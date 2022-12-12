@@ -14,7 +14,7 @@ Don’t forget at any time that the validation of any request parameter (GET, PO
 
 # Basic sample
 
-pandoc basic_sample.md
+@@include[basic_sample.md](includes/basic_sample.md)
 
 # Array values sample
 # Table name or field name protection
