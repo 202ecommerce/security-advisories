@@ -14,7 +14,7 @@ Don’t forget at any time that the validation of any request parameter (GET, PO
 
 # Basic sample
 
-cat basic_sample.md
+pandoc basic_sample.md
 
 # Array values sample
 # Table name or field name protection
