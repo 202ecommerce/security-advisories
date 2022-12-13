@@ -12,6 +12,18 @@ Don’t forget at any time that the validation of any request parameter (GET, PO
 
 ## Basic sample
 
+```
+function test(int $id, string $name) {
+    $querystr = 'SELECT id, name FROM mytable WHERE id = $id AND name = "' . $name . '"';
+    return Db::getInstance()->executeS($querystr);
+}
+```
+
+
+
+
+
+
 > ***DON'T DO :***
 >
 > `function test(int $id, string $name) {`  
