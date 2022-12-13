@@ -36,18 +36,18 @@
     2. [Sample with file_put_contents](/chain_of_vulnerability.md#sample-with-file_put_contents)
 
 
-<table class="center">
+<table class="center" style="border:none">
     <tr>
-        <td><img src="/images/resized/left-arrow-9133251.png"></td>
+        <td><img src="/images/resized/left-arrow-9133251.png"></img></td>
         <td>test 1 2 test : fichier précédant</td>
     </tr>
     <tr>
-        <td><img src="/images/resized/back-to-menu-arrow-9121722.png"></td>
-        <td><img src="/images/resized/up-arrow-1767592-1502496.png"></td>
+        <td><img src="/images/resized/back-to-menu-arrow-9121722.png"></img></td>
+        <td><img src="/images/resized/up-arrow-1767592-1502496.png"></img></td>
     </tr>
     <tr>
         <td>test 3 4 test : fichier suivant</td>
-        <td><img src="/images/resized/right-arrow.png"></td>
+        <td><img src="/images/resized/right-arrow.png"></img></td>
     </tr>
 </table>
 
