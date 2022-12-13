@@ -11,9 +11,9 @@
     1. [Basic sample](/pages/php_injections.md#basic-sample)
 
 3. **[Prevent sensitive data disclosure](/pages/sensitive_data_disclosure.md)**
-    1. [Logs, data export, …](/pages/sensitive_data_disclosure.md##logs-data-export)
-    2. [White reader, white deleter, …](/pages/sensitive_data_disclosure.md##white-reader-white-deleter)
-    3. [Deny any none-useful file extensions](/pages/sensitive_data_disclosure.md##deny-any-none-useful-file-extensions)
+    1. [Logs, data export, …](/pages/sensitive_data_disclosure.md#logs-data-export)
+    2. [White reader, white deleter, …](/pages/sensitive_data_disclosure.md#white-reader-white-deleter)
+    3. [Deny any none-useful file extensions](/pages/sensitive_data_disclosure.md#deny-any-none-useful-file-extensions)
 
 4. **[Prevent Cross Script (XSS) vulnerability](/pages/cross_script_vulnerability.md)**
     1. [Escape assigned variable on templates](/pages/cross_script_vulnerability.md#escape-assigned-variable-on-templates)
