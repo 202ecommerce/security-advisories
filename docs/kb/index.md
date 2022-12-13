@@ -1,6 +1,6 @@
 # PrestaShop Modules Security: Knowledge base
 
-1. [Prevent SQL injections](/pages/sql_injections.md)
+1. **[Prevent SQL injections](/pages/sql_injections.md)**
     1. [Basic sample](/pages/sql_injections.md#basic-sample)
     2. [Array values sample](/pages/sql_injections.md#array-values-sample)
     3. [Table name or field name protection](/pages/sql_injections.md#table-name-or-field-name-protection)
