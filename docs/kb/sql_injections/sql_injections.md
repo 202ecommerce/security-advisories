@@ -8,7 +8,7 @@ Don’t forget at any time that the validation of any request parameter (GET, PO
 2. [Array values sample](#array-values-sample)
 3. [Table name or field name protection](#table-name-or-field-name-protection)
 4. [OrderBy and orderWay protection](#orderby-and-orderway-protection)
-5. [Other cases like case-then, functions](#other-cases-like-case-then,-functions)
+5. [Other cases like case/then, functions](#other-cases-like-casethen,-functions)
 
 ## Basic sample
 
@@ -131,6 +131,6 @@ Instead of this previous sensitive SQL call :
 Do not use pSQL() or bqSQL() in an order direction.
 
 
-## Other cases like case-then, functions
+## Other cases like case/then, functions
 
 I hope you understand it will be impossible to easily protect parameters when it’s not an integer or a string between quotes or backtick. So, for this specific case you need to refactor your code to send and validate all parameters on your own.
