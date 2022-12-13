@@ -37,6 +37,6 @@
 
 #### ![go left](/images/resized/left-arrow-9133251.png) test 1 2 test : fichier précédant
 
-#### ![go up](/images/resized/up-arrow-1767592-1502496.png) ![go back](../images/resized/back-to-menu-arrow-9121722.png)	
+#### ![go up](/images/resized/up-arrow-1767592-1502496.png) ![go back](/images/resized/back-to-menu-arrow-9121722.png)	
 
-#### test 3 4 test : fichier suivant ![go right](/images/resized/right-arrow(left-arrow-9133251-reversed).png)
+#### test 3 4 test : fichier suivant ![go right](/images/resized/right-arrow.png)
