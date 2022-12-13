@@ -7,33 +7,23 @@
     4. [OrderBy and orderWay protection](/sql_injections.md#orderby-and-orderway-protection)
     5. [Other cases like case/then, functions…](/sql_injections.md#other-cases-like-casethen-functions)
 
-<br><br>
-
 2. **[Prevent PHP injections](/php_injections.md)**
     1. [Basic sample](/php_injections.md#basic-sample)
-
-<br><br>
 
 3. **[Prevent sensitive data disclosure](/sensitive_data_disclosure.md)**
     1. [Logs, data export, …](/sensitive_data_disclosure.md#logs-data-export-)
     2. [White reader, white deleter, …](/sensitive_data_disclosure.md#white-reader-white-deleter-)
     3. [Deny any none-useful file extensions](/sensitive_data_disclosure.md#deny-any-none-useful-file-extensions)
 
-<br><br>
-
 4. **[Prevent Cross Script (XSS) vulnerability](/cross_script_vulnerability.md)**
     1. [Escape assigned variable on templates](/cross_script_vulnerability.md#escape-assigned-variable-on-templates)
     2. [None secure svg files](/cross_script_vulnerability.md#none-secure-svg-files)
-
-<br><br>
 
 5. **[Prevent logical weakness](/logical_weakness.md)**
     1. [Standalone script without ModuleFrontController](/logical_weakness.md#standalone-script-without-modulefrontcontroller)
     2. [Weakness token in a front controller](/logical_weakness.md#weakness-token-in-a-front-controller)
     3. [Callback of a wildcard method](/logical_weakness.md#callback-of-a-wildcard-method)
     4. [Wildcard data in the PrestaShop secures cookie](/logical_weakness.md#wildcard-data-in-the-prestashop-secures-cookie)
-
-<br><br>
 
 6. **[Prevent chain of vulnerability](/chain_of_vulnerability.md)**
     1. [None obvious trusted data](/chain_of_vulnerability.md#none-obvious-trusted-data)
