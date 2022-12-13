@@ -134,3 +134,6 @@ Do not use pSQL() or bqSQL() in an order direction.
 ## Other cases like case/then or functions
 
 I hope you understand it will be impossible to easily protect parameters when it’s not an integer or a string between quotes or backtick. So, for this specific case you need to refactor your code to send and validate all parameters on your own.
+
+##
+![test!](../images/left-arrow-9133251.png)
