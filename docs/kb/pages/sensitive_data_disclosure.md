@@ -1,8 +1,8 @@
 # Prevent sensitive data disclosure
 
-1. [Logs, data export, …](#)
-2. [White reader, white deleter, …](#)
-3. [Deny any none-useful file extensions](#)
+1. [Logs, data export, …](#logs-data-export)
+2. [White reader, white deleter, …](#white-reader-white-deleter)
+3. [Deny any none useful file extensions](#deny-any-none-useful-file-extensions)
 
 ## Logs, data export, …
 
@@ -36,7 +36,7 @@ To prevent any call outside csv directory use basename method:
 Moreover, it’s recommended to check the type of files and mime type.
 
 
-## Deny any none-useful file extensions
+## Deny any none useful file extensions
 
 The easiest way to deny none useful is to add in the root directory of your module this htaccess file.
 
