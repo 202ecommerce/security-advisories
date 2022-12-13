@@ -13,8 +13,8 @@ Don’t forget at any time that the validation of any request parameter (GET, PO
 ## Basic sample
 
 >`function test(int $id, string $name) {`  
->    `$querystr = 'SELECT id, name FROM mytable WHERE id = $id AND name = "' . $name . '"';`  
->    `return Db::getInstance()->executeS($querystr);`  
+>`    $querystr = 'SELECT id, name FROM mytable WHERE id = $id AND name = "' . $name . '"';`  
+>`    return Db::getInstance()->executeS($querystr);`  
 >`}`
 
 This request has a vulnerability named “sensitive sql call” because if :
@@ -33,11 +33,11 @@ Please note: **pSQL is not efficient without quotes**, for integer variables. So
 The same method (variant using also *DbQuery* class) without the type hint of test method argument. Do not use pSQL to fix this sensitive SQL call, use an explicit casting like (int) (or float if need) :
 
 >`function test($id, $name) {`  
->    `$query = new DbQuery();`  
->    `$query->select('id, name');`  
->    `$query->from('mytable');`  
->    `$query->where('id = ' . (int) $id . ' AND name = "' . pSQL($name) . '"');`  
->    `$results = Db::getInstance()->executeS($query);`  
+>`    $query = new DbQuery();`  
+>`    $query->select('id, name');`  
+>`    $query->from('mytable');`  
+>`    $query->where('id = ' . (int) $id . ' AND name = "' . pSQL($name) . '"');`  
+>`    $results = Db::getInstance()->executeS($query);`  
 >`}`
 
 Other recommandations :
