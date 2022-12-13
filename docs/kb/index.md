@@ -5,7 +5,7 @@
     2. [Array values sample](/sql_injections/sql_injections.md#array-values-sample)
     3. [Table name or field name protection](/sql_injections/sql_injections.md#table-name-or-field-name-protection)
     4. [OrderBy and orderWay protection](/sql_injections/sql_injections.md#orderby-and-orderway-protection)
-    5. [Other cases like case/then, functions](/sql_injections/sql_injections.md#other-cases-like-casethen,-functions)
+    5. [Other cases like case-then, functions](/sql_injections/sql_injections.md#other-cases-like-casethen,-functions)
 
 2. **[Prevent sensitive data disclosure]()**
     1. [Logs, data export, …]()
