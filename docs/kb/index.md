@@ -7,6 +7,14 @@
     4. [OrderBy and orderWay protection](/sql_injections.md#orderby-and-orderway-protection)
     5. [Other cases like case/then, functions…](/sql_injections.md#other-cases-like-casethen-functions)
 
+
+
+
+
+
+
+    
+
 2. **[Prevent PHP injections](/php_injections.md)**
     1. [Basic sample](/php_injections.md#basic-sample)
 
