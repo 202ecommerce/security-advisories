@@ -1,14 +1,14 @@
 # PrestaShop Modules Security: Knowledge base
 
-1. **[Prevent SQL injections](/sql_injections.md)**
-    1. [Basic sample](/sql_injections.md#basic-sample)
-    2. [Array values sample](/sql_injections.md#array-values-sample)
-    3. [Table name or field name protection](/sql_injections.md#table-name-or-field-name-protection)
-    4. [OrderBy and orderWay protection](/sql_injections.md#orderby-and-orderway-protection)
-    5. [Other cases like case/then or functions](/sql_injections.md#other-cases-like-casethen-or-functions)
+1. **[Prevent SQL injections](/pages/sql_injections.md)**
+    1. [Basic sample](/pages/sql_injections.md#basic-sample)
+    2. [Array values sample](/pages/sql_injections.md#array-values-sample)
+    3. [Table name or field name protection](/pages/sql_injections.md#table-name-or-field-name-protection)
+    4. [OrderBy and orderWay protection](/pages/sql_injections.md#orderby-and-orderway-protection)
+    5. [Other cases like case/then or functions](/pages/sql_injections.md#other-cases-like-casethen-or-functions)
 
-2. **[Prevent PHP injections](/php_injections.md)**
-    1. [Basic sample](/php_injections.md#basic-sample)
+2. **[Prevent PHP injections](/pages/php_injections.md)**
+    1. [Basic sample](/pages/php_injections.md#basic-sample)
 
 3. **[Prevent sensitive data disclosure](/sql_injections.md)**
     1. [Logs, data export, …]()
