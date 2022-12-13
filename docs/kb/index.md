@@ -35,6 +35,8 @@
     1. [None obvious trusted data](/chain_of_vulnerability.md#none-obvious-trusted-data)
     2. [Sample with file_put_contents](/chain_of_vulnerability.md#sample-with-file_put_contents)
 
-![go left](/images/resized/left-arrow-9133251.png) | test 1 2 test : fichier précédant
-![go up](/images/resized/up-arrow-1767592-1502496.png) | ![go back](/images/resized/back-to-menu-arrow-9121722.png)
-test 3 4 test : fichier suivant | ![go right](/images/resized/right-arrow.png)
+#### ![go left](/images/resized/left-arrow-9133251.png) | test 1 2 test : fichier précédant
+
+![go up](/images/resized/up-arrow-1767592-1502496.png)![go back](/images/resized/back-to-menu-arrow-9121722.png)
+
+#### test 3 4 test : fichier suivant | ![go right](/images/resized/right-arrow.png)
