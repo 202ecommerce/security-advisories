@@ -8,7 +8,7 @@ Don’t forget at any time that the validation of any request parameter (GET, PO
 2. [Array values sample](#array-values-sample)
 3. [Table name or field name protection](#table-name-or-field-name-protection)
 4. [OrderBy and orderWay protection](#orderby-and-orderway-protection)
-5. [Other cases like case-then, functions](#other-cases-like-case\-then,-functions)
+5. [Other cases like case-then, functions](#other-cases-like-case\-then\,-functions)
 
 ## Basic sample
 
