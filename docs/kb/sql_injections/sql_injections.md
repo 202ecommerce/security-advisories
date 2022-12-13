@@ -12,7 +12,7 @@ Don’t forget at any time that the validation of any request parameter (GET, PO
 
 ## Basic sample
 
-> ***DON'T DO :***
+> ***DON'T DO:***
 > ```PHP
 > function test(int $id, string $name) {
 >     $querystr = 'SELECT id, name FROM mytable WHERE id = $id AND name = "' . $name . '"';
@@ -32,14 +32,14 @@ To fix this sensitive SQL call you need to use pSQL(`$name`) like this. In this 
 
 Please note: **pSQL is not efficient without quotes**, for integer variables. Some malicious injections can be forged without quote like :
 
-> ```
+> ```PHP
 > $id = '1; DROP TABLE test;#'
 > (pSQL($id) == $id) === true
 > ```
 
 The same method (variant using also *DbQuery* class) without the type hint of test method argument. Do not use pSQL to fix this sensitive SQL call, use an explicit casting like (int) (or float if need) :
 
-> ***DO :***
+> ***DO:***
 > ```PHP
 > function test($id, $name) {
 >    $query = new DbQuery();
@@ -59,8 +59,78 @@ For quick reviewing or if you want to automate some regex to improve quality and
 
 ## Array values sample
 
+To protect IN where clause with an array of values, use array map to cast or pSQL to protect each element of the array.
+
+> ***DO:***
+> ```PHP
+> $ids = [1,2,3];
+> $name = ['kiwi', 'apple'];
+>
+> function test(array $ids, array $name) {
+>    $querystr = 'SELECT id, name FROM mytable WHERE id IN ( ' . implode(',', array_map('intval', $ids )) . ' AND name IN ("' . implode ('","', array_map('pSQL', $name )) '")’;
+>    return $querystr;
+>}
+> ```
+
 ## Table name or field name protection
+
+This is another sensitive SQL call :
+
+
+> ***DON'T DO:***
+> ```PHP
+> function test($id, $name) {
+>    $querystr = 'SELECT id, ' . $name . ' FROM mytable WHERE id = ' . (int) $id;
+>    return Db::getInstance()->executeS($querystr);
+> }
+> ```
+
+Use `'bqSQL($name)'` will escape backtick characters.
+
+> ***DO:***
+> ```PHP
+> function test($id, $name) {
+>    $querystr = 'SELECT id, `' . bqSQL($name) . '` FROM mytable WHERE id = ' . (int) $id;
+>    return Db::getInstance()->executeS($querystr);
+> }
+> ```
+
+You should always use bqSQL() between two backticks to be efficient !
+
+Do **not** use pSQL() instead of bqSQL().
+
 
 ## OrderBy and orderWay protection
 
+Only class *Validate* with method *isOrderWay() isOrderBy()* before using the parameter is a good solution to prevent SQL injection ! All other solution can introduce SQL error in case of 
+ 
+> ***DON'T DO:***
+> ```PHP
+>function test($orderWay, $orderBy) {
+>    $querystr = 'SELECT id, name FROM mytable ORDER BY `' . bqSQL($orderBy) . '` ' . pSQL($orderWay);
+>    return Db::getInstance()->executeS($querystr);
+> }
+> ```
+
+Instead of this previous sensitive SQL call :
+
+> ***DO:***
+> ```PHP
+> function test($orderWay, $orderBy) {
+>    if (Validate::isOrderWay($orderWay) === false){
+>        $orderWay = 'DESC';
+>    }
+>    if (Validate::isOrderBy($orderWay) === false) {
+>        $orderBy = 'name';
+>    }
+>    $querystr = 'SELECT id, name FROM mytable ORDER BY `' . bqSQL($orderBy) . '` ' . $orderWay;
+>    return Db::getInstance()->executeS($querystr);
+> }
+> ```
+
+Do not use pSQL() or bqSQL() in an order direction.
+
+
 ## Other cases like case/then, functions, etc
+
+I hope you understand it will be impossible to easily protect parameters when it’s not an integer or a string between quotes or backtick. So, for this specific case you need to refactor your code to send and validate all parameters on your own.
