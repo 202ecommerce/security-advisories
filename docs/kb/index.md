@@ -39,5 +39,4 @@
 
 #### ![go up](/images/resized/up-arrow-1767592-1502496.png) ![go back](/images/resized/back-to-menu-arrow-9121722.png)	
 
-#### test 3 4 test : fichier suivant 
-#### ![go right](/images/resized/right-arrow.png)
+#### test 3 4 test : fichier suivant ![go right](/images/resized/right-arrow.png)
