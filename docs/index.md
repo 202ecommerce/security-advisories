@@ -1,3 +1,3 @@
 #PrestaShop modules Security Advisories
 
-***[vers la KB](/kb/index.md)***
+***[to the KB](/kb/index.md)***
