@@ -1,5 +1,6 @@
 ---
 layout: default
+title: 202ecommerce Security Advisories
 ---
 
 # Prevent sensitive data disclosure
