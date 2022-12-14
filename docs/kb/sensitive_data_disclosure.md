@@ -71,4 +71,4 @@ Note : This htaccess deny php direct call too. It also prevents [standalone scri
 
 <br>
 
-[![go left](/images/resized/left-arrow-9133251.png)](/security-advisories/kb/php_injections.html) | [Prevent PHP injections](/php_injections.md) | [![go back](/images/resized/back-to-menu-arrow-9121722.png)](/security-advisories/kb/index.html) | [![go up](/images/resized/up-arrow-1767592-1502496.png)](#prevent-sensitive-data-disclosure) | [Prevent Cross Script (XSS) vulnerability](/cross_script_vulnerability.md) | [![go right](/images/resized/right-arrow.png)](/security-advisories/kb/cross_script_vulnerability.html)
+[![go left](/images/left-arrow-9133251.png)](/security-advisories/kb/php_injections.html) | [Prevent PHP injections](/php_injections.md) | [![go back](/images/back-to-menu-arrow-9121722.png)](/security-advisories/kb/index.html) | [![go up](/images/up-arrow-1767592-1502496.png)](#prevent-sensitive-data-disclosure) | [Prevent Cross Script (XSS) vulnerability](/cross_script_vulnerability.md) | [![go right](/images/right-arrow.png)](/security-advisories/kb/cross_script_vulnerability.html)

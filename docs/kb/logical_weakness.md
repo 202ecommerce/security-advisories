@@ -194,4 +194,4 @@ But it can also be used to update other data of the cookie like the sessions.
 
 <br>
 
-[![go left](/images/resized/left-arrow-9133251.png)](/security-advisories/kb/cross_script_vulnerability.html) | [Prevent Cross Script (XSS) vulnerability](/cross_script_vulnerability.md) | [![go back](/images/resized/back-to-menu-arrow-9121722.png)](/security-advisories/kb/index.html) | [![go up](/images/resized/up-arrow-1767592-1502496.png)](#prevent-logical-weakness) | [Prevent chain of vulnerability](/chain_of_vulnerability.md) | [![go right](/images/resized/right-arrow.png)](/security-advisories/kb/chain_of_vulnerability.html)
+[![go left](/images/left-arrow-9133251.png)](/security-advisories/kb/cross_script_vulnerability.html) | [Prevent Cross Script (XSS) vulnerability](/cross_script_vulnerability.md) | [![go back](/images/back-to-menu-arrow-9121722.png)](/security-advisories/kb/index.html) | [![go up](/images/up-arrow-1767592-1502496.png)](#prevent-logical-weakness) | [Prevent chain of vulnerability](/chain_of_vulnerability.md) | [![go right](/images/right-arrow.png)](/security-advisories/kb/chain_of_vulnerability.html)

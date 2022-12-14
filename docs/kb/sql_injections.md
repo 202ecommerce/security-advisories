@@ -141,5 +141,5 @@ I hope you understand it will be impossible to easily protect parameters when it
 
 <br>
 
-[![go back](/images/resized/back-to-menu-arrow-9121722.png)](/security-advisories/kb/index.html) | [![go up](/images/resized/up-arrow-1767592-1502496.png)](#prevent-sql-injections) | [Prevent PHP injections](/php_injections.md) | [![go right](/images/resized/right-arrow.png)](/security-advisories/kb/php_injections.html)
+[![go back](/images/back-to-menu-arrow-9121722.png)](/security-advisories/kb/index.html) | [![go up](/images/up-arrow-1767592-1502496.png)](#prevent-sql-injections) | [Prevent PHP injections](/php_injections.md) | [![go right](/images/right-arrow.png)](/security-advisories/kb/php_injections.html)
 
