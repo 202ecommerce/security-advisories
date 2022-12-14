@@ -20,7 +20,7 @@
       
       <h1 class="project-name">
         <a href="../index.html" class="btn">
-          test
+          {{ page.title | default: site.title | default: site.github.repository_name }}
         </a>
       </h1>
 
