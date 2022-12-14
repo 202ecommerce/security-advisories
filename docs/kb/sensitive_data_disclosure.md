@@ -63,7 +63,7 @@ The easiest way to deny none useful is to add in the root directory of your modu
 
 Do not forget htaccess is available on Apache but not on nginx.
 
-Note : This htaccess deny php direct call too. It also prevents [standalone scripts without ModuleFrontController](https://docs.google.com/document/d/1CvbzwhN-C1MNfmXykfIG6HBogh_EI4dvdgrmW3m4hh8/edit#heading=h.u5uy9tq7sq3g).
+Note : This htaccess deny php direct call too. It also prevents [standalone scripts without ModuleFrontController](/logical_weakness.md#standalone-script-without-modulefrontcontroller).
 
 <br>
 
