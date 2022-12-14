@@ -4,6 +4,7 @@
 
 > ***DON'T DO:***
 > ```PHP
+> <?php
 > $id = Tools::getValue('id_adress');
 > $file = Tools::getValue('file', 'address-'.$id.'.json');
 > $address = (new Address($id))->toArray();

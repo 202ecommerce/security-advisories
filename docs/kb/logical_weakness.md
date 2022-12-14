@@ -34,8 +34,9 @@ It’s sometimes useful to protect a front controller with a static token for in
 
 > ***DON'T DO:***
 > ```PHP
-> if (Configuration::get('PS_TOKEN_ENABLE') == 1 
->        && (Tools::getValue('token') != Tools::encrypt('mymodule'))) {
+> <?php
+> if (Configuration::get('PS_TOKEN_ENABLE') == 1 &&
+>        (Tools::getValue('token') != ools::encrypt('mymodule'))) {
 >    echo 'Invalid token!';
 >    die();
 > }
@@ -45,6 +46,7 @@ Use instead:
 
 > ***DO:***
 > ```PHP
+> <?php
 > if (Tools::getValue('token') != Tools::encrypt('mymodule')) {
 >    echo 'Invalid token!';
 >    die();
@@ -55,6 +57,7 @@ Use instead:
 
 > ***DON'T DO:***
 > ```PHP
+> <?php
 > if (Tools::getValue('token') != Tools::getToken()) {
 >    echo 'Invalid token!';
 >    die();
@@ -65,6 +68,7 @@ Use instead:
 
 > ***DO:***
 > ```PHP
+> <?php
 > if (Tools::getValue('token') != Tools::encrypt('mymodule')) {
 >    echo 'Invalid token!';
 >    die();
@@ -75,8 +79,8 @@ Use instead:
 
 > ***DON'T DO:***
 > ```PHP
-> if (Tools::getValue('token') != 
->         sha1($this->module->name.'-'.$this->module->version)) {
+> <?php
+> if (Tools::getValue('token') != sha1($this->module->name.'-'.$this->module->version)) {
 >    echo 'Invalid token!';
 >    die();
 > }
@@ -86,8 +90,8 @@ Use instead:
 
 > ***DO:***
 > ```PHP
-> if (Tools::getValue('token') != 
->         sha1($this->module->name . _COOKIE_KEY_)) {
+> <?php
+> if (Tools::getValue('token') != sha1($this->module->name . _COOKIE_KEY_)) {
 >    echo 'Invalid token!';
 >    die();
 > }
@@ -97,6 +101,7 @@ Use instead:
 
 > ***DON'T DO:***
 > ```PHP
+> <?php
 > if (isset(Tools::getValue('token')) === true ||
 >        Tools::getValue('token') != Configuration::get('MYMODULE_TOKEN')) {
 >    echo 'Invalid token!';
@@ -108,6 +113,7 @@ Use instead:
 
 > ***DO:***
 > ```PHP
+> <?php
 > if (empty(Tools::getValue('token')) === true ||
 >        Tools::getValue('token') != Configuration::get('MYMODULE_TOKEN')) {
 >    echo 'Invalid token!';
@@ -121,6 +127,7 @@ This is an example that can call any method of the main Module classes like getA
 
 > ***DON'T DO:***
 > ```PHP
+> <?php
 > class MyModule extends Module
 > {
 >   public function hookDisplayHeader()
@@ -140,6 +147,7 @@ To prevent any malicious uses, you need to define an exhaustive list of permitte
 
 > ***DO:***
 > ```PHP
+> <?php
 > class MyModule extends Module
 > {
 >   public function hookDisplayHeader()
@@ -161,6 +169,7 @@ This code saves in the PrestaShop secured cookie a new variable.
 
 > ***DON'T DO:***
 > ```PHP
+> <?php
 > class TestModuleFrontController extends ModuleFrontController
 > {
 >    public function displayAjaxFavoriteOrder() {
@@ -175,6 +184,7 @@ But it can also be used to update other data of the cookie like the sessions.
 
 > ***DO:***
 > ```PHP
+> <?php
 > class TestModuleFrontController extends ModuleFrontController
 > {
 >    public function displayAjaxFavoriteOrder() {

@@ -12,6 +12,7 @@ It’s recommended to store logs in var/logs native PrestaShop directory of or c
 
 > ***DO:***
 > ```PHP
+> <?php
 > file_put_contents(__DIR__ . '/csv/order-' . md5(time() . rand()) . '.csv', $content);
 > ```
 
@@ -21,6 +22,7 @@ It can be a good idea to create a controller to read a sensitive file and check 
 
 > ***DON'T DO:***
 > ```PHP
+> <?php
 > echo file_get_contents(__DIR__ . '/csv/' . Tools::getValue($file));
 > ```
 
@@ -30,6 +32,7 @@ To prevent any call outside csv directory use basename method:
 
 > ***DO:***
 > ```PHP
+> <?php
 > echo file_get_contents(__DIR__ . '/csv/' . basename(Tools::getValue($file)));
 > ```
 
