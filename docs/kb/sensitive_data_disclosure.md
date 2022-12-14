@@ -1,6 +1,5 @@
 # Prevent sensitive data disclosure
 
-- [Prevent sensitive data disclosure](#prevent-sensitive-data-disclosure)
   - [Logs, data export, …](#logs-data-export-)
   - [White reader, white deleter, …](#white-reader-white-deleter-)
   - [Deny any none useful file extensions](#deny-any-none-useful-file-extensions)

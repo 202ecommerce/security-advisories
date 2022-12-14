@@ -1,6 +1,5 @@
 # Prevent logical weakness
 
-- [Prevent logical weakness](#prevent-logical-weakness)
   - [Standalone script without ModuleFrontController](#standalone-script-without-modulefrontcontroller)
   - [Weakness token in a front controller](#weakness-token-in-a-front-controller)
   - [Callback of a wildcard method](#callback-of-a-wildcard-method)
