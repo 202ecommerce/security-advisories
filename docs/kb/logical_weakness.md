@@ -30,7 +30,7 @@ Recommandations :
 
 It’s sometimes useful to protect a front controller with a static token for instance to protect a cron, a webhook, …
 
-  1) *Check if 'PS_TOKEN_ENABLE' is enabled will deactivate the protection. This feature is not done to protect a controller.*
+*1) Check if 'PS_TOKEN_ENABLE' is enabled will deactivate the protection. This feature is not done to protect a controller.*
 
 > ***DON'T DO:***
 > ```PHP
@@ -51,7 +51,7 @@ Use instead:
 > }
 > ```
 
-  2) *Tools::getToken() is assigned as a JavaScript variable on all pages. If you use this method, the token is predictable and not safe.*
+*2) Tools::getToken() is assigned as a JavaScript variable on all pages. If you use this method, the token is predictable and not safe.*
 
 > ***DON'T DO:***
 > ```PHP
@@ -71,7 +71,7 @@ Use instead:
 > }
 > ```
 
-  3) *Compare the token submitted with a predictable parameter. Add a secret like the COOKIE_KEY as salt !*
+*3) Compare the token submitted with a predictable parameter. Add a secret like the COOKIE_KEY as salt !*
 
 > ***DON'T DO:***
 > ```PHP
@@ -91,7 +91,7 @@ Use instead:
 > }
 > ```
 
-  4) *If you store a PrestaShop Configuration and compare it to a GET or POST parameter, check previously the configuration and the token submitted value is not empty (isset is not suffisant). In fact, the PrestaShop configuration with the referral token can be empty before module activation (or empty by an sql injection). In this case, the controller is potentially available with an empty token !*
+*4) If you store a PrestaShop Configuration and compare it to a GET or POST parameter, check previously the configuration and the token submitted value is not empty (isset is not suffisant). In fact, the PrestaShop configuration with the referral token can be empty before module activation (or empty by an sql injection). In this case, the controller is potentially available with an empty token !*
 
 > ***DON'T DO:***
 > ```PHP
