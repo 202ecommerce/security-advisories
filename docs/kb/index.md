@@ -36,4 +36,4 @@
     2. [Sample with file_put_contents](/chain_of_vulnerability.md#sample-with-file_put_contents)
 <br><br>
 
-***[back to the index](/../index.md)***
+***[back to the home page](/../index.md)***
