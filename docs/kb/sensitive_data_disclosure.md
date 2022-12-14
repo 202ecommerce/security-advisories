@@ -41,19 +41,23 @@ Moreover, it’s recommended to check the type of files and mime type.
 The easiest way to deny none useful is to add in the root directory of your module this htaccess file.
 
 > **Apache 2.2**
+> ```XML
 > <IfModule !mod_authz_core.c>
 >    Order deny,allow
 >    Deny from all
->    <Files ~ "(?i)^.*\.(jpg|jpeg|gif|png|bmp|tiff|svg|pdf|mov|mpeg|mp4|avi|mpg|wma|flv|webm|ico|webp|woff|woff2|ttf|eot|html|css|js)$">
+>    <Files ~ 
+> "(?i)^.*\.(jpg|jpeg|gif|png|bmp|tiff|svg|pdf|mov|mpeg|mp4|avi|mpg|wma|flv|webm|ico|webp|woff|woff2|ttf|eot|html|css|js)$">
 >        Allow from all
 >    </Files>
 > </IfModule>
 > ```
 
 > **Apache 2.4**
+> ```XML
 > <IfModule mod_authz_core.c>
 >    Require all denied
->    <Files ~ "(?i)^.*\.(jpg|jpeg|gif|png|bmp|tiff|svg|pdf|mov|mpeg|mp4|avi|mpg|wma|flv|webm|ico|webp|woff|woff2|ttf|eot|html|css|js)$">
+>    <Files ~
+> "(?i)^.*\.(jpg|jpeg|gif|png|bmp|tiff|svg|pdf|mov|mpeg|mp4|avi|mpg|wma|flv|webm|ico|webp|woff|woff2|ttf|eot|html|css|js)$">
 >        Require all granted
 >    </Files>
 > </IfModule>
