@@ -14,7 +14,6 @@ Don’t forget at any time that the validation of any request parameter (GET, PO
 
 > ***DON'T DO:***
 > ```PHP
-> <?php
 > function test(int $id, string $name) {
 >     $querystr = 'SELECT id, name FROM mytable WHERE id = $id AND name = "' . $name . '"';
 >     return Db::getInstance()->executeS($querystr);
@@ -24,7 +23,6 @@ Don’t forget at any time that the validation of any request parameter (GET, PO
 This request has a vulnerability named “sensitive sql call” because if :
 
 > ```PHP
-> <?php
 > $name = 'dummy" UNION SELECT id_configuration AS id, value AS name FROM ps_configuration;#';
 > ```
 
@@ -35,7 +33,6 @@ To fix this sensitive SQL call you need to use pSQL(`$name`) like this. In this 
 Please note: **pSQL is not efficient without quotes**, for integer variables. Some malicious injections can be forged without quote like :
 
 > ```PHP
-> <?php
 > $id = '1; DROP TABLE test;#'
 > (pSQL($id) == $id) === true
 > ```
@@ -44,7 +41,6 @@ The same method (variant using also *DbQuery* class) without the type hint of te
 
 > ***DO:***
 > ```PHP
-> <?php
 > function test($id, $name) {
 >    $query = new DbQuery();
 >    $query->select('id, name');
@@ -67,7 +63,6 @@ To protect IN where clause with an array of values, use array map to cast or pSQ
 
 > ***DO:***
 > ```PHP
-> <?php
 > $ids = [1,2,3];
 > $name = ['kiwi', 'apple'];
 >
@@ -84,7 +79,6 @@ This is another sensitive SQL call :
 
 > ***DON'T DO:***
 > ```PHP
-> <?php
 > function test($id, $name) {
 >    $querystr = 'SELECT id, ' . $name . ' FROM mytable WHERE id = ' . (int) $id;
 >    return Db::getInstance()->executeS($querystr);
@@ -95,7 +89,6 @@ Use `'bqSQL($name)'` will escape backtick characters.
 
 > ***DO:***
 > ```PHP
-> <?php
 > function test($id, $name) {
 >    $querystr = 'SELECT id, `' . bqSQL($name) . '` FROM mytable WHERE id = ' . (int) $id;
 >    return Db::getInstance()->executeS($querystr);
@@ -113,7 +106,6 @@ Only class *Validate* with method *isOrderWay() isOrderBy()* before using the pa
  
 > ***DON'T DO:***
 > ```PHP
-> <?php
 >function test($orderWay, $orderBy) {
 >    $querystr = 'SELECT id, name FROM mytable ORDER BY `' . bqSQL($orderBy) . '` ' . pSQL($orderWay);
 >    return Db::getInstance()->executeS($querystr);
@@ -124,7 +116,6 @@ Instead of this previous sensitive SQL call :
 
 > ***DO:***
 > ```PHP
-> <?php
 > function test($orderWay, $orderBy) {
 >    if (Validate::isOrderWay($orderWay) === false){
 >        $orderWay = 'DESC';
