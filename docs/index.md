@@ -1,3 +1,5 @@
 #PrestaShop modules Security Advisories
 
-***[to the KB](/kb/index.md)***
+1. ***[PrestaShop module security knowledge base](/kb/index.md)***
+2. 202ecommerce security advisory
+3. List of public vulnerability about PrestaShop core and modules (CVE)
