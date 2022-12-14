@@ -135,7 +135,7 @@ Do not use pSQL() or bqSQL() in an order direction.
 
 I hope you understand it will be impossible to easily protect parameters when it’s not an integer or a string between quotes or backtick. So, for this specific case you need to refactor your code to send and validate all parameters on your own.
 
-##
+## 
 
 [![go back](/images/resized/back-to-menu-arrow-9121722.png)](/security-advisories/kb/index.html) | [![go up](/images/resized/up-arrow-1767592-1502496.png)](#prevent-sql-injections) | [Prevent PHP injections](/php_injections.md) | [![go right](/images/resized/right-arrow.png)](/security-advisories/kb/php_injections.html)
 
