@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # PrestaShop Modules Security: Knowledge base
 
 

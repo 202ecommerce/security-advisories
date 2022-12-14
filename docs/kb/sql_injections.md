@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Prevent SQL injections
 
 Sensitive SQL calls can turn into sql injection, that’s why it’s very important to know all risks and matters to prevent sql injections. This note is important if you use legacy classes of PrestaShop.

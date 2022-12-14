@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Prevent logical weakness
 
   - [Standalone script without ModuleFrontController](#standalone-script-without-modulefrontcontroller)

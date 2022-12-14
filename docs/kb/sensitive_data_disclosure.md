@@ -1,3 +1,7 @@
+---
+layout: default
+---
+
 # Prevent sensitive data disclosure
 
   - [Logs, data export, …](#logs-data-export-)
