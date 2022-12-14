@@ -1,8 +1,9 @@
 # Prevent sensitive data disclosure
 
-1. [Logs, data export, …](#logs-data-export-)
-2. [White reader, white deleter, …](#white-reader-white-deleter-)
-3. [Deny any none useful file extensions](#deny-any-none-useful-file-extensions)
+- [Prevent sensitive data disclosure](#prevent-sensitive-data-disclosure)
+  - [Logs, data export, …](#logs-data-export-)
+  - [White reader, white deleter, …](#white-reader-white-deleter-)
+  - [Deny any none useful file extensions](#deny-any-none-useful-file-extensions)
 
 ## Logs, data export, …
 
@@ -64,5 +65,11 @@ The easiest way to deny none useful is to add in the root directory of your modu
 Do not forget htaccess is available on Apache but not on nginx.
 
 Note : This htaccess deny php direct call too. It also prevents [standalone scripts without ModuleFrontController](https://docs.google.com/document/d/1CvbzwhN-C1MNfmXykfIG6HBogh_EI4dvdgrmW3m4hh8/edit#heading=h.u5uy9tq7sq3g).
+
+<br>
+
+****
+
+<br>
 
 [![go left](/images/resized/left-arrow-9133251.png)](/security-advisories/kb/php_injections.html) | [Prevent PHP injections](/php_injections.md) | [![go back](/images/resized/back-to-menu-arrow-9121722.png)](/security-advisories/kb/index.html) | [![go up](/images/resized/up-arrow-1767592-1502496.png)](#prevent-sensitive-data-disclosure) | [Prevent Cross Script (XSS) vulnerability](/cross_script_vulnerability.md) | [![go right](/images/resized/right-arrow.png)](/security-advisories/kb/cross_script_vulnerability.html)

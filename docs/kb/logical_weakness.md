@@ -1,9 +1,10 @@
 # Prevent logical weakness
 
-1. [Standalone script without ModuleFrontController](#standalone-script-without-modulefrontcontroller)
-2. [Weakness token in a front controller](#weakness-token-in-a-front-controller)
-3. [Callback of a wildcard method](#callback-of-a-wildcard-method)
-4. [Wildcard data in the PrestaShop secures cookie](#wildcard-data-in-the-prestashop-secures-cookie)
+- [Prevent logical weakness](#prevent-logical-weakness)
+  - [Standalone script without ModuleFrontController](#standalone-script-without-modulefrontcontroller)
+  - [Weakness token in a front controller](#weakness-token-in-a-front-controller)
+  - [Callback of a wildcard method](#callback-of-a-wildcard-method)
+  - [Wildcard data in the PrestaShop secures cookie](#wildcard-data-in-the-prestashop-secures-cookie)
 
 ## Standalone script without ModuleFrontController
 
@@ -187,5 +188,11 @@ But it can also be used to update other data of the cookie like the sessions.
 >    }
 > }
 > ```
+
+<br>
+
+****
+
+<br>
 
 [![go left](/images/resized/left-arrow-9133251.png)](/security-advisories/kb/cross_script_vulnerability.html) | [Prevent Cross Script (XSS) vulnerability](/cross_script_vulnerability.md) | [![go back](/images/resized/back-to-menu-arrow-9121722.png)](/security-advisories/kb/index.html) | [![go up](/images/resized/up-arrow-1767592-1502496.png)](#prevent-logical-weakness) | [Prevent chain of vulnerability](/chain_of_vulnerability.md) | [![go right](/images/resized/right-arrow.png)](/security-advisories/kb/chain_of_vulnerability.html)

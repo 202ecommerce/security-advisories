@@ -16,5 +16,11 @@ This is a critical vulnerability.
 
 In fact, if the content of an address street is `Yellow <?php echo ‘123’; ?> Stone` and `$_GET[file] = test.php`, the request will push a php file test.php containing a php file.
 
+<br>
+
+****
+
+<br>
+
 [![go left](/images/resized/left-arrow-9133251.png)](/security-advisories/kb/sql_injections.html) | [Prevent SQL injections](/sql_injections.md) | [![go back](/images/resized/back-to-menu-arrow-9121722.png)](/security-advisories/kb/index.html) | [![go up](/images/resized/up-arrow-1767592-1502496.png)](#prevent-php-injections) | [Prevent sensitive data disclosure](/sensitive_data_disclosure.md) | [![go right](/images/resized/right-arrow.png)](/security-advisories/kb/sensitive_data_disclosure.html)
 
