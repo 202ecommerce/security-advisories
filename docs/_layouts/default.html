@@ -16,10 +16,9 @@
     <a id="skip-to-content" href="#content">Skip to the content.</a>
 
     <header class="page-header" role="banner">
-
       
       <h1 class="project-name">
-        <a href="../index.html" class="btn">
+        <a href="../index.html" style="color:#f0f3f4">
           {{ page.title | default: site.title | default: site.github.repository_name }}
         </a>
       </h1>
@@ -29,7 +28,7 @@
       </h2>
 
       {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub TEST?</a>
       {% endif %}
 
       {% if site.show_downloads %}
