@@ -1,14 +1,19 @@
+---
+layout: default
+title: 202ecommerce Security Advisories
+---
+
 # Prevent SQL injections
 
 Sensitive SQL calls can turn into sql injection, that’s why it’s very important to know all risks and matters to prevent sql injections. This note is important if you use legacy classes of PrestaShop.
 
 Don’t forget at any time that the validation of any request parameter (GET, POST, body content, sub json variable,…) is very required.
 
-1. [Basic sample](#basic-sample)
-2. [Array values sample](#array-values-sample)
-3. [Table name or field name protection](#table-name-or-field-name-protection)
-4. [OrderBy and orderWay protection](#orderby-and-orderway-protection)
-5. [Other cases like case/then, functions…](#other-cases-like-casethen-functions)
+  - [Basic sample](#basic-sample)
+  - [Array values sample](#array-values-sample)
+  - [Table name or field name protection](#table-name-or-field-name-protection)
+  - [OrderBy and orderWay protection](#orderby-and-orderway-protection)
+  - [Other cases like case/then, functions…](#other-cases-like-casethen-functions)
 
 ## Basic sample
 
@@ -135,7 +140,11 @@ Do not use pSQL() or bqSQL() in an order direction.
 
 I hope you understand it will be impossible to easily protect parameters when it’s not an integer or a string between quotes or backtick. So, for this specific case you need to refactor your code to send and validate all parameters on your own.
 
-##
+<br>
 
-[![go back](/images/resized/back-to-menu-arrow-9121722.png)](/security-advisories/kb/index.html) | [![go up](/images/resized/up-arrow-1767592-1502496.png)](#prevent-sql-injections) | [Prevent PHP injections](/php_injections.md) | [![go right](/images/resized/right-arrow.png)](/security-advisories/kb/php_injections.html)
+****
+
+<br>
+
+[![go back](/images/back-to-menu-arrow-9121722.png)](/security-advisories/kb/index.html) | [![go up](/images/up-arrow-1767592-1502496.png)](#prevent-sql-injections) | [Prevent PHP injections](/php_injections.md) | [![go right](/images/right-arrow.png)](/security-advisories/kb/php_injections.html)
 

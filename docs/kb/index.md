@@ -1,3 +1,8 @@
+---
+layout: default
+title: 202ecommerce Security Advisories
+---
+
 # PrestaShop Modules Security: Knowledge base
 
 
@@ -34,3 +39,6 @@
 6. **[Prevent chain of vulnerability](/chain_of_vulnerability.md)**
     1. [None obvious trusted data](/chain_of_vulnerability.md#none-obvious-trusted-data)
     2. [Sample with file_put_contents](/chain_of_vulnerability.md#sample-with-file_put_contents)
+<br><br>
+
+***[back to the home page](/../index.md)***
