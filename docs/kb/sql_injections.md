@@ -10,11 +10,11 @@ Sensitive SQL calls can turn into sql injection, that’s why it’s very import
 
 Don’t forget at any time that the validation of any request parameter (GET, POST, body content, sub json variable,…) is very required.
 
-  - [Basic sample](#basic-sample)
-  - [Array values sample](#array-values-sample)
-  - [Table name or field name protection](#table-name-or-field-name-protection)
-  - [OrderBy and orderWay protection](#orderby-and-orderway-protection)
-  - [Other cases like case/then, functions…](#other-cases-like-casethen-functions)
+1. [Basic sample](#basic-sample)
+2. [Array values sample](#array-values-sample)
+3. [Table name or field name protection](#table-name-or-field-name-protection)
+4. [OrderBy and orderWay protection](#orderby-and-orderway-protection)
+5. [Other cases like case/then, functions…](#other-cases-like-casethen-functions)
 
 ## Basic sample
 

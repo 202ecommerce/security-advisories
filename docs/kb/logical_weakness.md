@@ -5,10 +5,10 @@ title: Security Advisories
 
 # Prevent logical weakness
 
-  - [Standalone script without ModuleFrontController](#standalone-script-without-modulefrontcontroller)
-  - [Weakness token in a front controller](#weakness-token-in-a-front-controller)
-  - [Callback of a wildcard method](#callback-of-a-wildcard-method)
-  - [Wildcard data in the PrestaShop secures cookie](#wildcard-data-in-the-prestashop-secures-cookie)
+1. [Standalone script without ModuleFrontController](#standalone-script-without-modulefrontcontroller)
+2. [Weakness token in a front controller](#weakness-token-in-a-front-controller)
+3. [Callback of a wildcard method](#callback-of-a-wildcard-method)
+4. [Wildcard data in the PrestaShop secures cookie](#wildcard-data-in-the-prestashop-secures-cookie)
 
 ## Standalone script without ModuleFrontController
 
