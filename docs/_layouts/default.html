@@ -27,7 +27,7 @@
         {{ page.description | default: site.description | default: site.github.project_tagline }}
       </h2>
 
-      {% if page.is_kb_page | default: site.title | default: site.github.repository_name %}
+      {% if page.is_kb_page == "true" %}
         <a href="index.html" class="btn">Index</a>
       {% endif %}
 
