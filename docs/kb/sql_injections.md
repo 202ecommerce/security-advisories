@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 202ecommerce Security Advisories
+is_project_page: true
 ---
 
 # Prevent SQL injections
