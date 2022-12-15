@@ -1,6 +1,6 @@
 ---
 layout: default
-title: 202ecommerce Security Advisories
+title: Security Advisories
 ---
 
 # PrestaShop Modules Security: Knowledge base
