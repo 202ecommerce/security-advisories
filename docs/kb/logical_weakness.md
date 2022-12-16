@@ -41,7 +41,7 @@ It’s sometimes useful to protect a front controller with a static token for in
 > ***DON'T DO:***
 > ```PHP
 > if (Configuration::get('PS_TOKEN_ENABLE') == 1 &&
->        (Tools::getValue('token') != ools::encrypt('mymodule'))) {
+>        (Tools::getValue('token') != Tools::encrypt('mymodule'))) {
 >    echo 'Invalid token!';
 >    die();
 > }
