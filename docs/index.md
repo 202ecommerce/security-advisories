@@ -1,3 +1,9 @@
+---
+layout: default
+title: 202 ecommerce Security Advisories
+is_home_page: true
+---
+
 #PrestaShop modules Security Advisories
 
 1. ***[PrestaShop module security knowledge base](/kb/index.md)***
