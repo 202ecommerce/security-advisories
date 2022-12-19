@@ -15,4 +15,4 @@ aller dans ../list/core et ../list/modules et afficher tout les CVEs:
     - utiliser une foreach pour créer les liens vers les pages
     - faire pareil pour ../list/modules
 
-{% include test.md %}
+{% include test.html %}
