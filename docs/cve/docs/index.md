@@ -19,5 +19,5 @@ générer les fichier de datas dans _CVE_datas
     - faire pareil pour ../list/modules
 
 {% for data in site.cvedatas %}
-    {{ data.content }}
+    {{ data.title }} : {{ data.content }}
 {% endfor %}
