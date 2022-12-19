@@ -44,7 +44,7 @@
 
       {% if page.to_home_page == true and page.is_kb_page == true %}
         <a href="../index.html" class="btn">Home page</a>
-      {% elsif is_home_page != true %}
+      {% elsif page.is_home_page != true %}
         <a href="index.html" class="btn">Home page</a>
       {% endif %}
 
