@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Security Advisories
+title: 202 ecommerce Security Advisories
 is_kb_page: true
 ---
 
