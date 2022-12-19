@@ -18,6 +18,6 @@ générer les fichier de datas dans _CVE_datas
     - utiliser une foreach pour créer les liens vers les pages
     - faire pareil pour ../list/modules
 
-{% for data in site.CVE_datas %}
+{% for data in site.cvedatas %}
     {{ data.content }}
 {% endfor %}
