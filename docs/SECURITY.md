@@ -31,43 +31,36 @@ For more information, please visit our dedicated [website about security](https:
 
 ### Magento vendor's connector
 
-
-|Technical name|Repository|
---
-|bridge|[GitHub repository](https://github.com/BridgeAPI-Io/Magento)|
-|younitedpay|[GitHub repository](https://github.com/YounitedCredit/younitedpay-module-magento2)|
+**Technical name** | **Repository**
+bridge | [GitHub repository](https://github.com/BridgeAPI-Io/Magento)
+younitedpay | [GitHub repository](https://github.com/YounitedCredit/younitedpay-module-magento2)
 
 ### PrestaShop vendor's connector
 
+**Technical name** | **Repository** | **Security advisories**
 
-|Technical name|Repository|Security advisories|
---
-|axeptiocookies|[GitHub repository](https://github.com/202ecommerce/axeptiocookies)|Security advisories|
-|braintreeofficial|[GitHub repository](https://github.com/202-ecommerce/braintreeofficial)|Security advisories|
-|bridge|No public repository|Security advisories|
-|ebay|[GitHub repository](https://github.com/202ecommerce/ebay2)|[Security advisories](https://github.com/202ecommerce/ebay2/security)|
-|paypal|[GitHub repository](https://github.com/202-ecommerce/paypal)|[Security advisories](https://github.com/202-ecommerce/paypal/security)|
-|totadministrativemandate|No public repository|Security advisories|
-|totcarrierupdate|No public repository|Security advisories|
-|totcustomfields|No public repository|Security advisories|
-|totloyaltyadvanced|No public repository|Security advisories|
-|totmanufacturerpage|No public repository|Security advisories|
-|totsmartdelivery|No public repository|Security advisories|
-|totswitchattribute|No public repository|Security advisories|
-|totshowmailalerts|No public repository|Security advisories|
-|trustedshopsintegration|No public repository|Security advisories|
-|trustedshopseseayintegration|[GitHub repository](https://github.com/trustedshops/connect-prestashop-app)|Security advisories|
-|stripe_official|[GitHub repository](https://github.com/202-ecommerce/stripe_official)|Security advisories|
-|younitedpay|[GitHub repository](https://github.com/YounitedCredit/younitedpay-module-prestashop)|Security advisories|
+axeptiocookies | [GitHub repository](https://github.com/202ecommerce/axeptiocookies) | Security advisories
+braintreeofficial | [GitHub repository](https://github.com/202-ecommerce/braintreeofficial) | Security advisories
+bridge | No public repository | Security advisories
+ebay | [GitHub repository](https://github.com/202ecommerce/ebay2) | [Security advisories](https://github.com/202ecommerce/ebay2/security)
+paypal | [GitHub repository](https://github.com/202-ecommerce/paypal) | [Security advisories](https://github.com/202-ecommerce/paypal/security)
+totadministrativemandate | No public repository | Security advisories
+totcarrierupdate | No public repository | Security advisories
+totcustomfields | No public repository | Security advisories
+totloyaltyadvanced | No public repository | Security advisories
+totmanufacturerpage | No public repository | Security advisories
+totsmartdelivery | No public repository | Security advisories
+totswitchattribute | No public repository | Security advisories
+totshowmailalerts | No public repository | Security advisories
+trustedshopsintegration | No public repository | Security advisories
+trustedshopseseayintegration | [GitHub repository](https://github.com/trustedshops/connect-prestashop-app) | Security advisories
+stripe_official | [GitHub repository](https://github.com/202-ecommerce/stripe_official) | Security advisories
+younitedpay | [GitHub repository](https://github.com/YounitedCredit/younitedpay-module-prestashop) | Security advisories
 
 
 ### SDK for PHP
 
+**Technical name** | **Repository** | **Security advisories**
 
-|Technical name|Repository|Security advisories|
---
-|SDK-Bridge|[GitHub repository](https://github.com/BridgeAPI-Io/SDK-Bridge)|Security advisories|
-|SDK-younitedpay|[GitHub repository](https://github.com/YounitedCredit/younitedpay-sdk-php)|Security advisories|
-
-
-
+SDK-Bridge | [GitHub repository](https://github.com/BridgeAPI-Io/SDK-Bridge) | Security advisories
+SDK-younitedpay | [GitHub repository](https://github.com/YounitedCredit/younitedpay-sdk-php) | Security advisories
