@@ -7,4 +7,4 @@ plugins:
 - jekyll-remote-theme
 
 collections:
-- CVE_datas
+- cvedatas
