@@ -16,3 +16,4 @@ aller dans ../list/core et ../list/modules et afficher tout les CVEs:
     - faire pareil pour ../list/modules
 
 {% include test.html %}
+{% include test2.html %}
