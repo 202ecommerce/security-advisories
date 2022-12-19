@@ -1,23 +1,28 @@
-tableau ou une page par cve ?
+générer les fichier de datas dans _cvedatas
+/!\ : les préparer celon le modèle suivant :
 
+---
+title: core / module
+module_name:
+version_min:
+version_max:
+vendor_name:
+description:
+url:
+---
 
-générer les fichier de datas dans _CVE_datas
-/!\ : les démarer par --- title: core --- et --- title: modules --- respectivement
+1. CVEs de type Core :
 
+  {% for data in site.cvedatas %}
+    {% if data.title == "core" %}
+      **{{ data.module_name }}** | {{ data.version_min }} | {{ data.version_max }} | {{ data.vendor_name }} | {{ data.description }} | {{ data.url }}
+    {% endif %}
+  {% endfor %}
 
- - tableau :
-    - aller dans ../list/core
-    - recuperer tout les paths dans une array
-    - pour chaque élément, récupérer les données voulues
-    - les afficher dans une ligne du tableau
-    - faire pareil pour ../list/modules
+2. CVEs de type modules :
 
- - pages :
-    - aller dans ../list/core
-    - recuperer tout les paths dnas une array
-    - utiliser une foreach pour créer les liens vers les pages
-    - faire pareil pour ../list/modules
-
-{% for data in site.cvedatas %}
-    {{ data.title }} : {{ data.content }}
-{% endfor %}
+  {% for data in site.cvedatas %}
+    {% if data.title == "module" %}
+      **{{ data.module_name }}** | {{ data.version_min }} | {{ data.version_max }} | {{ data.vendor_name }} | {{ data.description }} | {{ data.url }}
+    {% endif %}
+  {% endfor %}
