@@ -20,7 +20,7 @@
       <h1 class="project-name">
       
         <a href="/security-advisories/index.html" style="color:#e9edee">
-          <img class="fit-picture" src="/security-advisories/kb/images/logo+name-202-black.png" style="width:35%; height:35%">
+          <!-- <img src="" style="width:0%; height:0%"> -->
           {{ page.title | default: site.title | default: site.github.repository_name }}
         </a>
       </h1>
@@ -29,19 +29,25 @@
         {{ page.description | default: site.description | default: site.github.project_tagline }}
       </h2>
 
-      {% if page.is_kb_page == true %}
+      {% if page.is_kb_page == true and page.is_index != true %}
         <a href="index.html" class="btn">Index</a>
       {% endif %}
 
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
-
       {% endif %}
 
       {% if site.show_downloads %}
         <a href="{{ site.github.zip_url }}" class="btn">Download .zip</a>
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
+
+      {% if page.to_home_page == true and page.is_kb_page == true %}
+        <a href="../index.html" class="btn">Home page</a>
+      {% elsif page.is_home_page != true %}
+        <a href="index.html" class="btn">Home page</a>
+      {% endif %}
+
     </header>
 
     <main id="content" class="main-content" role="main">

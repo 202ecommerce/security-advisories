@@ -1,6 +1,9 @@
 ---
 layout: default
-title: Security Advisories
+title: 202 ecommerce Security Advisories
+is_index: true
+is_kb_page: true
+to_home_page: true
 ---
 
 # PrestaShop Modules Security: Knowledge base
