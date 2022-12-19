@@ -42,16 +42,10 @@
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
 
-      {% if page.to_home_page == true %}
-        {% if page.is_kb_page == true %}
-          {% if page.is_index != true %}
-            <a href="index.html" class="btn">Home page</a>
-          {% else %}
-            <a href="../index.html" class="btn">Home page</a>
-          {% endif %}
-        {% else %}
-          <a href="index.html" class="btn">Home page</a>
-        {% endif %}
+      {% if page.to_home_page == true and page.is_kb_page == true %}
+        <a href="../index.html" class="btn">Home page</a>
+      {% else %}
+        <a href="index.html" class="btn">Home page</a>
       {% endif %}
 
     </header>
