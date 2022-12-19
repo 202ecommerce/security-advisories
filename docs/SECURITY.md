@@ -70,4 +70,8 @@ SDK-younitedpay | [GitHub repository](https://github.com/YounitedCredit/younited
 
 <br>
 
+****
+
+<br>
+
 ***[back to the home page](/index.md)***

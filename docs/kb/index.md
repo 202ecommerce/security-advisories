@@ -41,4 +41,8 @@ title: 202 ecommerce Security Advisories
     2. [Sample with file_put_contents](/chain_of_vulnerability.md#sample-with-file_put_contents)
 <br><br>
 
+****
+
+<br>
+
 ***[back to the home page](/../index.md)***
