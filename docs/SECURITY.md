@@ -58,7 +58,7 @@ totsmartdelivery | No public repository | Security advisories
 totswitchattribute | No public repository | Security advisories
 totshowmailalerts | No public repository | Security advisories
 trustedshopsintegration | No public repository | Security advisories
-trustedshopseseayintegration | [GitHub repository](https://github.com/trustedshops/connect-prestashop-app) | Security advisories
+trustedshopseseayintegration | No public repository | Security advisories
 stripe_official | [GitHub repository](https://github.com/202-ecommerce/stripe_official) | Security advisories
 younitedpay | [GitHub repository](https://github.com/YounitedCredit/younitedpay-module-prestashop) | Security advisories
 
