@@ -1,13 +1,14 @@
 ---
 layout: default
-title: 202ecommerce Security Advisories
+title: Security Advisories
+is_kb_page: true
 ---
 
 # Prevent sensitive data disclosure
 
-  - [Logs, data export, …](#logs-data-export-)
-  - [White reader, white deleter, …](#white-reader-white-deleter-)
-  - [Deny any none useful file extensions](#deny-any-none-useful-file-extensions)
+1. [Logs, data export, …](#logs-data-export-)
+2. [White reader, white deleter, …](#white-reader-white-deleter-)
+3. [Deny any none useful file extensions](#deny-any-none-useful-file-extensions)
 
 ## Logs, data export, …
 

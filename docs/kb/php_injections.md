@@ -1,6 +1,7 @@
 ---
 layout: default
-title: 202ecommerce Security Advisories
+title: Security Advisories
+is_kb_page: true
 ---
 
 # Prevent PHP injections

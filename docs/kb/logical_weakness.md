@@ -1,14 +1,15 @@
 ---
 layout: default
-title: 202ecommerce Security Advisories
+title: Security Advisories
+is_kb_page: true
 ---
 
 # Prevent logical weakness
 
-  - [Standalone script without ModuleFrontController](#standalone-script-without-modulefrontcontroller)
-  - [Weakness token in a front controller](#weakness-token-in-a-front-controller)
-  - [Callback of a wildcard method](#callback-of-a-wildcard-method)
-  - [Wildcard data in the PrestaShop secures cookie](#wildcard-data-in-the-prestashop-secures-cookie)
+1. [Standalone script without ModuleFrontController](#standalone-script-without-modulefrontcontroller)
+2. [Weakness token in a front controller](#weakness-token-in-a-front-controller)
+3. [Callback of a wildcard method](#callback-of-a-wildcard-method)
+4. [Wildcard data in the PrestaShop secures cookie](#wildcard-data-in-the-prestashop-secures-cookie)
 
 ## Standalone script without ModuleFrontController
 
@@ -40,7 +41,7 @@ It’s sometimes useful to protect a front controller with a static token for in
 > ***DON'T DO:***
 > ```PHP
 > if (Configuration::get('PS_TOKEN_ENABLE') == 1 &&
->        (Tools::getValue('token') != ools::encrypt('mymodule'))) {
+>        (Tools::getValue('token') != Tools::encrypt('mymodule'))) {
 >    echo 'Invalid token!';
 >    die();
 > }

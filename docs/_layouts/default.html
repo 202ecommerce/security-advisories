@@ -18,7 +18,9 @@
     <header class="page-header" role="banner">
       
       <h1 class="project-name">
-        <a href="../index.html" style="color:#f0f3f4">
+      
+        <a href="/security-advisories/index.html" style="color:#e9edee">
+          <img class="fit-picture" src="/security-advisories/kb/images/logo+name-202-black.png" style="width:35%; height:35%">
           {{ page.title | default: site.title | default: site.github.repository_name }}
         </a>
       </h1>
@@ -27,8 +29,13 @@
         {{ page.description | default: site.description | default: site.github.project_tagline }}
       </h2>
 
+      {% if page.is_kb_page == true %}
+        <a href="index.html" class="btn">Index</a>
+      {% endif %}
+
       {% if site.github.is_project_page %}
-        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub TEST?</a>
+        <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
+
       {% endif %}
 
       {% if site.show_downloads %}
