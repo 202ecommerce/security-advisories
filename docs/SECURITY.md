@@ -1,3 +1,8 @@
+---
+layout: default
+title: 202 ecommerce Security Advisories
+---
+
 # Security Policy
 
 The 202ecommerce team and community take security bugs in our PrestaShop modules seriously. We appreciate your efforts to responsibly disclose your findings.
