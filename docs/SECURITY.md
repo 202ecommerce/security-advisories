@@ -38,7 +38,6 @@ younitedpay | [GitHub repository](https://github.com/YounitedCredit/younitedpay-
 ### PrestaShop vendor's connector
 
 **Technical name** | **Repository** | **Security advisories**
-
 axeptiocookies | [GitHub repository](https://github.com/202ecommerce/axeptiocookies) | Security advisories
 braintreeofficial | [GitHub repository](https://github.com/202-ecommerce/braintreeofficial) | Security advisories
 bridge | No public repository | Security advisories
@@ -61,6 +60,5 @@ younitedpay | [GitHub repository](https://github.com/YounitedCredit/younitedpay-
 ### SDK for PHP
 
 **Technical name** | **Repository** | **Security advisories**
-
 SDK-Bridge | [GitHub repository](https://github.com/BridgeAPI-Io/SDK-Bridge) | Security advisories
 SDK-younitedpay | [GitHub repository](https://github.com/YounitedCredit/younitedpay-sdk-php) | Security advisories
