@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 202 ecommerce Security Advisories
+is_kb_page: false
 to_home_page: true
 ---
 
