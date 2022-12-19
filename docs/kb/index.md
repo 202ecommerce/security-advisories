@@ -43,6 +43,4 @@ title: 202 ecommerce Security Advisories
 
 ****
 
-<br>
-
 ***[back to the home page](/../index.md)***
