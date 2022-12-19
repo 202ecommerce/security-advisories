@@ -1,6 +1,9 @@
 tableau ou une page par cve ?
 
-aller dans ../list/core et ../list/modules et afficher tout les CVEs:
+
+générer les fichier de datas dans _CVE_datas
+/!\ : les démarer par --- title: core --- et --- title: modules --- respectivement
+
 
  - tableau :
     - aller dans ../list/core
@@ -15,4 +18,6 @@ aller dans ../list/core et ../list/modules et afficher tout les CVEs:
     - utiliser une foreach pour créer les liens vers les pages
     - faire pareil pour ../list/modules
 
-{{ site.collections }}
+{% for data in site.CVE_datas %}
+    {{ data.content }}
+{% endfor %}
