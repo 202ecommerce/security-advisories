@@ -1,6 +1,7 @@
 ---
 layout: default
 title: 202 ecommerce Security Advisories
+to_home_page: true
 ---
 
 # PrestaShop Modules Security: Knowledge base

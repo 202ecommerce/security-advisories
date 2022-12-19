@@ -2,6 +2,7 @@
 layout: default
 title: 202 ecommerce Security Advisories
 is_kb_page: true
+to_home_page: true
 ---
 
 # Prevent logical weakness
