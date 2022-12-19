@@ -68,4 +68,6 @@ younitedpay | [GitHub repository](https://github.com/YounitedCredit/younitedpay-
 SDK-Bridge | [GitHub repository](https://github.com/BridgeAPI-Io/SDK-Bridge) | Security advisories
 SDK-younitedpay | [GitHub repository](https://github.com/YounitedCredit/younitedpay-sdk-php) | Security advisories
 
+<br>
+
 ***[back to the home page](/index.md)***
