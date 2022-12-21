@@ -20,9 +20,9 @@ to_home_page: true
 
 
     {% if is_core %}
-        {% assign cvecore %}
+        {% assign cvecore = '' %}
     {% elsif is_module %}
-        {% assign cvemodules %}
+        {% assign cvemodules = '' %}
     {% endif %}
 {% endfor %}
 
