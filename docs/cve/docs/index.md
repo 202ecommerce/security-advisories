@@ -9,12 +9,14 @@ to_home_page: true
 {% assign allcve = site.data.cve %}
 {% assign types = "core, module" | split: ", " %}
 
+{{ allcve | json }}
+
 {% for type in types %}
 
     {% capture title %}
         **{{ type }} type CVEs:**
     {% endcapture %}
-    {{ title | markdownify}}
+    {{ title | markdownify }}
 
     {% for cve in allcve %}
         {% if type == "core" %}
