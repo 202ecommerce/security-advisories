@@ -24,6 +24,9 @@ to_home_page: true
     {% assign module_name3 = module_name2.product_name %}
     {{ module_name3 }}
 
+    {% assign vendor_name = module_name.vendor_name %}
+    {{ module_name2 }}
+
     {% break %}
 
     {% if module_name == prestashop %}
