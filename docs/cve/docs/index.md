@@ -6,33 +6,32 @@ is_cve_page: true
 to_home_page: true
 ---
 
-générer les fichier de datas dans _cvedatas
-/!\ : les préparer celon le modèle suivant :
+{% assign allcve = site.data.cve %}
 
----
-title: core / module
-module_name:
-version_min:
-version_max:
-vendor_name:
-description:
-github-url:
----
+{% for cve in allcve -%}
 
-1. CVEs de type Core :
-
-  {% for data in site.cvedatas %}
-    {% if data.title == "core" %}
-      **{{ data.module_name }}** | {{ data.version_min }} | {{ data.version_max }} | *{{ data.vendor_name }}* | {{ data.description }} | {{ data.github-url }}
+    {% if cve.affect.vendor.vendor_data.product.product_data.product_name == PrestaShop}
+        {% assign type = Core %}
+        {% assign module_name = cve.affect.vendor.vendor_data.product.product_data.product_name %}
+    {% else %}
+        {% assign type = Modules %}
     {% endif %}
-  {% endfor %}
 
-<br><br>
-
-2. CVEs de type modules :
-
-  {% for data in site.cvedatas %}
-    {% if data.title == "module" %}
-      **{{ data.module_name }}** | {{ data.version_min }} | {{ data.version_max }} | *{{ data.vendor_name }}* | {{ data.description }} | {{ data.url }}
+    {% assign version = cve.affect.vendor.vendor_data.product.product_data.version.version_data.version_value | split: ", " %}
+    {% if version.size == 2 %}
+        {% assign version_min = version | first %}
+        {% assign version_max = version | first %}
+    {% else %}
+        {% assign whatkind = version | slice: 0 %}
+        {% if whatkind == "<" %}
+            {% assign version_max = version %}
+        {% else %}
+            {% assign version_max = version %}
+        {% endif %}
     {% endif %}
-  {% endfor %}
+
+    {% assign vendor_name = cve.affect.vendor.vendor_data.vendor_name %}
+    {% assign description = cve.description.description_data.value %}
+    {% assign github_link = cve.references.reference_data.url %}
+
+{% endfor %}
