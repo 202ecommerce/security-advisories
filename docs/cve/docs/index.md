@@ -16,9 +16,11 @@ to_home_page: true
 
     {% assign module_name = cve.affects.vendor.vendor_data | first %}
     {{ module_name }}
-    
+
     {% assign module_name = module_name.product_data | first %}
     {{ module_name }}
+
+    {% break %}
 
     {% if module_name == prestashop %}
         {% assign cvecore = cvecore | push: cve %}
