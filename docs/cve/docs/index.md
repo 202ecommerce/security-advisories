@@ -25,7 +25,7 @@ to_home_page: true
     {{ module_name3 }}
 
     {% assign vendor_name = module_name.vendor_name %}
-    {{ module_name2 }}
+    {{ vendor_name }}
 
     {% break %}
 
