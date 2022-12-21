@@ -15,13 +15,13 @@ to_home_page: true
 {% for cve in allcve %}
 
     {% assign module_name = cve.affects.vendor.vendor_data %}
-    {{ module_name | split: '{' | first }}
+    {{ module_name }}
 
     {% assign module_name2 = module_name.product.product_data %}
-    {{ module_name }}
+    {{ module_name2 }}
     
     {% assign module_name3 = module_name2.product_name %}
-    {{ module_name }}
+    {{ module_name3 }}
 
     {% break %}
 
