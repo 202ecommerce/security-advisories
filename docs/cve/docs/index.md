@@ -7,27 +7,34 @@ to_home_page: true
 ---
 
 {% assign allcve = site.data.cve %}
+{% assign types = "core, module" | split: ", " %}
 
-{% for cve in allcve -%}
+{% paginate allcve by 35 %}
+    {% for type in types %}
 
-    {{ cve.CVE_data_meta.TITLE }}
+    **{{ type }} type CVEs:**
 
-    {% assign title = cve.CVE_data_meta.TITLE %}
-    {% assign version = cve.affect.vendor.vendor_data.product.product_data.version.version_data.version_value %}
-    {% assign vendor_name = cve.affect.vendor.vendor_data.vendor_name %}
-    {% assign description = cve.description.description_data.value %}
-    {% assign github_link = cve.references.reference_data.url %}
+        {% for cve in allcve %}
+            {% if type == core %}
 
-    {% if cve.affect.vendor.vendor_data.product.product_data.product_name == PrestaShop}
-        {% assign module_name = cve.affect.vendor.vendor_data.product.product_data.product_name %}
+                {{ cve.CVE_data_meta.TITLE }} | {{ cve.affect.vendor.vendor_data.product.product_data.version.version_data.version_value }} 
 
-        **{{ TITLE }}** | {{ module_name }} | {{ version }} | {{ vendor_name }} | {{ description }} | {{ github_link }}
+            {% assign title = cve.CVE_data_meta.TITLE %}
+            {% assign version = cve.affect.vendor.vendor_data.product.product_data.version.version_data.version_value %}
+            {% assign vendor_name = cve.affect.vendor.vendor_data.vendor_name %}
+            {% assign description = cve.description.description_data.value %}
+            {% assign github_link = cve.references.reference_data.url %}
 
-    {% else %}
+            {% if cve.affect.vendor.vendor_data.product.product_data.product_name == PrestaShop}
+                {% assign module_name = cve.affect.vendor.vendor_data.product.product_data.product_name %}
 
-        **{{ TITLE }}** | {% if version.size == 2 %} {{ version }} {% else %} {{ version }} {% endif %} | {{ vendor_name }} | {{ description }} | {{ github_link }}
+                **{{ TITLE }}** | {{ module_name }} | {{ version }} | {{ vendor_name }} | {{ description }} | {{ github_link }}
 
-    {% endif %}
+            {% else %}
 
-{% endfor %}
+                **{{ TITLE }}** | {% if version.size == 2 %} {{ version }} {% else %} {{ version }} {% endif %} | {{ vendor_name }} | {{ description }} | {{ github_link }}
 
+            {% endif %}
+
+        {% endfor %}
+{% endpaginate %}
