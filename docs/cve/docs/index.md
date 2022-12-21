@@ -16,6 +16,7 @@ to_home_page: true
 
     {% assign module_name = cve.affects.vendor.vendor_data %}
     {% assign module_name = "" | append: module_name | append: "" %}
+    {% assign module_name = module_name %}
     {{ module_name }}
 
     {% assign module_name2 = module_name.product.product_data %}
@@ -28,6 +29,9 @@ to_home_page: true
     {{ vendor_name }}
 
     {% break %}
+
+
+
 
     {% if module_name == prestashop %}
         {% assign cvecore = cvecore | push: cve %}
