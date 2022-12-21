@@ -14,7 +14,7 @@ to_home_page: true
     **{{ type }} type CVEs:**
 
     {% for cve in allcve %}
-        {% if type == core %}
+        {% if type == "core" %}
 
             {{ cve.CVE_data_meta.TITLE }} 
         
