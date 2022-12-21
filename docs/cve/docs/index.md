@@ -14,25 +14,16 @@ to_home_page: true
 
 {% for cve in allcve %}
 
-    {% assign title = cve.CVE_data_meta.TITLE %}
-    {{ title }}
-    {{ cve.CVE_data_meta.TITLE }}
-
+    {{ cve.affects.vendor.vendor_data | json }}
+    {% break %}
 
     {% if is_core %}
-        {% assign cvecore = '' %}
+        {% push cve to:cvecore %}
     {% elsif is_module %}
-        {% assign cvemodules = '' %}
+        {% push cve to:cvemodules %}
     {% endif %}
+
 {% endfor %}
-
-
-
-
-
-
-
-
 
 
 
@@ -43,10 +34,16 @@ to_home_page: true
 
 ## Core type CVEs:
 
+{% for cve in cvecore %}
 
+    {% assign title = cve.CVE_data_meta.TITLE %}
+
+{% endfor %}
 
 ## Module type CVEs:
 
+{% for cve in cvemodules %}
 
+    {% assign title = cve.CVE_data_meta.TITLE %}
 
-    
+{% endfor %}
