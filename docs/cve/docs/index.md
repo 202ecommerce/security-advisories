@@ -15,19 +15,7 @@ to_home_page: true
 {% for cve in allcve %}
 
     {% assign module_name = cve.affects.vendor.vendor_data %}
-    {% assign module_name = module_name | replace: "[", "" | replace: "]", "" %}
-    {% assign module_name = "" | append: module_name | append: "" %}
-    {% assign module_name = module_name %}
     {{ module_name }}
-
-    {% assign module_name2 = module_name.product.product_data %}
-    {{ module_name2 }}
-    
-    {% assign module_name3 = module_name2.product_name %}
-    {{ module_name3 }}
-
-    {% assign vendor_name = module_name.vendor_name %}
-    {{ vendor_name }}
 
     {% break %}
 
