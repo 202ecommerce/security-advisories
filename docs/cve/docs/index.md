@@ -14,7 +14,7 @@ to_home_page: true
     {% capture title %}
         **{{ type }} type CVEs:**
     {% endcapture %}
-    {{ title | makdownify}}
+    {{ title | markdownify}}
 
     {% for cve in allcve %}
         {% if type == "core" %}
