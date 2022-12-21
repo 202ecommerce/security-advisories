@@ -6,7 +6,7 @@ is_cve_page: true
 to_home_page: true
 ---
 
-{% assign allcve = site.data.cve %}
+{% assign allcve = site.data.CVE-2020-4074 %}
 {% assign types = "core, module" | split: ", " %}
 
 {{ allcve | json }}
