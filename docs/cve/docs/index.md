@@ -32,13 +32,9 @@ to_home_page: true
     {% if cve.affect.vendor.vendor_data.product.product_data.product_name == PrestaShop}
         {% assign module_name = cve.affect.vendor.vendor_data.product.product_data.product_name %}
 
-        ***Core type CVEs:***
-
-        **{{ TITLE }}** | {{ module_name }} | {% if version.size == 2 %} {{ version_min }} | {{ version_max}} {% else %} {{ version }} {% endif %} | {{ vendor_name }} | {{ description }} | {{ github_link }}
+        **{{ TITLE }}** | {{ module_name }} | {{ version }} | {{ vendor_name }} | {{ description }} | {{ github_link }}
 
     {% else %}
-
-        ***Module type CVEs:***
 
         **{{ TITLE }}** | {% if version.size == 2 %} {{ version_min }} | {{ version_max}} {% else %} {{ version }} {% endif %} | {{ vendor_name }} | {{ description }} | {{ github_link }}
 
