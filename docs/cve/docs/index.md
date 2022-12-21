@@ -14,7 +14,8 @@ to_home_page: true
 
 {% for cve in allcve %}
 
-    {{ cve.affects.vendor.vendor_data | json }}
+    {{ cve.affects.vendor.vendor_data }}
+    {% break %}
 
     {% if is_core %}
         {% assign cvecore = cvecore | push: cve %}
