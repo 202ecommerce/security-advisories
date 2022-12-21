@@ -6,22 +6,47 @@ is_cve_page: true
 to_home_page: true
 ---
 
-{% assign allcve = site.data.CVE-2020-4074 %}
+{% assign allcve = site.data.cve %}
 {% assign types = "core, module" | split: ", " %}
 
-{{ allcve | json }}
+{% assign cvecore = cvecore | split: '' %}
+{% assign cvemodules = cvemodules | split: '' %}
 
-{% for type in types %}
+{% for cve in allcve %}
 
-    {% capture title %}
-        **{{ type }} type CVEs:**
-    {% endcapture %}
-    {{ title | markdownify }}
+    {% assign title = cve.CVE_data_meta.TITLE %}
+    {{ title }}
+    {{ cve.CVE_data_meta.TITLE }}
 
-    {% for cve in allcve %}
-        {% if type == "core" %}
-            {{ cve.CVE_data_meta.TITLE }} | {{ cve.affect.vendor.vendor_data.0.product.product_data.1.version.version_data.0.version_value }}
 
-        {% endif %}
-    {% endfor %}
+    {% if is_core %}
+        {% assigne cvecore %}
+    {% elsif is_module %}
+        {% assigne cvemodules %}
+    {% endif %}
 {% endfor %}
+
+
+
+
+
+
+
+
+
+
+
+# CVEs list
+
+1. [Core type CVEs](#core-type-cves)
+2. [Module type CVEs](#module-type-cves)
+
+## Core type CVEs:
+
+
+
+## Module type CVEs:
+
+
+
+    
