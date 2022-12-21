@@ -14,6 +14,8 @@ to_home_page: true
 
 {% for cve in allcve %}
 
+    {{ cve.affects.vendor.vendor_data.vendor_name }}
+
     {% if is_core %}
         {% assign cvecore = cvecore | push: cve %}
     {% elsif is_module %}
@@ -21,7 +23,6 @@ to_home_page: true
     {% endif %}
 
 {% endfor %}
-
 
 
 # CVEs list
