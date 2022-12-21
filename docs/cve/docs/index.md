@@ -14,9 +14,6 @@ to_home_page: true
 
 {% for cve in allcve %}
 
-    {{ cve.affects.vendor.vendor_data | json }}
-    {% break %}
-
     {% if is_core %}
         {% assign cvecore = cvecore | push: cve %}
     {% elsif is_module %}
@@ -37,6 +34,12 @@ to_home_page: true
 {% for cve in cvecore %}
 
     {% assign title = cve.CVE_data_meta.TITLE %}
+    {% assign version = cve.affects.vendor.vendor_data %}
+    {% assign vendor_name = cve.affects.vendor.vendor_data %}
+    {% assign description = cve.description.description_data. %}
+    {% assign github_link = cve.references.references_data. %}
+
+    **{{ data.title }}** | {{ data.version }} | *{{ data.vendor_name }}* | {{ data.description }} | {{ data.github_link }}
 
 {% endfor %}
 
@@ -45,5 +48,12 @@ to_home_page: true
 {% for cve in cvemodules %}
 
     {% assign title = cve.CVE_data_meta.TITLE %}
+    {% assign module_name = cve.affects.vendor.vendor_data %}
+    {% assign version = cve.affects.vendor.vendor_data %}
+    {% assign vendor_name = cve.affects.vendor.vendor_data %}
+    {% assign description = cve.description.description_data. %}
+    {% assign github_link = cve.references.references_data. %}
+
+    **{{ data.title }}** | {{ data.module_name }} | {{ data.version }} | *{{ data.vendor_name }}* | {{ data.description }} | {{ data.github_link }}
 
 {% endfor %}
