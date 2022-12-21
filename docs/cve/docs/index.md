@@ -18,9 +18,9 @@ to_home_page: true
     {% break %}
 
     {% if is_core %}
-        {% push cve to:cvecore %}
+        {% assign cvecore = cvecore | push: cve %}
     {% elsif is_module %}
-        {% push cve to:cvemodules %}
+        {% assign cvemodules = cvemodules | push: cve %}
     {% endif %}
 
 {% endfor %}
