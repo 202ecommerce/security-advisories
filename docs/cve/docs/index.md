@@ -9,17 +9,17 @@ to_home_page: true
 {% assign allcve = site.data.cve %}
 {% assign types = "core, module" | split: ", " %}
 
-{% assign cvecore = cvecore | split: '' %}
+{% assign cvecore = '' %}
 {% assign cvemodules = cvemodules | split: '' %}
 
 {% for cve in allcve %}
 
-    {{ cve.affects.vendor.vendor_data }}
-    {% break %}
+    {% assign module_name = cve.affects.vendor.vendor_data | first %}
+    {% assign module_name = module_name.product_data | first %}
 
-    {% if is_core %}
+    {% if module_name == prestashop %}
         {% assign cvecore = cvecore | push: cve %}
-    {% elsif is_module %}
+    {% else %}
         {% assign cvemodules = cvemodules | push: cve %}
     {% endif %}
 
@@ -37,7 +37,7 @@ to_home_page: true
 
     {% assign title = cve.CVE_data_meta.TITLE %}
     {% assign version = cve.affects.vendor.vendor_data %}
-    {% assign vendor_name = cve.affects.vendor.vendor_data %}
+    {% assign vendor_name = cve.affects.vendor.vendor_data | last %}
     {% assign description = cve.description.description_data. %}
     {% assign github_link = cve.references.references_data. %}
 
@@ -50,7 +50,10 @@ to_home_page: true
 {% for cve in cvemodules %}
 
     {% assign title = cve.CVE_data_meta.TITLE %}
-    {% assign module_name = cve.affects.vendor.vendor_data %}
+
+    {% assign module_name = cve.affects.vendor.vendor_data | first %}
+    {% assign module_name = module_name.product_data | first %}
+
     {% assign version = cve.affects.vendor.vendor_data %}
     {% assign vendor_name = cve.affects.vendor.vendor_data %}
     {% assign description = cve.description.description_data. %}
