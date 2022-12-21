@@ -17,10 +17,10 @@ to_home_page: true
     {% assign module_name = cve.affects.vendor.vendor_data %}
     {{ module_name }}
 
-    {% assign module_name = module_name.product.product_data %}
+    {% assign module_name2 = module_name.product.product_data %}
     {{ module_name }}
     
-    {% assign module_name = module_name.product_name %}
+    {% assign module_name3 = module_name2.product_name %}
     {{ module_name }}
 
     {% break %}
