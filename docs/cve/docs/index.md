@@ -16,7 +16,7 @@ to_home_page: true
     {% for cve in allcve %}
         {% if type == core %}
 
-            {{ cve.CVE_data_meta.TITLE }} | {{ cve.affect.vendor.vendor_data.product.product_data.version.version_data.version_value }}
+            {{ cve.CVE_data_meta.TITLE }} 
         
         {% endif %}
     {% endfor %}
