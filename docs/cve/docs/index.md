@@ -14,7 +14,7 @@ to_home_page: true
 
 {% for cve in allcve %}
 
-    {% assign module_name = cve.affects.vendor.vendor_data | join %}
+    {% assign module_name = cve.affects.vendor.vendor_data | join: '/custom/'%}
     {{ module_name }}
 
     {% assign module_name2 = module_name.product.product_data %}
