@@ -18,11 +18,11 @@ to_home_page: true
     {% assign module_name = "" | append: module_name | append: "" %}
     {{ module_name }}
 
-    {% assign module_name = module_name.product.product_data %}
-    {{ module_name }}
+    {% assign module_name2 = module_name.product.product_data %}
+    {{ module_name2 }}
     
-    {% assign module_name = module_name2.product_name %}
-    {{ module_name }}
+    {% assign module_name3 = module_name2.product_name %}
+    {{ module_name3 }}
 
     {% break %}
 
