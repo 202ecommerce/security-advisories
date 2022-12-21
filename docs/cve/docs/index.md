@@ -14,10 +14,13 @@ to_home_page: true
 
 {% for cve in allcve %}
 
-    {% assign module_name = cve.affects.vendor.vendor_data | first %}
+    {% assign module_name = cve.affects.vendor.vendor_data %}
     {{ module_name }}
 
-    {% assign module_name = module_name.product_data | first %}
+    {% assign module_name = module_name.product.product_data %}
+    {{ module_name }}
+    
+    {% assign module_name = module_name.product_name %}
     {{ module_name }}
 
     {% break %}
