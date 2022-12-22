@@ -14,7 +14,7 @@ to_home_page: true
 
 {% for cve in allcve %}
 
-    {% cve | json %}
+    {{ cve | json }}
 
     {% assign module_name = cve.affects.vendor.vendor_data %}
     {{ module_name | json }}
