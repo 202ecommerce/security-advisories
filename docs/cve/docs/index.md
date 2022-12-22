@@ -19,6 +19,10 @@ to_home_page: true
     {% assign module_name = cve.affects.vendor.vendor_data %}
     {{ module_name | json }}
 
+    {% assign module_name2 = module_name | replace: '[', '' | replace: ']', '' %}
+    {% assign module_name2 = module_name.product.product_data %}
+    {{ module_name2 }}
+    
     {% break %}
 
 
