@@ -8,9 +8,8 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2.0.0
 
-      # Clear previous instance of the module in the PrestaShop volume
-      - name: Install module and play unit test
-        run: ls -la
+      - name: Fetch and process cve from CVE Project
+        run: sh ./202/cve/fetch_cve.sh
 
       - uses: EndBug/add-and-commit@v9
         with:
