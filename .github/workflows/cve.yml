@@ -2,7 +2,7 @@ name: Update external CVEs
 on: [push]
 jobs:
   cve:
-    name: PHPUnit
+    name: Fetch cve list
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -10,7 +10,7 @@ jobs:
 
       # Clear previous instance of the module in the PrestaShop volume
       - name: Install module and play unit test
-        run: sh /github/workspace/202/cve/fetch_cve.sh
+        run: ls -la
 
       - uses: EndBug/add-and-commit@v9
         with:
