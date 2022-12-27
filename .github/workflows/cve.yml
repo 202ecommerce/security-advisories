@@ -1,7 +1,5 @@
 name: Update external CVEs
-on:
-  schedule:
-    - cron:  '0 0 * * *'
+on: [push]
 jobs:
   cve:
     name: PHPUnit
