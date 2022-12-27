@@ -22,6 +22,8 @@ if (!is_dir($outputDir)) {
 $data = getAllJsons($path);
 saveJson($data, $outputDir);
 
+exit('New CVE json has been generated');
+
 function getAllJsons($path)
 {
     $data = [];
