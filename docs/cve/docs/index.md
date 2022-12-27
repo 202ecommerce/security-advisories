@@ -35,7 +35,7 @@ to_home_page: true
     {% if module_name == 'PrestaShop' %}
 
         {% assign title = cve.CVE_data_meta.TITLE %}
-        {% cve.affects.vendor.vendor_data[0].product.product_data[0].version.version_data[0].version_value %}
+        {% assign version = cve.affects.vendor.vendor_data[0].product.product_data[0].version.version_data[0].version_value %}
         {% assign vendor_name = cve.affects.vendor.vendor_data[0].vendor_name %}
         {% assign description = cve.description.description_data[0].value %}
         {% assign github_link = cve.references.reference_data[0].url %}
