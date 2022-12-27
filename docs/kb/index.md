@@ -8,13 +8,13 @@ to_home_page: true
 
 # PrestaShop Modules Security: Knowledge base
 
-
 1. **[Prevent SQL injections](/sql_injections.md)**
     1. [Basic sample](/sql_injections.md#basic-sample)
     2. [Array values sample](/sql_injections.md#array-values-sample)
     3. [Table name or field name protection](/sql_injections.md#table-name-or-field-name-protection)
     4. [OrderBy and orderWay protection](/sql_injections.md#orderby-and-orderway-protection)
     5. [Other cases like case/then, functions…](/sql_injections.md#other-cases-like-casethen-functions)
+    6. [PrestaShop object models natively protected against SQL injection](/sql_injections.md#prestashop-object-models-natively-protected-against-sql-injection)
 <br><br>
 
 2. **[Prevent PHP injections](/php_injections.md)**

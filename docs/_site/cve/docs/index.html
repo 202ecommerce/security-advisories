@@ -1,0 +1,1357 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>202 ecommerce Security Advisories | Knowledge Base and CVE about PrestaShop modules security issues</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="202 ecommerce Security Advisories" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Knowledge Base and CVE about PrestaShop modules security issues" />
+<meta property="og:description" content="Knowledge Base and CVE about PrestaShop modules security issues" />
+<link rel="canonical" href="http://localhost:4000/cve/docs/" />
+<meta property="og:url" content="http://localhost:4000/cve/docs/" />
+<meta property="og:site_name" content="202 ecommerce Security Advisories" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="202 ecommerce Security Advisories" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Knowledge Base and CVE about PrestaShop modules security issues","headline":"202 ecommerce Security Advisories","url":"http://localhost:4000/cve/docs/"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4bc3c89cac8fbad3ba971bc19bb35e9f7b5409b1">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      
+      <h1 class="project-name">
+      
+        <a href="/security-advisories/index.html" style="color:#e9edee">
+          <!-- <img src="" style="width:0%; height:0%"> -->
+          202 ecommerce Security Advisories
+        </a>
+      </h1>
+
+      <h2 class="project-tagline">
+        Knowledge Base and CVE about PrestaShop modules security issues
+      </h2>
+
+      
+
+      
+        <a href="https://github.com/cbourgeois202/security-advisories" class="btn">View on GitHub</a>
+      
+
+      
+
+      
+        
+          <a href="../../index.html" class="btn">Home page</a>
+        
+      
+
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="cves-list">CVEs list</h1>
+
+<ol>
+  <li><a href="#core-type-cves">Core type CVEs</a></li>
+  <li><a href="#module-type-cves">Module type CVEs</a></li>
+</ol>
+
+<h2 id="core-type-cves">Core type CVEs:</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Version</th>
+      <th>Description</th>
+      <th>Github link</th>
+      <th>Vendor name</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Stored XSS in PrestaShop</td>
+  <td>&gt;= 1.5.3.0<br />&lt; 1.7.6.6</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop from version 1.5.3.0 and before version 1.7.6.6, there is a stored XSS when using the name of a quick access item. The problem is fixed in 1.7.6.6.</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-v4pg-q2cv-f7x4</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Improper access control in PrestaShop</td>
+  <td>&gt;= 1.5.0.0<br />&lt; 1.7.6.6</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop from version 1.5.0.0 and before version 1.7.6.6, there is improper access control in Carrier page, Module Manager and Module Positions. The problem is fixed in version 1.7.6.6</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-xp3x-3h8q-c386</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Information disclosure in release archive in PrestaShop</td>
+  <td>&gt;= 1.7.4.0<br />&lt;1.7.6.6</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop from version 1.7.4.0 and before version 1.7.6.6, some files should not be in the release archive, and others should not be accessible. The problem is fixed in version 1.7.6.6 A possible workaround is to make sure `composer.json` and `docker-compose.yml` are not accessible on your server.</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-492w-2pp5-xhvg</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Information exposure in the upload directory in PrestaShop</td>
+  <td>&gt;= 1.5.0.0<br />&lt; 1.7.6.6</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop from version 1.5.0.0 and before 1.7.6.6, there is information exposure in the upload directory. The problem is fixed in version 1.7.6.6. A possible workaround is to add an empty index.php file in the upload directory.</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-997j-f42g-x57c</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>External control of configuration setting in the dashboard in PrestaShop</td>
+  <td>&gt;= 1.6.0.1<br />&lt; 1.7.6.6</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop from version 1.6.0.1 and before version 1.7.6.6, the dashboard allows rewriting all configuration variables. The problem is fixed in 1.7.6.6</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-mc98-xjm3-c4fm</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Reflected XSS when uploading an image in the Product page in PrestaShop</td>
+  <td>&gt;= 1.7.0.0<br />&lt; 1.7.6.6</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop from version 1.7.0.0 and before version 1.7.6.6, if a target sends a corrupted file, it leads to a reflected XSS. The problem is fixed in 1.7.6.6</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-qgh4-95j7-p3vj</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Blind SQL Injection in PrestaShop</td>
+  <td>&gt;= 1.7.5.0<br />&lt; 1.7.6.8</td>
+  <td>PrestaShop</td>
+  <td>PrestaShop from version 1.7.5.0 and before version 1.7.6.8 is vulnerable to a blind SQL Injection attack in the Catalog Product edition page with location parameter. The problem is fixed in 1.7.6.8</td>
+  <td>https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.6.8</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Potential XSS in PrestaShop</td>
+  <td>&gt; 1.6.0.4<br />&lt; 1.7.6.8</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop from version 1.6.0.4 and before version 1.7.6.8 an attacker is able to inject javascript while using the contact form. The problem is fixed in 1.7.6.8</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-5cp2-r794-w37w</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Stored XSS in PrestaShop</td>
+  <td>&gt; 1.5.0.0<br />&lt; 1.7.6.8</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop from version 1.5.0.0 and before version 1.7.6.8, users are allowed to send compromised files. These attachments allowed people to input malicious JavaScript which triggered an XSS payload. The problem is fixed in version 1.7.6.8.</td>
+  <td>https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.6.8</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Improper Access Control in PrestaShop</td>
+  <td>&gt; 1.5.0.0<br />&lt; 1.7.6.8</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop before version 1.7.6.9 an attacker is able to list all the orders placed on the website without being logged by abusing the function that allows a shopping cart to be recreated from an order already placed. The problem is fixed in 1.7.6.9.</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-frf2-c9q3-qg9m</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Improper Authentication</td>
+  <td>&gt;= 1.5.0.0<br />&lt; 1.7.6.6</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop from version 1.5.0.0 and before version 1.7.6.6, the authentication system is malformed and an attacker is able to forge requests and execute admin commands. The problem is fixed in 1.7.6.6.</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-ccvh-jh5x-mpg4</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Possible information disclosure in PrestaShop</td>
+  <td>&gt;= 1.5.0.0<br />&lt; 1.7.6.6</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop before version 1.7.6.4, when a customer edits their address, they can freely change the id_address in the form, and thus steal someone else's address. It is the same with CustomerForm, you are able to change the id_customer and change all information of all accounts. The problem is patched in version 1.7.6.4.</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-mhfc-6rhg-fxp3</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Reflected XSS in security compromised page of PrestaShop</td>
+  <td>&gt;= 1.5.0.0<br />&lt; 1.7.6.6</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop before version 1.7.6.5, there is a reflected XSS while running the security compromised page. It allows anyone to execute arbitrary action. The problem is patched in the 1.7.6.5.</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-48vj-vvr6-jj4f</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Reflected XSS on AdminAttributesGroups page of PrestaShop</td>
+  <td>&gt;= 1.7.6.1<br />&lt; 1.7.6.5</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop between versions 1.7.6.1 and 1.7.6.5, there is a reflected XSS on AdminAttributesGroups page. The problem is patched in 1.7.6.5.</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-7fmr-5vcc-329j</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Reflected XSS on AdminFeatures page of PrestaShop</td>
+  <td>&gt;= 1.7.6.1<br />&lt; 1.7.6.5</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop between versions 1.7.6.1 and 1.7.6.5, there is a reflected XSS on AdminFeatures page by using the `id_feature` parameter. The problem is fixed in 1.7.6.5</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-87jh-7xpg-6v93</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Open redirection when using back parameter of PrestaShop</td>
+  <td>&gt;= 1.7.6.0<br />&lt; 1.7.6.5</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop between versions 1.7.6.0 and 1.7.6.5, there is an open redirection when using back parameter. The impacts can be many, and vary from the theft of information and credentials to the redirection to malicious websites containing attacker-controlled content, which in some cases even cause XSS attacks. So even though an open redirection might sound harmless at first, the impacts of it can be severe should it be exploitable. The problem is fixed in 1.7.6.5</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-375w-q56h-h7qc</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Reflected XSS with dashboard calendar of PrestaShop</td>
+  <td>&gt;= 1.6.0.0<br />&lt; 1.7.6.5</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop between versions 1.6.0.0 and 1.7.6.5, there is a reflected XSS with `date_from` and `date_to` parameters in the dashboard page This problem is fixed in 1.7.6.5</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-m2x6-c2c6-pjrx</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Reflected XSS on Search page of PrestaShop</td>
+  <td>&gt;= 1.5.5.0<br />&lt; 1.7.6.5</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop between versions 1.5.5.0 and 1.7.6.5, there is a reflected XSS on Search page with `alias` and `search` parameters. The problem is patched in 1.7.6.5</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-rpg3-f23r-jmqv</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Reflected XSS on AdminCarts page of PrestaShop</td>
+  <td>&gt;= 1.7.1.0<br />&lt; 1.7.6.5</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop between versions 1.7.1.0 and 1.7.6.5, there is a reflected XSS on AdminCarts page with `cartBox` parameter The problem is fixed in 1.7.6.5</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-q6pr-42v5-v97q</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Reflected XSS on Exception page of PrestaShop</td>
+  <td>&gt;= 1.5.4.0<br />&lt; 1.7.6.5</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop between versions 1.5.4.0 and 1.7.6.5, there is a reflected XSS on Exception page The problem is fixed in 1.7.6.5</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-mrpj-67mq-3fr5</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Improper Access Control for certain legacy controller in PrestaShop</td>
+  <td>&gt;= 1.5.0.0<br />&lt; 1.7.6.5</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop between versions 1.5.0.0 and 1.7.6.5, there are improper access control since the the version 1.5.0.0 for legacy controllers. - admin-dev/index.php/configure/shop/customer-preferences/ - admin-dev/index.php/improve/international/translations/ - admin-dev/index.php/improve/international/geolocation/ - admin-dev/index.php/improve/international/localization - admin-dev/index.php/configure/advanced/performance - admin-dev/index.php/sell/orders/delivery-slips/ - admin-dev/index.php?controller=AdminStatuses The problem is fixed in 1.7.6.5</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-74vp-ww64-w2gm</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Reflected XSS with back parameter in PrestaShop</td>
+  <td>&gt;= 1.7.6.0<br />&lt; 1.7.6.5</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop between versions 1.7.6.0 and 1.7.6.5, there is a reflected XSS with `back` parameter. The problem is fixed in 1.7.6.5</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-j3r6-33hf-m8wh</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Reflected XSS related in import page in PrestaShop</td>
+  <td>&gt;= 1.7.4.0<br />&lt; 1.7.6.5</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop between versions 1.7.4.0 and 1.7.6.5, there is a reflected XSS when uploading a wrong file. The problem is fixed in 1.7.6.5</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-98j8-hvjv-x47j</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Improper access control on customers search in PrestaShop</td>
+  <td>&gt; 1.5.5.0<br />&lt; 1.7.6.5</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop between versions 1.5.5.0 and 1.7.6.5, there is improper access control on customers search. The problem is fixed in 1.7.6.5.</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-r6rp-6gv6-r9hq</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Improper access control on product attributes page in PrestaShop</td>
+  <td>&gt;=  1.7.0.0<br />&lt; 1.7.6.5</td>
+  <td>PrestaShop</td>
+  <td>"In PrestaShop between versions 1.7.0.0 and 1.7.6.5, there is improper access controls on product attributes page. The problem is fixed in 1.7.6.5.</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-4wxg-33h3-3w5r</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Improper access control on product page with combinations, attachments and specific prices in PrestaShop</td>
+  <td>&gt;= 1.7.0.0<br />&lt; 1.7.6.5</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop between versions 1.7.0.0 and 1.7.6.5, there are improper access controls on product page with combinations, attachments and specific prices. The problem is fixed in 1.7.6.5.</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-cvjj-grfv-f56w</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>CSV Injection via csv export</td>
+  <td>&gt;= 1.5.0<br />&lt; 1.7.7.2</td>
+  <td>PrestaShop</td>
+  <td>PrestaShop is a fully scalable open source e-commerce solution. In PrestaShop before version 1.7.2 there is a CSV Injection vulnerability possible by using shop search keywords via the admin panel. The problem is fixed in 1.7.7.2</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-2rw4-2p99-cmx9</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Improper session management for soft logout</td>
+  <td>&gt;= 1.5.0<br />&lt; 1.7.7.2</td>
+  <td>PrestaShop</td>
+  <td>PrestaShop is a fully scalable open source e-commerce solution. In PrestaShop before version 1.7.2 the soft logout system is not complete and an attacker is able to foreign request and executes customer commands. The problem is fixed in 1.7.7.2</td>
+  <td>https://github.com/PrestaShop/PrestaShop/releases/tag/1.7.7.2</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Possible XSS injection through DataColumn Grid class</td>
+  <td>&gt;= 1.7.7.0<br />&lt; 1.7.7.3</td>
+  <td>PrestaShop</td>
+  <td>PrestaShop is a fully scalable open source e-commerce solution. In PrestaShop before version 1.7.7.3, an attacker can inject HTML when the Grid Column Type DataColumn is badly used. The problem is fixed in 1.7.7.3</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-fhhq-4x46-qx77</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Blind SQLi using Search filters in PrestaShop</td>
+  <td>&gt;= 1.7.5.0<br />&lt;= 1.7.8.1</td>
+  <td>PrestaShop</td>
+  <td>PrestaShop is an Open Source e-commerce web application. Versions of PrestaShop prior to 1.7.8.2 are vulnerable to blind SQL injection using search filters with `orderBy` and `sortOrder` parameters. The problem is fixed in version 1.7.8.2.</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-6xxj-gcjq-wgf4</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Server Side Twig Template Injection in PrestaShop</td>
+  <td>&gt;= 1.7.0.0<br />&lt; 1.7.8.3</td>
+  <td>PrestaShop</td>
+  <td>PrestaShop is an Open Source e-commerce platform. Starting with version 1.7.0.0 and ending with version 1.7.8.3, an attacker is able to inject twig code inside the back office when using the legacy layout. The problem is fixed in version 1.7.8.3. There are no known workarounds.</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-mrq4-7ch7-2465</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Remote code execution in prestashop</td>
+  <td>&gt;= 1.6.0.10<br />&lt; 1.7.8.7</td>
+  <td>PrestaShop</td>
+  <td>PrestaShop is an Open Source e-commerce platform. In versions from 1.6.0.10 and before 1.7.8.7 PrestaShop is subject to an SQL injection vulnerability which can be chained to call PHP's Eval function on attacker input. The problem is fixed in version 1.7.8.7. Users are advised to upgrade. Users unable to upgrade may delete the MySQL Smarty cache feature.</td>
+  <td>https://github.com/PrestaShop/PrestaShop/security/advisories/GHSA-hrgx-p36p-89q4</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+  </tbody>
+</table>
+
+<h2 id="module-type-cves">Module type CVEs:</h2>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Module name</th>
+      <th>V</th>
+      <th>Version</th>
+      <th>Description</th>
+      <th>Github link</th>
+      <th>Vendor name</th>
+    </tr>
+  </thead>
+  <tbody>
+
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Improper access control on dashboard form in PrestaShop</td>
+  <td>dashproducts</td>
+  <td>&lt; 2.1.0</td>
+  <td>&gt;= 1.6.0.10<br />&lt; 1.7.8.7</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop Dashboard Productions before version 2.1.0, there is improper authorization which enables an attacker to change the configuration. The problem is fixed in 2.1.0.</td>
+  <td>https://github.com/PrestaShop/dashproducts/security/advisories/GHSA-6292-4qpg-hvfg</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Potential XSS in PrestaShop contactform</td>
+  <td>contactform</td>
+  <td>&lt; 4.3.0</td>
+  <td>&gt;= 1.6.0.10<br />&lt; 1.7.8.7</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop contactform module (prestashop/contactform) before version 4.3.0, an attacker is able to inject JavaScript while using the contact form. The `message` field was incorrectly unescaped, possibly allowing attackers to execute arbitrary JavaScript in a victim's browser.</td>
+  <td>https://github.com/PrestaShop/contactform/security/advisories/GHSA-95hx-62rh-gg96</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Reflected XSS in PrestaShop Product Comments</td>
+  <td>productcomments</td>
+  <td>&gt;= 4.0.0&lt; 4.2.0</td>
+  <td>&gt;= 4.0.0<br />&lt; 4.2.0</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop Product Comments before version 4.2.0, an attacker could inject malicious web code into the users' web browsers by creating a malicious link. The problem was introduced in version 4.0.0 and is fixed in 4.2.0</td>
+  <td>https://github.com/PrestaShop/productcomments/security/advisories/GHSA-58w4-w77w-qv3w</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Blind SQL injection during the CommentGrade process</td>
+  <td>productcomments</td>
+  <td>&gt;= 4.0.0&lt; 4.2.1</td>
+  <td>&gt;= 4.0.0<br />&lt; 4.2.1</td>
+  <td>PrestaShop</td>
+  <td>In the PrestaShop module "productcomments" before version 4.2.1, an attacker can use a Blind SQL injection to retrieve data or stop the MySQL service. The problem is fixed in 4.2.1 of the module.</td>
+  <td>https://github.com/PrestaShop/productcomments/security/advisories/GHSA-5v44-7647-xfw9</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Stored XSS on back office edit page</td>
+  <td>ps_linklist</td>
+  <td>&lt; 3.1.0</td>
+  <td>&gt;= 4.0.0<br />&lt; 4.2.1</td>
+  <td>PrestaShop</td>
+  <td>In the ps_link module for PrestaShop before version 3.1.0, there is a stored XSS when you create or edit a link list block with the title field. The problem is fixed in 3.1.0</td>
+  <td>https://github.com/PrestaShop/ps_linklist/security/advisories/GHSA-vr7g-vqp5-966j</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Stored XSS with custom URLs in PrestaShop module ps_linklist</td>
+  <td>ps_linklist</td>
+  <td>&lt; 3.1.0</td>
+  <td>&gt;= 4.0.0<br />&lt; 4.2.1</td>
+  <td>PrestaShop</td>
+  <td>In PrestaShop module ps_linklist versions before 3.1.0, there is a stored XSS when using custom URLs. The problem is fixed in version 3.1.0</td>
+  <td>https://github.com/PrestaShop/ps_linklist/security/advisories/GHSA-cx2r-mf6x-55rx</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Reflected XSS with url_name parameter of PrestaShop module ps_facetedsearch</td>
+  <td>ps_facetedsearch</td>
+  <td>&lt; 3.5.0</td>
+  <td>&gt;= 4.0.0<br />&lt; 4.2.1</td>
+  <td>PrestaShop</td>
+  <td>PrestaShop module ps_facetedsearch versions before 3.5.0 has a reflected XSS with `url_name` parameter. The problem is fixed in 3.5.0</td>
+  <td>https://github.com/PrestaShop/ps_facetedsearch/security/advisories/GHSA-mmmv-m5q9-g3cm</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Reflected XSS with social networks fields</td>
+  <td>ps_socialfollow</td>
+  <td>&lt; 2.1.0</td>
+  <td>&gt;= 4.0.0<br />&lt; 4.2.1</td>
+  <td>PrestaShop</td>
+  <td>PrestaShop module ps_facetedsearch versions before 2.1.0 has a reflected XSS with social networks fields The problem is fixed in 2.1.0</td>
+  <td>https://github.com/PrestaShop/ps_socialfollow/security/advisories/GHSA-774w-fg8p-7c8w</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>Potential XSS injection in the newsletter conditions field</td>
+  <td>ps_emailsubscription</td>
+  <td>&lt; 2.6.1</td>
+  <td>&gt;= 4.0.0<br />&lt; 4.2.1</td>
+  <td>PrestaShop</td>
+  <td>ps_emailsubscription is a newsletter subscription module for the PrestaShop platform. An employee can inject javascript in the newsletter condition field that will then be executed on the front office The issue has been fixed in 2.6.1</td>
+  <td>https://github.com/PrestaShop/ps_emailsubscription/security/advisories/GHSA-vwfx-hh3w-fj99</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>SQL Injection in prestashop/blockwishlist</td>
+  <td>blockwishlist</td>
+  <td>&gt;= 2.0.0&lt; 2.1.1</td>
+  <td>&gt;= 2.0.0<br />&lt; 2.1.1</td>
+  <td>PrestaShop</td>
+  <td>prestashop/blockwishlist is a prestashop extension which adds a block containing the customer's wishlists. In affected versions an authenticated customer can perform SQL injection. This issue is fixed in version 2.1.1. Users are advised to upgrade. There are no known workarounds for this issue.</td>
+  <td>https://github.com/PrestaShop/blockwishlist/security/advisories/GHSA-2jx3-5j9v-prpp</td>
+</tr>
+
+    
+
+
+    
+
+    
+
+        
+        
+        
+        
+
+        
+        
+
+<tr>
+  <td>PrestaShop module Product Comments vulnerable to cross-site scripting (XSS)</td>
+  <td>productcomments</td>
+  <td>&lt; 5.0.2</td>
+  <td>&gt;= 2.0.0<br />&lt; 2.1.1</td>
+  <td>PrestaShop</td>
+  <td>This package is a PrestaShop module that allows users to post reviews and rate products. There is a vulnerability where the attacker could steal an administrator's cookie. The issue is fixed in version 5.0.2.</td>
+  <td>https://github.com/PrestaShop/productcomments/security/advisories/GHSA-prrh-qvhf-x788</td>
+</tr>
+
+    
+
+
+  </tbody>
+</table>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/cbourgeois202/security-advisories">security-advisories</a> is maintained by <a href="https://github.com/cbourgeois202">cbourgeois202</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>

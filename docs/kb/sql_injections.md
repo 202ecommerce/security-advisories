@@ -16,6 +16,7 @@ Don’t forget at any time that the validation of any request parameter (GET, PO
 3. [Table name or field name protection](#table-name-or-field-name-protection)
 4. [OrderBy and orderWay protection](#orderby-and-orderway-protection)
 5. [Other cases like case/then, functions…](#other-cases-like-casethen-functions)
+6. [PrestaShop object models natively protected against SQL injection](#prestashop-object-models-natively-protected-against-sql-injection)
 
 ## Basic sample
 
@@ -141,6 +142,52 @@ Do not use pSQL() or bqSQL() in an order direction.
 ## Other cases like case/then, functions…
 
 I hope you understand it will be impossible to easily protect parameters when it’s not an integer or a string between quotes or backtick. So, for this specific case you need to refactor your code to send and validate all parameters on your own.
+
+## PrestaShop object models natively protected against SQL injection
+
+PrestaShop object models are natively safe because they include definitions of each field and a validation before a save or an update.
+
+> ***DO:***
+> ```PHP
+> class Reinsurance extends ObjectModel
+> {
+>    public $id;
+>    public $id_shop;
+>    public $text;
+>
+>    public static $definition = [
+>   	 'table' => 'reinsurance',
+>   	 'primary' => 'id_reinsurance',
+>   	 'multilang' => true,
+>   	 'fields' => [
+>   	     'id_shop' => ['type' => self::TYPE_INT, 'validate' => 'isunsignedInt', 'required' => true],
+>   	     'text' => ['type' => self::TYPE_STRING, 'validate' => 'isGenericName', 'required' => true],
+>   	 ]
+>    ];
+> }
+>
+> $reinsurrance = new Reinsurance();
+> $reinsurrance->id_shop = Tools::getValue('id_shop');
+> $reinsurrance->text = Tools::getValue('text');
+> try {
+>    $reinsurrance->save();
+> } catch (Exception $e) {
+>    // exit;
+> }
+> ```
+
+pSQL and cast are apply according to the definition.
+
+You can also use PrestaShopCollection based on object model definition.
+
+> ***DO:***
+> ```PHP
+> $collection = new PrestaShopCollection(Reinsurance::class);
+> $collection->where('text', '=',Tools::getValue('text'));
+> $collection->sqlWhere('id_shop', '=', Tools::getValue('id_shop'));
+> $collection->orderBy('id_reinsurance');
+> $reinsurances = $collection->getResults();
+> ```
 
 <br>
 

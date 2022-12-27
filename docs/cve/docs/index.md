@@ -6,36 +6,6 @@ is_cve_page: true
 to_home_page: true
 ---
 
-{% assign allcve = site.data.cve %}
-{% assign types = "core, module" | split: ", " %}
-
-{% assign cvecore = '' %}
-{% assign cvemodules = cvemodules | split: '' %}
-
-{% for cve in allcve %}
-
-    {{ cve | json }}
-
-    {% assign module_name = cve.affects.vendor.vendor_data %}
-    {{ module_name | json }}
-
-    {% assign module_name2 = module_name | replace: '[', '' | replace: ']', '' %}
-    {% assign module_name2 = module_name.product.product_data %}
-    {{ module_name2 }}
-    
-    {% break %}
-
-
-
-
-    {% if module_name == prestashop %}
-        {% assign cvecore = cvecore | push: cve %}
-    {% else %}
-        {% assign cvemodules = cvemodules | push: cve %}
-    {% endif %}
-
-{% endfor %}
-
 
 # CVEs list
 
@@ -44,32 +14,87 @@ to_home_page: true
 
 ## Core type CVEs:
 
-{% for cve in cvecore %}
+{% assign all_cve = site.data.cve %}
 
-    {% assign title = cve.CVE_data_meta.TITLE %}
-    {% assign version = cve.affects.vendor.vendor_data %}
-    {% assign vendor_name = cve.affects.vendor.vendor_data | last %}
-    {% assign description = cve.description.description_data. %}
-    {% assign github_link = cve.references.references_data. %}
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Version</th>
+      <th>Description</th>
+      <th>Github link</th>
+      <th>Vendor name</th>
+    </tr>
+  </thead>
+  <tbody>
 
-    **{{ data.title }}** | {{ data.version }} | *{{ data.vendor_name }}* | {{ data.description }} | {{ data.github_link }}
+{% for cve in all_cve %}
 
+    {% assign module_name = cve.affects.vendor.vendor_data[0].product.product_data[0].product_name %}
+
+    {% if module_name == 'PrestaShop' %}
+
+        {% assign title = cve.CVE_data_meta.TITLE %}
+        {% cve.affects.vendor.vendor_data[0].product.product_data[0].version.version_data[0].version_value %}
+        {% assign vendor_name = cve.affects.vendor.vendor_data[0].vendor_name %}
+        {% assign description = cve.description.description_data[0].value %}
+        {% assign github_link = cve.references.reference_data[0].url %}
+
+<tr>
+  <td>{{ title }}</td>
+  <td>{{ version }}</td>
+  <td>{{ vendor_name }}</td>
+  <td>{{ description }}</td>
+  <td>{{ github_link }}</td>
+</tr>
+
+    {% endif %}
 {% endfor %}
+
+  </tbody>
+</table>
+
 
 ## Module type CVEs:
 
-{% for cve in cvemodules %}
+{% assign all_cve = site.data.cve %}
 
-    {% assign title = cve.CVE_data_meta.TITLE %}
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Module name</th>
+      <th>Version</th>
+      <th>Description</th>
+      <th>Github link</th>
+      <th>Vendor name</th>
+    </tr>
+  </thead>
+  <tbody>
 
-    {% assign module_name = cve.affects.vendor.vendor_data | first %}
-    {% assign module_name = module_name.product_data | first %}
+{% for cve in all_cve %}
 
-    {% assign version = cve.affects.vendor.vendor_data %}
-    {% assign vendor_name = cve.affects.vendor.vendor_data %}
-    {% assign description = cve.description.description_data. %}
-    {% assign github_link = cve.references.references_data. %}
+    {% assign module_name = cve.affects.vendor.vendor_data[0].product.product_data[0].product_name %}
 
-    **{{ data.title }}** | {{ data.module_name }} | {{ data.version }} | *{{ data.vendor_name }}* | {{ data.description }} | {{ data.github_link }}
+    {% if module_name != 'PrestaShop' %}
 
+        {% assign title = cve.CVE_data_meta.TITLE %}
+        {% assign version = cve.affects.vendor.vendor_data[0].product.product_data[0].version.version_data[0].version_value %}
+        {% assign vendor_name = cve.affects.vendor.vendor_data[0].vendor_name %}
+        {% assign description = cve.description.description_data[0].value %}
+        {% assign github_link = cve.references.reference_data[0].url %}
+
+<tr>
+  <td>{{ title }}</td>
+  <td>{{ module_name }}</td>
+  <td>{{ version }}</td>
+  <td>{{ vendor_name }}</td>
+  <td>{{ description }}</td>
+  <td>{{ github_link }}</td>
+</tr>
+
+    {% endif %}
 {% endfor %}
+
+  </tbody>
+</table>

@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>202 ecommerce Security Advisories | Knowledge Base and CVE about PrestaShop modules security issues</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="202 ecommerce Security Advisories" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Knowledge Base and CVE about PrestaShop modules security issues" />
+<meta property="og:description" content="Knowledge Base and CVE about PrestaShop modules security issues" />
+<link rel="canonical" href="http://localhost:4000/kb/sensitive_data_disclosure.html" />
+<meta property="og:url" content="http://localhost:4000/kb/sensitive_data_disclosure.html" />
+<meta property="og:site_name" content="202 ecommerce Security Advisories" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="202 ecommerce Security Advisories" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Knowledge Base and CVE about PrestaShop modules security issues","headline":"202 ecommerce Security Advisories","url":"http://localhost:4000/kb/sensitive_data_disclosure.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4bc3c89cac8fbad3ba971bc19bb35e9f7b5409b1">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      
+      <h1 class="project-name">
+      
+        <a href="/security-advisories/index.html" style="color:#e9edee">
+          <!-- <img src="" style="width:0%; height:0%"> -->
+          202 ecommerce Security Advisories
+        </a>
+      </h1>
+
+      <h2 class="project-tagline">
+        Knowledge Base and CVE about PrestaShop modules security issues
+      </h2>
+
+      
+        <a href="index.html" class="btn">Index</a>
+      
+
+      
+        <a href="https://github.com/cbourgeois202/security-advisories" class="btn">View on GitHub</a>
+      
+
+      
+
+      
+        
+          <a href="../index.html" class="btn">Home page</a>
+        
+      
+
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="prevent-sensitive-data-disclosure">Prevent sensitive data disclosure</h1>
+
+<ol>
+  <li><a href="#logs-data-export-">Logs, data export, …</a></li>
+  <li><a href="#white-reader-white-deleter-">White reader, white deleter, …</a></li>
+  <li><a href="#deny-any-none-useful-file-extensions">Deny any none useful file extensions</a></li>
+</ol>
+
+<h2 id="logs-data-export-">Logs, data export, …</h2>
+
+<p>Debug files or exports generated inside a module can contain sensitive technical or personal data.</p>
+
+<p>It’s recommended to store logs in var/logs native PrestaShop directory of or choose a shuffled none predictable file name, for instance :</p>
+
+<blockquote>
+  <p><strong><em>DO:</em></strong></p>
+  <pre><code class="language-PHP">file_put_contents(__DIR__ . '/csv/order-' . md5(time() . rand()) . '.csv', $content);
+</code></pre>
+</blockquote>
+
+<h2 id="white-reader-white-deleter-">White reader, white deleter, …</h2>
+
+<p>It can be a good idea to create a controller to read a sensitive file and check for instance that the customer is authenticated.</p>
+
+<blockquote>
+  <p><strong><em>DON’T DO:</em></strong></p>
+  <pre><code class="language-PHP">echo file_get_contents(__DIR__ . '/csv/' . Tools::getValue($file));
+</code></pre>
+</blockquote>
+
+<p>If <code class="language-plaintext highlighter-rouge">$file = ../../app/config/parameter.php</code> your controller will return sensitive configuration data.</p>
+
+<p>To prevent any call outside csv directory use basename method:</p>
+
+<blockquote>
+  <p><strong><em>DO:</em></strong></p>
+  <pre><code class="language-PHP">echo file_get_contents(__DIR__ . '/csv/' . basename(Tools::getValue($file)));
+</code></pre>
+</blockquote>
+
+<p>Moreover, it’s recommended to check the type of files and mime type.</p>
+
+<h2 id="deny-any-none-useful-file-extensions">Deny any none useful file extensions</h2>
+
+<p>The easiest way to deny none useful is to add in the root directory of your module this htaccess file.</p>
+
+<blockquote>
+  <p><strong>Apache 2.2</strong></p>
+  <pre><code class="language-XML">&lt;IfModule !mod_authz_core.c&gt;
+   Order deny,allow
+   Deny from all
+   &lt;Files ~ "(?i)^.*\.(jpg|jpeg|gif|png|bmp|tiff|svg|pdf|mov|mpeg|mp4|avi|mpg|wma|flv|webm|ico|webp|woff|woff2|ttf|eot|html|css|js)$"&gt;
+       Allow from all
+   &lt;/Files&gt;
+&lt;/IfModule&gt;
+</code></pre>
+</blockquote>
+
+<blockquote>
+  <p><strong>Apache 2.4</strong></p>
+  <pre><code class="language-XML">&lt;IfModule mod_authz_core.c&gt;
+   Require all denied
+   &lt;Files ~ "(?i)^.*\.(jpg|jpeg|gif|png|bmp|tiff|svg|pdf|mov|mpeg|mp4|avi|mpg|wma|flv|webm|ico|webp|woff|woff2|ttf|eot|html|css|js)$"&gt;
+       Require all granted
+   &lt;/Files&gt;
+&lt;/IfModule&gt;
+</code></pre>
+</blockquote>
+
+<p>Do not forget htaccess is available on Apache but not on nginx.</p>
+
+<p>Note : This htaccess deny php direct call too. It also prevents <a href="/kb/logical_weakness.html#standalone-script-without-modulefrontcontroller">standalone scripts without ModuleFrontController</a>.</p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="/security-advisories/kb/php_injections.html"><img src="/kb/images/left-arrow-9133251.png" alt="go left" /></a></td>
+      <td><a href="/kb/php_injections.html">Prevent PHP injections</a></td>
+      <td><a href="/security-advisories/kb/index.html"><img src="/kb/images/back-to-menu-arrow-9121722.png" alt="go back" /></a></td>
+      <td><a href="#prevent-sensitive-data-disclosure"><img src="/kb/images/up-arrow-1767592-1502496.png" alt="go up" /></a></td>
+      <td><a href="/kb/cross_script_vulnerability.html">Prevent Cross Script (XSS) vulnerability</a></td>
+      <td><a href="/security-advisories/kb/cross_script_vulnerability.html"><img src="/kb/images/right-arrow.png" alt="go right" /></a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/cbourgeois202/security-advisories">security-advisories</a> is maintained by <a href="https://github.com/cbourgeois202">cbourgeois202</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>

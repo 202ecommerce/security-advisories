@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>202 ecommerce Security Advisories | Knowledge Base and CVE about PrestaShop modules security issues</title>
+<meta name="generator" content="Jekyll v3.9.2" />
+<meta property="og:title" content="202 ecommerce Security Advisories" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="Knowledge Base and CVE about PrestaShop modules security issues" />
+<meta property="og:description" content="Knowledge Base and CVE about PrestaShop modules security issues" />
+<link rel="canonical" href="http://localhost:4000/kb/php_injections.html" />
+<meta property="og:url" content="http://localhost:4000/kb/php_injections.html" />
+<meta property="og:site_name" content="202 ecommerce Security Advisories" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="202 ecommerce Security Advisories" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","description":"Knowledge Base and CVE about PrestaShop modules security issues","headline":"202 ecommerce Security Advisories","url":"http://localhost:4000/kb/php_injections.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" as="style" type="text/css" crossorigin>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#157878">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="stylesheet" href="/assets/css/style.css?v=4bc3c89cac8fbad3ba971bc19bb35e9f7b5409b1">
+    <!-- start custom head snippets, customize with your own _includes/head-custom.html file -->
+
+<!-- Setup Google Analytics -->
+
+
+
+<!-- You can set your favicon here -->
+<!-- link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" -->
+
+<!-- end custom head snippets -->
+
+  </head>
+
+  <body>
+    <a id="skip-to-content" href="#content">Skip to the content.</a>
+
+    <header class="page-header" role="banner">
+      
+      <h1 class="project-name">
+      
+        <a href="/security-advisories/index.html" style="color:#e9edee">
+          <!-- <img src="" style="width:0%; height:0%"> -->
+          202 ecommerce Security Advisories
+        </a>
+      </h1>
+
+      <h2 class="project-tagline">
+        Knowledge Base and CVE about PrestaShop modules security issues
+      </h2>
+
+      
+        <a href="index.html" class="btn">Index</a>
+      
+
+      
+        <a href="https://github.com/cbourgeois202/security-advisories" class="btn">View on GitHub</a>
+      
+
+      
+
+      
+        
+          <a href="../index.html" class="btn">Home page</a>
+        
+      
+
+    </header>
+
+    <main id="content" class="main-content" role="main">
+      <h1 id="prevent-php-injections">Prevent PHP injections</h1>
+
+<h2 id="basic-sample">Basic sample</h2>
+
+<blockquote>
+  <p><strong><em>DON’T DO:</em></strong></p>
+  <pre><code class="language-PHP">$id = Tools::getValue('id_adress');
+$file = Tools::getValue('file', 'address-'.$id.'.json');
+$address = (new Address($id))-&gt;toArray();
+$content = json_encode($address);
+
+echo file_put_contents(__MODULE_DIR__ . '/json/' . $file, $content);
+</code></pre>
+</blockquote>
+
+<p>This is a critical vulnerability.</p>
+
+<p>In fact, if the content of an address street is <code class="language-plaintext highlighter-rouge">Yellow &lt;?php echo ‘123’; ?&gt; Stone</code> and <code class="language-plaintext highlighter-rouge">$_GET[file] = test.php</code>, the request will push a php file test.php containing a php file.</p>
+
+<p><br /></p>
+
+<hr />
+
+<p><br /></p>
+
+<table>
+  <tbody>
+    <tr>
+      <td><a href="/security-advisories/kb/sql_injections.html"><img src="/kb/images/left-arrow-9133251.png" alt="go left" /></a></td>
+      <td><a href="/kb/sql_injections.html">Prevent SQL injections</a></td>
+      <td><a href="/security-advisories/kb/index.html"><img src="/kb/images/back-to-menu-arrow-9121722.png" alt="go back" /></a></td>
+      <td><a href="#prevent-php-injections"><img src="/kb/images/up-arrow-1767592-1502496.png" alt="go up" /></a></td>
+      <td><a href="/kb/sensitive_data_disclosure.html">Prevent sensitive data disclosure</a></td>
+      <td><a href="/security-advisories/kb/sensitive_data_disclosure.html"><img src="/kb/images/right-arrow.png" alt="go right" /></a></td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+      <footer class="site-footer">
+        
+          <span class="site-footer-owner"><a href="https://github.com/cbourgeois202/security-advisories">security-advisories</a> is maintained by <a href="https://github.com/cbourgeois202">cbourgeois202</a>.</span>
+        
+        <span class="site-footer-credits">This page was generated by <a href="https://pages.github.com">GitHub Pages</a>.</span>
+      </footer>
+    </main>
+  </body>
+</html>
