@@ -3,3 +3,4 @@
 docs/Gemfile.lock
 docs/cve/cve_handler.php
 cvelist
+docs/_site
