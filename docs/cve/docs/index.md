@@ -6,11 +6,12 @@ is_cve_page: true
 to_home_page: true
 ---
 
-
 # CVEs list
 
 1. [Core type CVEs](#core-type-cves)
 2. [Module type CVEs](#module-type-cves)
+
+[All CVEs](/security-advisories/data/cve.json)
 
 ## Core type CVEs:
 
