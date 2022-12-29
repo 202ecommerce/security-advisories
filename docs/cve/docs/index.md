@@ -11,8 +11,6 @@ to_home_page: true
 1. [Core type CVEs](#core-type-cves)
 2. [Module type CVEs](#module-type-cves)
 
-[All CVEs](/security-advisories/data/cve.json)
-
 ## Core type CVEs:
 
 {% assign all_cve = site.data.cve %}

@@ -33,6 +33,10 @@
         <a href="index.html" class="btn">Index</a>
       {% endif %}
 
+      {% if page.is_cve_page == true and page.is_index == true %}
+        <a href="docs/list/cve.json" class="btn">View all CVEs</a>
+      {% endif %}
+
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
