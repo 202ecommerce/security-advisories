@@ -47,7 +47,7 @@ to_home_page: true
   <td>{{ version }}</td>
   <td>{{ vendor_name }}</td>
   <td>{{ description }}</td>
-  <td>{{ github_link }}</td>
+  <td><a href="{{ github_link }}">{{ github_link }}</a></td>
 </tr>
 
     {% endif %}
@@ -95,7 +95,7 @@ to_home_page: true
   <td>{{ version }}</td>
   <td>{{ vendor_name }}</td>
   <td>{{ description }}</td>
-  <td>{{ github_link }}</td>
+  <td><a href="{{ github_link }}">{{ github_link }}</a></td>
 </tr>
 
     {% endif %}
