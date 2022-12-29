@@ -33,6 +33,10 @@
         <a href="index.html" class="btn">Index</a>
       {% endif %}
 
+      {% if page.is_cve_page == true and page.is_index == true %}
+        <a href="../list/cve.json" class="btn">View all CVEs</a>
+      {% endif %}
+
       {% if site.github.is_project_page %}
         <a href="{{ site.github.repository_url }}" class="btn">View on GitHub</a>
       {% endif %}
@@ -42,10 +46,14 @@
         <a href="{{ site.github.tar_url }}" class="btn">Download .tar.gz</a>
       {% endif %}
 
-      {% if page.to_home_page == true and page.is_kb_page == true %}
-        <a href="../index.html" class="btn">Home page</a>
-      {% elsif page.is_home_page != true %}
-        <a href="index.html" class="btn">Home page</a>
+      {% if page.to_home_page == true %}
+        {% if page.is_kb_page == true %}
+          <a href="../index.html" class="btn">Home page</a>
+        {% elsif page.is_cve_page == true %}
+          <a href="../../index.html" class="btn">Home page</a>
+        {% else %}
+          <a href="index.html" class="btn">Home page</a>
+        {% endif %}
       {% endif %}
 
     </header>

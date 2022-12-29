@@ -1,0 +1,19 @@
+name: Update external CVEs
+on:
+  schedule:
+    - cron: '0 0 * * *'
+jobs:
+  cve:
+    name: Fetch cve list
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2.0.0
+
+      - name: Fetch and process cve from CVE Project
+        run: sh ./202/cve/fetch_cve.sh
+
+      - uses: EndBug/add-and-commit@v9
+        with:
+          author_name: Denys
+          author_email: dbezuhlyi@202-ecommerce.com
