@@ -20,17 +20,12 @@ for line in $FILES; do
   echo "Processing $FILENAME"
   RESULT=$(php "$ROOT_DIR/202/cve/process_cve.php" -- $FILENAME $CVE_DIR)
   echo "$RESULT"
-  if [ "$RESULT" = "SUCCESS" ]; then
-    GENERATE_JSON=true
-  fi
 done
 
 echo ""
 
-if [ "$GENERATE_JSON" = true ]; then
-  RESULT=$(php "$ROOT_DIR/202/cve/generate_json.php" -- $CVE_DIR $OUTPUT_JSON_DIR)
-  echo "$RESULT"
-fi
+RESULT=$(php "$ROOT_DIR/202/cve/generate_json.php" -- $CVE_DIR $OUTPUT_JSON_DIR)
+echo "$RESULT"
 
 cd ../
 rm -Rf cvelist
