@@ -20,9 +20,24 @@ if (!is_dir($outputDir)) {
 }
 
 $data = getAllJsons($path);
+
+if (md5areDifferent($data, $outputDir . 'cve.json') == false) {
+    exit('No changes in the file');
+}
+
 saveJson($data, $outputDir);
 
 exit('New CVE json has been generated');
+
+function md5areDifferent($data, $pathToDir)
+{
+    $jsonBeforeMd5 = md5_file($pathToDir);
+
+    $jsonAfter = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
+    $jsonAfterMd5 = md5($jsonAfter);
+
+    return $jsonBeforeMd5 != $jsonAfterMd5;
+}
 
 function getAllJsons($path)
 {
@@ -30,7 +45,7 @@ function getAllJsons($path)
 
     $it = new RecursiveDirectoryIterator($path);
     foreach (new RecursiveIteratorIterator($it) as $file) {
-        if (is_dir($file)) {
+        if (is_dir($file) || basename($file) == 'cve.json') {
             continue;
         }
         $content = json_decode(file_get_contents($file), true);
@@ -42,8 +57,9 @@ function getAllJsons($path)
     return $data;
 }
 
-function saveJson($data, $outputDir) {
+function saveJson($data, $outputDir)
+{
     $json = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
-
+    
     return file_put_contents($outputDir . 'cve.json', $json);
 }

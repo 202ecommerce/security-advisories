@@ -17,14 +17,11 @@ for line in $FILES; do
   FILENAME="$PWD/$line"
   echo "Processing $FILENAME"
   RESULT=$(php "$ROOT_DIR/202/cve/process_cve.php" -- $FILENAME $CVE_DIR)
-  if [ "$RESULT" = "SUCCESS" ]; then
-    GENERATE_JSON=true
-  fi
+  echo "$RESULT"
 done
 
-if [ "$GENERATE_JSON" = true ]; then
-  php "$ROOT_DIR/202/cve/generate_json.php" -- $CVE_DIR $OUTPUT_JSON_DIR
-fi
+RESULT=$(php "$ROOT_DIR/202/cve/generate_json.php" -- $CVE_DIR $OUTPUT_JSON_DIR)
+echo "$RESULT"
 
 cd ../
 rm -Rf cvelist
