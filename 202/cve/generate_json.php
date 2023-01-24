@@ -20,9 +20,8 @@ if (!is_dir($outputDir)) {
 }
 
 $data = getAllJsons($path);
-$pathToDir = $outputDir . '/cve.json';
 
-if (MD5areDifferent($data, $pathToDir) == false) {
+if (md5areDifferent($data, $outputDir . 'cve.json') == false) {
     exit('No changes in the file');
 }
 
@@ -30,10 +29,9 @@ saveJson($data, $outputDir);
 
 exit('New CVE json has been generated');
 
-function MD5areDifferent($data, $pathToDir)
+function md5areDifferent($data, $pathToDir)
 {
-    $jsonBefore = file_get_contents($pathToDir);
-    $jsonBeforeMd5 = md5($jsonBefore);
+    $jsonBeforeMd5 = md5_file($pathToDir);
 
     $jsonAfter = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
     $jsonAfterMd5 = md5($jsonAfter);
@@ -51,7 +49,7 @@ function getAllJsons($path)
 
     $it = new RecursiveDirectoryIterator($path);
     foreach (new RecursiveIteratorIterator($it) as $file) {
-        if (is_dir($file)) {
+        if (is_dir($file) || basename($file) == 'cve.json') {
             continue;
         }
         $content = json_decode(file_get_contents($file), true);
