@@ -36,11 +36,7 @@ function md5areDifferent($data, $pathToDir)
     $jsonAfter = json_encode($data, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
     $jsonAfterMd5 = md5($jsonAfter);
 
-    if ($jsonBeforeMd5 != $jsonAfterMd5) {
-        return true;
-    }
-
-    return false;
+    return $jsonBeforeMd5 != $jsonAfterMd5;
 }
 
 function getAllJsons($path)
