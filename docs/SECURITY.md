@@ -49,7 +49,7 @@ braintreeofficial | [GitHub repository](https://github.com/202-ecommerce/braintr
 bridge | No public repository | Security advisories
 ebay | [GitHub repository](https://github.com/202ecommerce/ebay2) | [Security advisories](https://github.com/202ecommerce/ebay2/security)
 paypal | [GitHub repository](https://github.com/202-ecommerce/paypal) | [Security advisories](https://github.com/202-ecommerce/paypal/security)
-totadministrativemandate | No public repository | Security advisories
+totadministrativemandate | No public repository | [CVE-2022-46965](https://github.com/202ecommerce/security-advisories/security/advisories/GHSA-hg7m-23j3-rf56)
 totcarrierupdate | No public repository | Security advisories
 totcustomfields | No public repository | Security advisories
 totloyaltyadvanced | No public repository | Security advisories
