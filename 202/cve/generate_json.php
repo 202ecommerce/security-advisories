@@ -53,6 +53,10 @@ function getAllJsons($path)
             $data[] = $content;
         }
     }
+    
+    usort($data, function($a, $b) { 
+        return strcmp($b['CVE_data_meta']['ID'], $a['CVE_data_meta']['ID']);
+    });
 
     return $data;
 }
