@@ -62,4 +62,3 @@ function findFile($fileName, $cvePath)
 
     return false;
 }
-
