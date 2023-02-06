@@ -18,12 +18,9 @@ to_home_page: true
 <table>
   <thead>
     <tr>
-      <th>Title</th>
       <th>Identifier</th>
       <th>Version</th>
-      <th>Vendor name</th>
       <th>Description</th>
-      <th>Github link</th>
     </tr>
   </thead>
   <tbody>
@@ -34,20 +31,14 @@ to_home_page: true
 
     {% if module_name == 'PrestaShop' %}
 
-        {% assign title = cve.CVE_data_meta.TITLE %}
         {% assign identifier = cve.CVE_data_meta.ID %}
         {% assign version = cve.affects.vendor.vendor_data[0].product.product_data[0].version.version_data[0].version_value %}
-        {% assign vendor_name = cve.affects.vendor.vendor_data[0].vendor_name %}
         {% assign description = cve.description.description_data[0].value %}
-        {% assign github_link = cve.references.reference_data[0].url %}
 
 <tr>
-  <td>{{ title }}</td>
-  <td>{{ identifier }}</td>
+  <td><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name={{ identifier }}">{{ identifier }}</a></td>
   <td>{{ version }}</td>
-  <td>{{ vendor_name }}</td>
   <td>{{ description }}</td>
-  <td><a href="{{ github_link }}">{{ github_link }}</a></td>
 </tr>
 
     {% endif %}
@@ -64,13 +55,10 @@ to_home_page: true
 <table>
   <thead>
     <tr>
-      <th>Title</th>
       <th>Identifier</th>
       <th>Module name</th>
       <th>Version</th>
-      <th>Vendor name</th>
       <th>Description</th>
-      <th>Github link</th>
     </tr>
   </thead>
   <tbody>
@@ -81,21 +69,15 @@ to_home_page: true
 
     {% if module_name != 'PrestaShop' %}
 
-        {% assign title = cve.CVE_data_meta.TITLE %}
         {% assign identifier = cve.CVE_data_meta.ID %}
         {% assign version = cve.affects.vendor.vendor_data[0].product.product_data[0].version.version_data[0].version_value %}
-        {% assign vendor_name = cve.affects.vendor.vendor_data[0].vendor_name %}
         {% assign description = cve.description.description_data[0].value %}
-        {% assign github_link = cve.references.reference_data[0].url %}
 
 <tr>
-  <td>{{ title }}</td>
-  <td>{{ identifier }}</td>
+  <td><a href="https://cve.mitre.org/cgi-bin/cvename.cgi?name={{ identifier }}">{{ identifier }}</a></td>
   <td>{{ module_name }}</td>
   <td>{{ version }}</td>
-  <td>{{ vendor_name }}</td>
   <td>{{ description }}</td>
-  <td><a href="{{ github_link }}">{{ github_link }}</a></td>
 </tr>
 
     {% endif %}
