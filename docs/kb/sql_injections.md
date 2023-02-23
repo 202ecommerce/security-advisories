@@ -128,7 +128,7 @@ Instead of this previous sensitive SQL call :
 >    if (Validate::isOrderWay($orderWay) === false){
 >        $orderWay = 'DESC';
 >    }
->    if (Validate::isOrderBy($orderWay) === false) {
+>    if (Validate::isOrderBy($orderBy) === false) {
 >        $orderBy = 'name';
 >    }
 >    $querystr = 'SELECT id, name FROM mytable ORDER BY `' . bqSQL($orderBy) . '` ' . $orderWay;
