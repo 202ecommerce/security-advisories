@@ -12,11 +12,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "stripejs",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "< 4.5.5"
                                             }
                                         ]
                                     }
@@ -54,9 +54,9 @@
         "references": {
             "reference_data": [
                 {
-                    "url": "http://prestashop.com",
+                    "url": "https://friends-of-presta.github.io/security-advisories/modules/2023/03/01/stripejs.html",
                     "refsource": "MISC",
-                    "name": "http://prestashop.com"
+                    "name": "https://friends-of-presta.github.io/security-advisories/modules/2023/03/01/stripejs.html"
                 }
             ]
         }
@@ -7423,7 +7423,7 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "PrestaShop",
+                                    "product_name": "mondialrelay",
                                     "version": {
                                         "version_data": [
                                             {
