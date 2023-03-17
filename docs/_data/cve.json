@@ -6326,85 +6326,6 @@
             "ASSIGNER": "no-reply@friends-of-presta.org",
             "ID": "CVE-2017-9841",
             "STATE": "PUBLIC",
-            "TITLE": "PrestaShop module autoupgrade has a critical vulnerability CVE-2017-9841"
-        },
-        "affects": {
-            "vendor": {
-                "vendor_data": [
-                    {
-                        "product": {
-                            "product_data": [
-                                {
-                                    "product_name": "autoupgrade",
-                                    "version": {
-                                        "version_data": [
-                                            {
-                                                "version_value": ">=2.1.0, < 2.3.2"
-                                            }
-                                        ]
-                                    }
-                                }
-                            ]
-                        },
-                        "vendor_name": "PrestaShop"
-                    }
-                ]
-            }
-        },
-        "data_format": "MITRE",
-        "data_type": "CVE",
-        "data_version": "4.0",
-        "description": {
-            "description_data": [
-                {
-                    "lang": "eng",
-                    "value": "Util/PHP/eval-stdin.php in PHPUnit before 4.8.28 and 5.x before 5.6.3 allows remote attackers to execute arbitrary PHP code via HTTP POST data beginning with a \"<?php \" substring, as demonstrated by an attack on a site with an exposed /vendor folder, i.e., external access to the /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php URI."
-                }
-            ]
-        },
-        "impact": {
-            "cvss": {
-                "attackComplexity": "HIGH",
-                "attackVector": "NETWORK",
-                "availabilityImpact": "HIGH",
-                "baseScore": 9,
-                "baseSeverity": "CRITICAL",
-                "confidentialityImpact": "HIGH",
-                "integrityImpact": "HIGH",
-                "privilegesRequired": "NONE",
-                "scope": "CHANGED",
-                "userInteraction": "NONE",
-                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
-                "version": "3.1"
-            }
-        },
-        "problemtype": {
-            "problemtype_data": [
-                {
-                    "description": [
-                        {
-                            "lang": "eng",
-                            "value": "CWE-94: Improper Control of Generation of Code ('Code Injection')"
-                        }
-                    ]
-                }
-            ]
-        },
-        "references": {
-            "reference_data": [
-                {
-                    "name": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html",
-                    "refsource": "MISC",
-                    "url": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html"
-                }
-            ]
-        }
-    },
-    {
-        "CVE_data_meta": {
-            "ASSIGNER": "no-reply@friends-of-presta.org",
-            "ID": "CVE-2017-9841",
-            "STATE": "PUBLIC",
             "TITLE": "PrestaShop module Product Merchant Expertise is vulnerable to CVE-2017-9841"
         },
         "affects": {
@@ -6481,85 +6402,6 @@
         "source": {
             "advisory": "GHSA-prrh-qvhf-x788",
             "discovery": "UNKNOWN"
-        }
-    },
-    {
-        "CVE_data_meta": {
-            "ASSIGNER": "no-reply@friends-of-presta.org",
-            "ID": "CVE-2017-9841",
-            "STATE": "PUBLIC",
-            "TITLE": "PrestaShop module pscartabandonmentpro has a critical vulnerability CVE-2017-9841"
-        },
-        "affects": {
-            "vendor": {
-                "vendor_data": [
-                    {
-                        "product": {
-                            "product_data": [
-                                {
-                                    "product_name": "pscartabandonmentpro",
-                                    "version": {
-                                        "version_data": [
-                                            {
-                                                "version_value": ">=2.1.0, < 2.3.2"
-                                            }
-                                        ]
-                                    }
-                                }
-                            ]
-                        },
-                        "vendor_name": "PrestaShop"
-                    }
-                ]
-            }
-        },
-        "data_format": "MITRE",
-        "data_type": "CVE",
-        "data_version": "4.0",
-        "description": {
-            "description_data": [
-                {
-                    "lang": "eng",
-                    "value": "Util/PHP/eval-stdin.php in PHPUnit before 4.8.28 and 5.x before 5.6.3 allows remote attackers to execute arbitrary PHP code via HTTP POST data beginning with a \"<?php \" substring, as demonstrated by an attack on a site with an exposed /vendor folder, i.e., external access to the /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php URI."
-                }
-            ]
-        },
-        "impact": {
-            "cvss": {
-                "attackComplexity": "HIGH",
-                "attackVector": "NETWORK",
-                "availabilityImpact": "HIGH",
-                "baseScore": 9,
-                "baseSeverity": "CRITICAL",
-                "confidentialityImpact": "HIGH",
-                "integrityImpact": "HIGH",
-                "privilegesRequired": "NONE",
-                "scope": "CHANGED",
-                "userInteraction": "NONE",
-                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
-                "version": "3.1"
-            }
-        },
-        "problemtype": {
-            "problemtype_data": [
-                {
-                    "description": [
-                        {
-                            "lang": "eng",
-                            "value": "CWE-94: Improper Control of Generation of Code ('Code Injection')"
-                        }
-                    ]
-                }
-            ]
-        },
-        "references": {
-            "reference_data": [
-                {
-                    "name": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html",
-                    "refsource": "MISC",
-                    "url": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html"
-                }
-            ]
         }
     },
     {
@@ -6646,6 +6488,85 @@
             "ASSIGNER": "no-reply@friends-of-presta.org",
             "ID": "CVE-2017-9841",
             "STATE": "PUBLIC",
+            "TITLE": "PrestaShop module autoupgrade has a critical vulnerability CVE-2017-9841"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "autoupgrade",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": ">=2.1.0, < 2.3.2"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "PrestaShop"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Util/PHP/eval-stdin.php in PHPUnit before 4.8.28 and 5.x before 5.6.3 allows remote attackers to execute arbitrary PHP code via HTTP POST data beginning with a \"<?php \" substring, as demonstrated by an attack on a site with an exposed /vendor folder, i.e., external access to the /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php URI."
+                }
+            ]
+        },
+        "impact": {
+            "cvss": {
+                "attackComplexity": "HIGH",
+                "attackVector": "NETWORK",
+                "availabilityImpact": "HIGH",
+                "baseScore": 9,
+                "baseSeverity": "CRITICAL",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "privilegesRequired": "NONE",
+                "scope": "CHANGED",
+                "userInteraction": "NONE",
+                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+                "version": "3.1"
+            }
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "CWE-94: Improper Control of Generation of Code ('Code Injection')"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "name": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html",
+                    "refsource": "MISC",
+                    "url": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "no-reply@friends-of-presta.org",
+            "ID": "CVE-2017-9841",
+            "STATE": "PUBLIC",
             "TITLE": "PrestaShop module ps_checkout has a critical vulnerability CVE-2017-9841"
         },
         "affects": {
@@ -6656,6 +6577,85 @@
                             "product_data": [
                                 {
                                     "product_name": "ps_checkout",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": ">=2.1.0, < 2.3.2"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "PrestaShop"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Util/PHP/eval-stdin.php in PHPUnit before 4.8.28 and 5.x before 5.6.3 allows remote attackers to execute arbitrary PHP code via HTTP POST data beginning with a \"<?php \" substring, as demonstrated by an attack on a site with an exposed /vendor folder, i.e., external access to the /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php URI."
+                }
+            ]
+        },
+        "impact": {
+            "cvss": {
+                "attackComplexity": "HIGH",
+                "attackVector": "NETWORK",
+                "availabilityImpact": "HIGH",
+                "baseScore": 9,
+                "baseSeverity": "CRITICAL",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "privilegesRequired": "NONE",
+                "scope": "CHANGED",
+                "userInteraction": "NONE",
+                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+                "version": "3.1"
+            }
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "CWE-94: Improper Control of Generation of Code ('Code Injection')"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "name": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html",
+                    "refsource": "MISC",
+                    "url": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "no-reply@friends-of-presta.org",
+            "ID": "CVE-2017-9841",
+            "STATE": "PUBLIC",
+            "TITLE": "PrestaShop module pscartabandonmentpro has a critical vulnerability CVE-2017-9841"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "pscartabandonmentpro",
                                     "version": {
                                         "version_data": [
                                             {
