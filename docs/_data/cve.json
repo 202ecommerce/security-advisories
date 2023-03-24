@@ -12,11 +12,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "tshirtecommerce",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "< 2.1.4"
                                             }
                                         ]
                                     }
@@ -84,11 +84,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "tshirtecommerce",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "< 2.1.4"
                                             }
                                         ]
                                     }
@@ -287,6 +287,82 @@
                     "refsource": "MISC",
                     "name": "https://security.profileo.com/cve/eo_tags_2023-27569-27570/",
                     "url": "https://security.profileo.com/cve/eo_tags_2023-27569-27570/"
+                }
+            ]
+        },
+        "impact": {
+            "cvss": {
+                "attackComplexity": "LOW",
+                "attackVector": "NETWORK",
+                "availabilityImpact": "HIGH",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "privilegesRequired": "NONE",
+                "scope": "UNCHANGED",
+                "userInteraction": "NONE",
+                "vectorString": "CVSS:3.1/AC:L/AV:N/A:H/C:H/I:H/PR:N/S:U/UI:N",
+                "version": "3.1"
+            }
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-27034",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "PrestaShop jmsblog 2.5.5 was discovered to contain a SQL injection vulnerability."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://friends-of-presta.github.io/security-advisories/modules/2023/03/13/jmsblog.html",
+                    "url": "https://friends-of-presta.github.io/security-advisories/modules/2023/03/13/jmsblog.html"
                 }
             ]
         },
