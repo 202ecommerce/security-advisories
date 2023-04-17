@@ -28,8 +28,10 @@ to_home_page: true
 <br><br>
 
 4. **[Prevent Cross Script (XSS) vulnerability](/cross_script_vulnerability.md)**
-    1. [Escape assigned variable on templates](/cross_script_vulnerability.md#escape-assigned-variable-on-templates)
-    2. [None secure svg files](/cross_script_vulnerability.md#none-secure-svg-files)
+    1. [Reflexive XSS: Escape assigned variable on a Smarty templates](/cross_script_vulnerability.md#reflexive-xss-escape-assigned-variable-on-a-smarty-templates)
+    2. [Stored XSS from front to back](/cross_script_vulnerability.md#stored-xss-from-front-to-back)
+    3. [Content Security Policies](/cross_script_vulnerability.md#content-security-policies)
+    4. [None secure svg files](/cross_script_vulnerability.md#none-secure-svg-files)
 <br><br>
 
 5. **[Prevent logical weakness](/logical_weakness.md)**
