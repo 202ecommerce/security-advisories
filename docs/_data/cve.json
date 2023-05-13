@@ -12,7 +12,7 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "contactform",
                                     "version": {
                                         "version_data": [
                                             {
@@ -23,7 +23,7 @@
                                 }
                             ]
                         },
-                        "vendor_name": "n/a"
+                        "vendor_name": "PrestaShop"
                     }
                 ]
             }
@@ -436,11 +436,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "posstaticfooter",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "<= 1.0.0"
                                             }
                                         ]
                                     }
@@ -541,15 +541,15 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "possearchproducts",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "not down converted",
+                                                "version_value": "< ",
                                                 "x_cve_json_5_version_data": {
                                                     "versions": [
                                                         {
-                                                            "version": "n/a",
+                                                            "version": "<= 1.7",
                                                             "status": "unknown"
                                                         }
                                                     ]
