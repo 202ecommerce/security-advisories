@@ -16,7 +16,7 @@
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "< 4.3.0"
                                             }
                                         ]
                                     }
@@ -545,7 +545,7 @@
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "< ",
+                                                "version_value": "< 1.7",
                                                 "x_cve_json_5_version_data": {
                                                     "versions": [
                                                         {
