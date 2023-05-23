@@ -436,11 +436,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "scquickaccounting",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "< 3.7.3"
                                             }
                                         ]
                                     }
@@ -498,11 +498,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "customexporter",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "<= 1.7.20"
                                             }
                                         ]
                                     }
@@ -753,11 +753,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "cdesigner",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "< 3.1.9"
                                             }
                                         ]
                                     }
@@ -829,11 +829,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "posstaticblocks",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "<= 1.0.0"
                                             }
                                         ]
                                     }
