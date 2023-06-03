@@ -558,6 +558,95 @@
         }
     },
     {
+        "data_version": "4.0",
+        "data_type": "CVE",
+        "data_format": "MITRE",
+        "CVE_data_meta": {
+            "ID": "CVE-2023-3031",
+            "ASSIGNER": "vulnerability@ncsc.ch",
+            "STATE": "PUBLIC"
+        },
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Improper Limitation of a Pathname leads to a Path Traversal vulnerability in the module King-Avis for Prestashop, allowing a user knowing the download token to read arbitrary local files.This issue affects King-Avis: before 17.3.15.\n\n"
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "CWE-22 Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+                            "cweId": "CWE-22"
+                        }
+                    ]
+                }
+            ]
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "vendor_name": "Webbax",
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "King-Avis",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_affected": "<",
+                                                "version_name": "0",
+                                                "version_value": "17.3.15"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://borelenzo.github.io/stuff/2023/06/01/cve-2023-3031.html",
+                    "refsource": "MISC",
+                    "name": "https://borelenzo.github.io/stuff/2023/06/01/cve-2023-3031.html"
+                }
+            ]
+        },
+        "generator": {
+            "engine": "Vulnogram 0.1.0-dev"
+        },
+        "source": {
+            "discovery": "UNKNOWN"
+        },
+        "impact": {
+            "cvss": [
+                {
+                    "attackComplexity": "LOW",
+                    "attackVector": "NETWORK",
+                    "availabilityImpact": "NONE",
+                    "baseScore": 4.9,
+                    "baseSeverity": "MEDIUM",
+                    "confidentialityImpact": "HIGH",
+                    "integrityImpact": "NONE",
+                    "privilegesRequired": "HIGH",
+                    "scope": "UNCHANGED",
+                    "userInteraction": "NONE",
+                    "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:N/S:U/C:H/I:N/A:N",
+                    "version": "3.1"
+                }
+            ]
+        }
+    },
+    {
         "CVE_data_meta": {
             "ASSIGNER": "cve@mitre.org",
             "ID": "CVE-2023-30282",
@@ -1248,6 +1337,73 @@
                 "vectorString": "CVSS:3.1/AC:L/AV:N/A:H/C:H/I:H/PR:N/S:U/UI:N",
                 "version": "3.1"
             }
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-30149",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "SQL injection vulnerability in the City Autocomplete (cityautocomplete) module from ebewe.net for PrestaShop, prior to version 1.8.12 (for PrestaShop version 1.5/1.6) or prior to 2.0.3 (for PrestaShop version 1.7), allows remote attackers to execute arbitrary SQL commands via the type, input_name. or q parameter in the autocompletion.php front controller."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://addons.prestashop.com/fr/inscription-processus-de-commande/6097-city-autocomplete.html",
+                    "refsource": "MISC",
+                    "name": "https://addons.prestashop.com/fr/inscription-processus-de-commande/6097-city-autocomplete.html"
+                },
+                {
+                    "refsource": "MISC",
+                    "name": "https://friends-of-presta.github.io/security-advisories/module/2023/06/01/cityautocomplete.html",
+                    "url": "https://friends-of-presta.github.io/security-advisories/module/2023/06/01/cityautocomplete.html"
+                }
+            ]
         }
     },
     {
@@ -8863,6 +9019,85 @@
             "ASSIGNER": "no-reply@friends-of-presta.org",
             "ID": "CVE-2017-9841",
             "STATE": "PUBLIC",
+            "TITLE": "PrestaShop module ps_facetedsearch has a critical vulnerability CVE-2017-9841"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "ps_facetedsearch",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": ">=2.1.0, < 2.3.2"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "PrestaShop"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Util/PHP/eval-stdin.php in PHPUnit before 4.8.28 and 5.x before 5.6.3 allows remote attackers to execute arbitrary PHP code via HTTP POST data beginning with a \"<?php \" substring, as demonstrated by an attack on a site with an exposed /vendor folder, i.e., external access to the /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php URI."
+                }
+            ]
+        },
+        "impact": {
+            "cvss": {
+                "attackComplexity": "HIGH",
+                "attackVector": "NETWORK",
+                "availabilityImpact": "HIGH",
+                "baseScore": 9,
+                "baseSeverity": "CRITICAL",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "privilegesRequired": "NONE",
+                "scope": "CHANGED",
+                "userInteraction": "NONE",
+                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+                "version": "3.1"
+            }
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "CWE-94: Improper Control of Generation of Code ('Code Injection')"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "name": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html",
+                    "refsource": "MISC",
+                    "url": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "no-reply@friends-of-presta.org",
+            "ID": "CVE-2017-9841",
+            "STATE": "PUBLIC",
             "TITLE": "PrestaShop module Product Merchant Expertise is vulnerable to CVE-2017-9841"
         },
         "affects": {
@@ -8939,85 +9174,6 @@
         "source": {
             "advisory": "GHSA-prrh-qvhf-x788",
             "discovery": "UNKNOWN"
-        }
-    },
-    {
-        "CVE_data_meta": {
-            "ASSIGNER": "no-reply@friends-of-presta.org",
-            "ID": "CVE-2017-9841",
-            "STATE": "PUBLIC",
-            "TITLE": "PrestaShop module ps_checkout has a critical vulnerability CVE-2017-9841"
-        },
-        "affects": {
-            "vendor": {
-                "vendor_data": [
-                    {
-                        "product": {
-                            "product_data": [
-                                {
-                                    "product_name": "ps_checkout",
-                                    "version": {
-                                        "version_data": [
-                                            {
-                                                "version_value": ">=2.1.0, < 2.3.2"
-                                            }
-                                        ]
-                                    }
-                                }
-                            ]
-                        },
-                        "vendor_name": "PrestaShop"
-                    }
-                ]
-            }
-        },
-        "data_format": "MITRE",
-        "data_type": "CVE",
-        "data_version": "4.0",
-        "description": {
-            "description_data": [
-                {
-                    "lang": "eng",
-                    "value": "Util/PHP/eval-stdin.php in PHPUnit before 4.8.28 and 5.x before 5.6.3 allows remote attackers to execute arbitrary PHP code via HTTP POST data beginning with a \"<?php \" substring, as demonstrated by an attack on a site with an exposed /vendor folder, i.e., external access to the /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php URI."
-                }
-            ]
-        },
-        "impact": {
-            "cvss": {
-                "attackComplexity": "HIGH",
-                "attackVector": "NETWORK",
-                "availabilityImpact": "HIGH",
-                "baseScore": 9,
-                "baseSeverity": "CRITICAL",
-                "confidentialityImpact": "HIGH",
-                "integrityImpact": "HIGH",
-                "privilegesRequired": "NONE",
-                "scope": "CHANGED",
-                "userInteraction": "NONE",
-                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
-                "version": "3.1"
-            }
-        },
-        "problemtype": {
-            "problemtype_data": [
-                {
-                    "description": [
-                        {
-                            "lang": "eng",
-                            "value": "CWE-94: Improper Control of Generation of Code ('Code Injection')"
-                        }
-                    ]
-                }
-            ]
-        },
-        "references": {
-            "reference_data": [
-                {
-                    "name": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html",
-                    "refsource": "MISC",
-                    "url": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html"
-                }
-            ]
         }
     },
     {
@@ -9183,7 +9339,7 @@
             "ASSIGNER": "no-reply@friends-of-presta.org",
             "ID": "CVE-2017-9841",
             "STATE": "PUBLIC",
-            "TITLE": "PrestaShop module ps_facetedsearch has a critical vulnerability CVE-2017-9841"
+            "TITLE": "PrestaShop module ps_checkout has a critical vulnerability CVE-2017-9841"
         },
         "affects": {
             "vendor": {
@@ -9192,7 +9348,7 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "ps_facetedsearch",
+                                    "product_name": "ps_checkout",
                                     "version": {
                                         "version_data": [
                                             {
