@@ -198,6 +198,73 @@
     {
         "CVE_data_meta": {
             "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-31671",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "PrestaShop postfinance <= 17.1.13 is vulnerable to SQL Injection via PostfinanceValidationModuleFrontController::postProcess()."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://shop.webbax.ch/modules-de-paiement/123-module-postfinance.html",
+                    "refsource": "MISC",
+                    "name": "https://shop.webbax.ch/modules-de-paiement/123-module-postfinance.html"
+                },
+                {
+                    "refsource": "MISC",
+                    "name": "https://friends-of-presta.github.io/security-advisories/modules/2023/06/13/postfinance.html",
+                    "url": "https://friends-of-presta.github.io/security-advisories/modules/2023/06/13/postfinance.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
             "ID": "CVE-2023-31508",
             "STATE": "PUBLIC"
         },
@@ -1418,6 +1485,68 @@
                 "vectorString": "CVSS:3.1/AC:L/AV:N/A:H/C:H/I:H/PR:N/S:U/UI:N",
                 "version": "3.1"
             }
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-30150",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "PrestaShop leocustomajax 1.0 and 1.0.0 are vulnerable to SQL Injection via modules/leocustomajax/leoajax.php."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://friends-of-presta.github.io/security-advisories/module/2023/06/06/leocustomajax.html",
+                    "url": "https://friends-of-presta.github.io/security-advisories/module/2023/06/06/leocustomajax.html"
+                }
+            ]
         }
     },
     {
