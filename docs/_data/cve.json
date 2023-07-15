@@ -1643,11 +1643,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "envoimoinscher",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": ">= 3.1.10"
                                             }
                                         ]
                                     }
