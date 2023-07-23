@@ -917,11 +917,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "ultimateimagetool",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "<= 2.1.02"
                                             }
                                         ]
                                     }
