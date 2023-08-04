@@ -11,7 +11,7 @@ OUTPUT_JSON_DIR="$ROOT_DIR/docs/_data/"
 
 cd ./cvelist
 
-FILES=$(grep -rli "prestashop")
+FILES=$(grep -Erli "(prestashop|security\.friendsofpresta\.org)")
 
 for line in $FILES; do
   FILENAME="$PWD/$line"
