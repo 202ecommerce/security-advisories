@@ -1,7 +1,8 @@
 name: Update external CVEs
 on:
+  push:
   schedule:
-    - cron: '0 0 * * *'
+     - cron: '0 0 * * *'
 jobs:
   cve:
     name: Fetch cve list
