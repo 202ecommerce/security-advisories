@@ -208,7 +208,7 @@
     {
         "CVE_data_meta": {
             "ASSIGNER": "cve@mitre.org",
-            "ID": "CVE-2023-39642",
+            "ID": "CVE-2023-39643",
             "STATE": "PUBLIC"
         },
         "affects": {
@@ -223,6 +223,73 @@
                                         "version_data": [
                                             {
                                                 "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Bl Modules xmlfeeds before v3.9.8 was discovered to contain a SQL injection vulnerability via the component SearchApiXml::Xmlfeeds()."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://addons.prestashop.com/en/data-import-export/5732-xml-feeds-pro.html",
+                    "refsource": "MISC",
+                    "name": "https://addons.prestashop.com/en/data-import-export/5732-xml-feeds-pro.html"
+                },
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/08/29/xmlfeeds.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/08/29/xmlfeeds.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-39642",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "cartsguru",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "< 2.4.3"
                                             }
                                         ]
                                     }
@@ -285,11 +352,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "psaffiliate",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "1.9.8"
                                             }
                                         ]
                                     }
@@ -352,11 +419,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "leoblog",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "<= 3.1.2"
                                             }
                                         ]
                                     }
