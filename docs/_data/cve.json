@@ -218,11 +218,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "xmlfeeds",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "< 3.9.8"
                                             }
                                         ]
                                     }
