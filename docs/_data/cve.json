@@ -2,6 +2,78 @@
     {
         "CVE_data_meta": {
             "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-39677",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "MyPrestaModules Prestashop Module v6.2.9 and UpdateProducts Prestashop Module v3.6.9 were discovered to contain a PHPInfo information disclosure vulnerability via send.php."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://myprestamodules.com/",
+                    "refsource": "MISC",
+                    "name": "https://myprestamodules.com/"
+                },
+                {
+                    "url": "https://sorcery.ie",
+                    "refsource": "MISC",
+                    "name": "https://sorcery.ie"
+                },
+                {
+                    "refsource": "MISC",
+                    "name": "https://blog.sorcery.ie/posts/myprestamodules_phpinfo/",
+                    "url": "https://blog.sorcery.ie/posts/myprestamodules_phpinfo/"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
             "ID": "CVE-2023-39676",
             "STATE": "PUBLIC"
         },
@@ -67,6 +139,73 @@
                     "refsource": "MISC",
                     "name": "https://blog.sorcery.ie/posts/fieldpopupnewsletter_xss/",
                     "url": "https://blog.sorcery.ie/posts/fieldpopupnewsletter_xss/"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-39675",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "SimpleImportProduct Prestashop Module v6.2.9 was discovered to contain a SQL injection vulnerability via the key parameter at send.php."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://sorcery.ie",
+                    "refsource": "MISC",
+                    "name": "https://sorcery.ie"
+                },
+                {
+                    "refsource": "MISC",
+                    "name": "https://blog.sorcery.ie/posts/simpleimportproduct_sqli/",
+                    "url": "https://blog.sorcery.ie/posts/simpleimportproduct_sqli/"
                 }
             ]
         }
@@ -1133,6 +1272,82 @@
                     "version": "3.1"
                 }
             ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-34575",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "SQL injection vulnerability in PrestaShop opartsavecart through 2.0.7 allows remote attackers to run arbitrary SQL commands via OpartSaveCartDefaultModuleFrontController::initContent() and OpartSaveCartDefaultModuleFrontController::displayAjaxSendCartByEmail() methods."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/09/19/opartsavecart.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/09/19/opartsavecart.html"
+                }
+            ]
+        },
+        "impact": {
+            "cvss": {
+                "attackComplexity": "LOW",
+                "attackVector": "NETWORK",
+                "availabilityImpact": "HIGH",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "privilegesRequired": "NONE",
+                "scope": "UNCHANGED",
+                "userInteraction": "NONE",
+                "vectorString": "CVSS:3.1/AC:L/AV:N/A:H/C:H/I:H/PR:N/S:U/UI:N",
+                "version": "3.1"
+            }
         }
     },
     {
@@ -5852,6 +6067,212 @@
                     "scope": "UNCHANGED",
                     "userInteraction": "NONE",
                     "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "version": "3.1"
+                }
+            ]
+        }
+    },
+    {
+        "data_version": "4.0",
+        "data_type": "CVE",
+        "data_format": "MITRE",
+        "CVE_data_meta": {
+            "ID": "CVE-2022-45448",
+            "ASSIGNER": "cve-coordination@incibe.es",
+            "STATE": "PUBLIC"
+        },
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "M4 PDF plugin for Prestashop sites, in its 3.2.3 version and before, is vulnerable to an arbitrary HTML Document crafting vulnerability. The resource /m4pdf/pdf.php uses templates to dynamically create documents. In the case that the template does not exist, the application will return a fixed document with a message in mpdf format. An attacker could exploit this vulnerability by inputting a valid HTML/CSS document as the value of the parameter."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "CWE-79 Improper Neutralization of Input During Web Page Generation ('Cross-site Scripting')",
+                            "cweId": "CWE-79"
+                        }
+                    ]
+                }
+            ]
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "vendor_name": "Prestashop",
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "M4 PDF plugin",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_affected": "<=",
+                                                "version_name": "0",
+                                                "version_value": "3.2.3"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://www.incibe.es/en/incibe-cert/notices/aviso/multiple-vulnerabilities-m4-pdf-plugin-prestashop-sites",
+                    "refsource": "MISC",
+                    "name": "https://www.incibe.es/en/incibe-cert/notices/aviso/multiple-vulnerabilities-m4-pdf-plugin-prestashop-sites"
+                }
+            ]
+        },
+        "generator": {
+            "engine": "Vulnogram 0.1.0-dev"
+        },
+        "source": {
+            "discovery": "EXTERNAL"
+        },
+        "credits": [
+            {
+                "lang": "en",
+                "value": "Francisco Díaz-Pache Alonso"
+            },
+            {
+                "lang": "en",
+                "value": "David Álvarez Robles"
+            },
+            {
+                "lang": "en",
+                "value": "Sergio Corral Cristo"
+            }
+        ],
+        "impact": {
+            "cvss": [
+                {
+                    "attackComplexity": "LOW",
+                    "attackVector": "NETWORK",
+                    "availabilityImpact": "NONE",
+                    "baseScore": 3.5,
+                    "baseSeverity": "LOW",
+                    "confidentialityImpact": "NONE",
+                    "integrityImpact": "LOW",
+                    "privilegesRequired": "LOW",
+                    "scope": "UNCHANGED",
+                    "userInteraction": "REQUIRED",
+                    "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:N/I:L/A:N",
+                    "version": "3.1"
+                }
+            ]
+        }
+    },
+    {
+        "data_version": "4.0",
+        "data_type": "CVE",
+        "data_format": "MITRE",
+        "CVE_data_meta": {
+            "ID": "CVE-2022-45447",
+            "ASSIGNER": "cve-coordination@incibe.es",
+            "STATE": "PUBLIC"
+        },
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "M4 PDF plugin for Prestashop sites, in its 3.2.3 version and before, is vulnerable to a directory traversal vulnerability. The “f” parameter is not properly checked in the resource /m4pdf/pdf.php, returning any file given its relative path. An attacker that exploits this vulnerability could download /etc/passwd from the server if the file exists."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "CWE-22 Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal')",
+                            "cweId": "CWE-22"
+                        }
+                    ]
+                }
+            ]
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "vendor_name": "Prestashop",
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "M4 PDF plugin",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_affected": "<=",
+                                                "version_name": "0",
+                                                "version_value": "3.2.3"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://www.incibe.es/en/incibe-cert/notices/aviso/multiple-vulnerabilities-m4-pdf-plugin-prestashop-sites",
+                    "refsource": "MISC",
+                    "name": "https://www.incibe.es/en/incibe-cert/notices/aviso/multiple-vulnerabilities-m4-pdf-plugin-prestashop-sites"
+                }
+            ]
+        },
+        "generator": {
+            "engine": "Vulnogram 0.1.0-dev"
+        },
+        "source": {
+            "discovery": "EXTERNAL"
+        },
+        "credits": [
+            {
+                "lang": "en",
+                "value": "Francisco Díaz-Pache Alonso"
+            },
+            {
+                "lang": "en",
+                "value": "David Álvarez Robles"
+            },
+            {
+                "lang": "en",
+                "value": "Sergio Corral Cristo"
+            }
+        ],
+        "impact": {
+            "cvss": [
+                {
+                    "attackComplexity": "LOW",
+                    "attackVector": "NETWORK",
+                    "availabilityImpact": "NONE",
+                    "baseScore": 6.5,
+                    "baseSeverity": "MEDIUM",
+                    "confidentialityImpact": "HIGH",
+                    "integrityImpact": "NONE",
+                    "privilegesRequired": "LOW",
+                    "scope": "UNCHANGED",
+                    "userInteraction": "NONE",
+                    "vectorString": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:N/A:N",
                     "version": "3.1"
                 }
             ]
