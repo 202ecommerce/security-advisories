@@ -529,6 +529,68 @@
     {
         "CVE_data_meta": {
             "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-39651",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Improper neutralization of SQL parameter in Theme Volty CMS BrandList module for PrestaShop In the module “Theme Volty CMS BrandList” (tvcmsbrandlist) up to version 4.0.1 from Theme Volty for PrestaShop, a guest can perform SQL injection in affected versions."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/09/26/tvcmsbrandlist.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/09/26/tvcmsbrandlist.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
             "ID": "CVE-2023-39650",
             "STATE": "PUBLIC"
         },
@@ -589,6 +651,316 @@
                     "refsource": "MISC",
                     "name": "https://security.friendsofpresta.org/modules/2023/08/24/tvcmsblog.html",
                     "url": "https://security.friendsofpresta.org/modules/2023/08/24/tvcmsblog.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-39649",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Improper neutralization of SQL parameter in Theme Volty CMS Category Slider module for PrestaShop. In the module “Theme Volty CMS Category Slider” (tvcmscategoryslider) up to version 4.0.1 from Theme Volty for PrestaShop, a guest can perform SQL injection in affected versions."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/09/26/tvcmscategoryslider.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/09/26/tvcmscategoryslider.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-39648",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Improper neutralization of SQL parameter in Theme Volty CMS Testimonial module for PrestaShop. In the module “Theme Volty CMS Testimonial” (tvcmstestimonial) up to version 4.0.1 from Theme Volty for PrestaShop, a guest can perform SQL injection in affected versions."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/09/26/tvcmstestimonial.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/09/26/tvcmstestimonial.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-39647",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Improper neutralization of SQL parameter in Theme Volty CMS Category Product module for PrestaShop. In the module “Theme Volty CMS Category Product” (tvcmscategoryproduct) up to version 4.0.1 from Theme Volty for PrestaShop, a guest can perform SQL injection in affected versions."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/09/26/tvcmscategoryproduct.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/09/26/tvcmscategoryproduct.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-39646",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Improper neutralization of SQL parameter in Theme Volty CMS Category Chain Slider module for PrestaShop. In the module “Theme Volty CMS Category Chain Slide\"(tvcmscategorychainslider) up to version 4.0.1 from Theme Volty for PrestaShop, a guest can perform SQL injection in affected versions."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/09/26/tvcmscategorychainslider.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/09/26/tvcmscategorychainslider.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-39645",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Improper neutralization of SQL parameter in Theme Volty CMS Payment Icon module for PrestaShop. In the module “Theme Volty CMS Payment Icon” (tvcmspaymenticon) up to version 4.0.1 from Theme Volty for PrestaShop, a guest can perform SQL injection in affected versions."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/09/26/tvcmspaymenticon.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/09/26/tvcmspaymenticon.html"
                 }
             ]
         }
