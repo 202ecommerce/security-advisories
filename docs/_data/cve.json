@@ -4492,6 +4492,68 @@
     {
         "CVE_data_meta": {
             "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-30154",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Multiple improper neutralization of SQL parameters in module AfterMail (aftermailpresta) for PrestaShop, before version 2.2.1, allows remote attackers to perform SQL injection attacks via `id_customer`, `id_conf`, `id_product` and `token` parameters in `aftermailajax.php via the 'id_product' parameter in hooks DisplayRightColumnProduct and DisplayProductButtons."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/10/10/aftermailpresta.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/10/10/aftermailpresta.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
             "ID": "CVE-2023-30153",
             "STATE": "PUBLIC"
         },
@@ -4769,6 +4831,82 @@
                     "url": "https://friends-of-presta.github.io/security-advisories/module/2023/06/01/cityautocomplete.html"
                 }
             ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-30148",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Multiple Stored Cross Site Scripting (XSS) vulnerabilities in Opart opartmultihtmlblock before version 2.0.12 and Opart multihtmlblock* version 1.0.0, allows remote authenticated users to inject arbitrary web script or HTML via the body_text or body_text_rude field in /sourcefiles/BlockhtmlClass.php and /sourcefiles/blockhtml.php."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/10/10/opartmultihtmlblock.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/10/10/opartmultihtmlblock.html"
+                }
+            ]
+        },
+        "impact": {
+            "cvss": {
+                "attackComplexity": "LOW",
+                "attackVector": "NETWORK",
+                "availabilityImpact": "NONE",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "privilegesRequired": "HIGH",
+                "scope": "UNCHANGED",
+                "userInteraction": "REQUIRED",
+                "vectorString": "CVSS:3.1/AC:L/AV:N/A:N/C:H/I:H/PR:H/S:U/UI:R",
+                "version": "3.1"
+            }
         }
     },
     {
