@@ -64,6 +64,73 @@
     {
         "CVE_data_meta": {
             "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-45384",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "KnowBand supercheckout > 5.0.7 and < 6.0.7 is vulnerable to Unrestricted Upload of File with Dangerous Type. In the module \"Module One Page Checkout, Social Login & Mailchimp\" (supercheckout), a guest can upload files with extensions .php"
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://addons.prestashop.com/fr/processus-rapide-commande/18016-one-page-checkout-social-login-mailchimp.html",
+                    "refsource": "MISC",
+                    "name": "https://addons.prestashop.com/fr/processus-rapide-commande/18016-one-page-checkout-social-login-mailchimp.html"
+                },
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/10/17/supercheckout.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/10/17/supercheckout.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
             "ID": "CVE-2023-45383",
             "STATE": "PUBLIC"
         },
@@ -124,6 +191,207 @@
                     "refsource": "MISC",
                     "name": "https://security.friendsofpresta.org/modules/2023/10/17/sonice_etiquetage.html",
                     "url": "https://security.friendsofpresta.org/modules/2023/10/17/sonice_etiquetage.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-45381",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "In the module \"Creative Popup\" (creativepopup) up to version 1.6.9 from WebshopWorks for PrestaShop, a guest can perform SQL injection via `cp_download_popup().`"
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://addons.prestashop.com/fr/pop-up/39348-creative-popup.html",
+                    "refsource": "MISC",
+                    "name": "https://addons.prestashop.com/fr/pop-up/39348-creative-popup.html"
+                },
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/10/19/creativepopup.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/10/19/creativepopup.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-45379",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "In the module \"Rotator Img\" (posrotatorimg) in versions at least up to 1.1 from PosThemes for PrestaShop, a guest can perform SQL injection."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "http://posrotatorimg.com",
+                    "refsource": "MISC",
+                    "name": "http://posrotatorimg.com"
+                },
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/10/17/posrotatorimg.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/10/17/posrotatorimg.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-45376",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "In the module \"Carousels Pack - Instagram, Products, Brands, Supplier\" (hicarouselspack) for PrestaShop up to version 1.5.0 from HiPresta for PrestaShop, a guest can perform SQL injection via HiCpProductGetter::getViewedProduct().`"
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://addons.prestashop.com/en/sliders-galleries/20410-carousels-pack-instagram-products-brands-supplier.html",
+                    "refsource": "MISC",
+                    "name": "https://addons.prestashop.com/en/sliders-galleries/20410-carousels-pack-instagram-products-brands-supplier.html"
+                },
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/10/19/hicarouselspack.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/10/19/hicarouselspack.html"
                 }
             ]
         }
@@ -248,6 +516,73 @@
                     "refsource": "MISC",
                     "name": "https://security.friendsofpresta.org/modules/2023/10/05/supercheckout.html",
                     "url": "https://security.friendsofpresta.org/modules/2023/10/05/supercheckout.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-43986",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "DM Concept configurator before v4.9.4 was discovered to contain a SQL injection vulnerability via the component ConfiguratorAttachment::getAttachmentByToken."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://addons.prestashop.com/fr/declinaisons-personnalisation/20343-configurateur-avance-de-produit-sur-mesure-par-etape.html",
+                    "refsource": "MISC",
+                    "name": "https://addons.prestashop.com/fr/declinaisons-personnalisation/20343-configurateur-avance-de-produit-sur-mesure-par-etape.html"
+                },
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2023/10/19/configurator.html",
+                    "url": "https://security.friendsofpresta.org/modules/2023/10/19/configurator.html"
                 }
             ]
         }
