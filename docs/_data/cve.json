@@ -533,11 +533,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "configurator",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "< 4.9.4"
                                             }
                                         ]
                                     }
@@ -2744,11 +2744,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "sitologapplicationconnect",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": ""
                                             }
                                         ]
                                     }
