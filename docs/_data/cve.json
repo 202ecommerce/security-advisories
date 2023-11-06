@@ -8943,7 +8943,7 @@
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "< 2.4.6"
                                             }
                                         ]
                                     }
