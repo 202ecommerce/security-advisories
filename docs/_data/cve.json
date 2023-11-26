@@ -385,11 +385,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "motivationsale",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "< 3.5.0"
                                             }
                                         ]
                                     }
@@ -767,11 +767,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "exportproducts",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "< 5.0.0"
                                             }
                                         ]
                                     }
@@ -1030,11 +1030,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "sonice_retour",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "< 2.1.0"
                                             }
                                         ]
                                     }
@@ -1355,11 +1355,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "chronopost",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "< 6.4.0"
                                             }
                                         ]
                                     }
