@@ -156,7 +156,7 @@
                             "product_data": [
                                 {
                                     "product_name": "nkmgls",
-                                    "uversion": {
+                                    "version": {
                                         "version_data": [
                                             {
                                                 "version_value": "< 3.0.2"
