@@ -719,11 +719,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "ordersexport",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "< 5.2.0"
                                             }
                                         ]
                                     }
@@ -16223,7 +16223,7 @@
             "ASSIGNER": "no-reply@friends-of-presta.org",
             "ID": "CVE-2017-9841",
             "STATE": "PUBLIC",
-            "TITLE": "PrestaShop module ps_facetedsearch has a critical vulnerability CVE-2017-9841"
+            "TITLE": "PrestaShop module autoupgrade has a critical vulnerability CVE-2017-9841"
         },
         "affects": {
             "vendor": {
@@ -16232,7 +16232,7 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "ps_facetedsearch",
+                                    "product_name": "autoupgrade",
                                     "version": {
                                         "version_data": [
                                             {
@@ -16543,7 +16543,7 @@
             "ASSIGNER": "no-reply@friends-of-presta.org",
             "ID": "CVE-2017-9841",
             "STATE": "PUBLIC",
-            "TITLE": "PrestaShop module autoupgrade has a critical vulnerability CVE-2017-9841"
+            "TITLE": "PrestaShop module ps_facetedsearch has a critical vulnerability CVE-2017-9841"
         },
         "affects": {
             "vendor": {
@@ -16552,7 +16552,7 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "autoupgrade",
+                                    "product_name": "ps_facetedsearch",
                                     "version": {
                                         "version_data": [
                                             {
