@@ -237,7 +237,7 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "PrestaShop Google Integrator",
+                                    "product_name": "pshowconversion",
                                     "version": {
                                         "version_data": [
                                             {
@@ -317,11 +317,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "baproductzoommagnifier",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "< 1.0.16"
                                             }
                                         ]
                                     }
