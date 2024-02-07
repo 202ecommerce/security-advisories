@@ -1,5 +1,196 @@
 [
     {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-24311",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Path Traversal vulnerability in Linea Grafica \"Multilingual and Multistore Sitemap Pro - SEO\" (lgsitemaps) module for PrestaShop before version 1.6.6, a guest can download personal information without restriction."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2024/02/06/lgsitemaps.html",
+                    "url": "https://security.friendsofpresta.org/modules/2024/02/06/lgsitemaps.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-24304",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "In the module \"Mailjet\" (mailjet) from Mailjet for PrestaShop before versions 3.5.1, a guest can download technical information without restriction."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://github.com/mailjet/prestashop-mailjet-plugin-apiv3/releases/tag/v3.5.1",
+                    "refsource": "MISC",
+                    "name": "https://github.com/mailjet/prestashop-mailjet-plugin-apiv3/releases/tag/v3.5.1"
+                },
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2024/02/06/mailjet.html",
+                    "url": "https://security.friendsofpresta.org/modules/2024/02/06/mailjet.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-24303",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "SQL Injection vulnerability in HiPresta \"Gift Wrapping Pro\" (hiadvancedgiftwrapping) module for PrestaShop before version 1.4.1, allows remote attackers to escalate privileges and obtain sensitive information via the HiAdvancedGiftWrappingGiftWrappingModuleFrontController::addGiftWrappingCartValue() method."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2024/02/06/hiadvancedgiftwrapping.html",
+                    "url": "https://security.friendsofpresta.org/modules/2024/02/06/hiadvancedgiftwrapping.html"
+                }
+            ]
+        }
+    },
+    {
         "data_version": "4.0",
         "data_type": "CVE",
         "data_format": "MITRE",
@@ -379,11 +570,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "jmssetting",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "<= 1.1.0"
                                             }
                                         ]
                                     }
@@ -446,11 +637,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "blockslidingcart",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "<= 2.3.8"
                                             }
                                         ]
                                     }
@@ -1198,6 +1389,68 @@
                     "refsource": "MISC",
                     "name": "https://security.friendsofpresta.org/modules/2023/12/12/idxquickorder.html",
                     "url": "https://security.friendsofpresta.org/modules/2023/12/12/idxquickorder.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-46914",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "SQL Injection vulnerability in RM bookingcalendar module for PrestaShop versions 2.7.9 and before, allows remote attackers to execute arbitrary code, escalate privileges, and obtain sensitive information via ics_export.php."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2024/02/06/bookingcalendar.html",
+                    "url": "https://security.friendsofpresta.org/modules/2024/02/06/bookingcalendar.html"
                 }
             ]
         }
@@ -17230,89 +17483,6 @@
             "ASSIGNER": "no-reply@friends-of-presta.org",
             "ID": "CVE-2017-9841",
             "STATE": "PUBLIC",
-            "TITLE": "PrestaShop module Product Merchant Expertise is vulnerable to CVE-2017-9841"
-        },
-        "affects": {
-            "vendor": {
-                "vendor_data": [
-                    {
-                        "product": {
-                            "product_data": [
-                                {
-                                    "product_name": "gamification",
-                                    "version": {
-                                        "version_data": [
-                                            {
-                                                "version_value": ">=2.1.0, < 2.3.2"
-                                            }
-                                        ]
-                                    }
-                                }
-                            ]
-                        },
-                        "vendor_name": "PrestaShop"
-                    }
-                ]
-            }
-        },
-        "data_format": "MITRE",
-        "data_type": "CVE",
-        "data_version": "4.0",
-        "description": {
-            "description_data": [
-                {
-                    "lang": "eng",
-                    "value": "Util/PHP/eval-stdin.php in PHPUnit before 4.8.28 and 5.x before 5.6.3 allows remote attackers to execute arbitrary PHP code via HTTP POST data beginning with a \"<?php \" substring, as demonstrated by an attack on a site with an exposed /vendor folder, i.e., external access to the /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php URI."
-                }
-            ]
-        },
-        "impact": {
-            "cvss": {
-                "attackComplexity": "HIGH",
-                "attackVector": "NETWORK",
-                "availabilityImpact": "HIGH",
-                "baseScore": 9,
-                "baseSeverity": "CRITICAL",
-                "confidentialityImpact": "HIGH",
-                "integrityImpact": "HIGH",
-                "privilegesRequired": "NONE",
-                "scope": "CHANGED",
-                "userInteraction": "NONE",
-                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
-                "version": "3.1"
-            }
-        },
-        "problemtype": {
-            "problemtype_data": [
-                {
-                    "description": [
-                        {
-                            "lang": "eng",
-                            "value": "CWE-94: Improper Control of Generation of Code ('Code Injection')"
-                        }
-                    ]
-                }
-            ]
-        },
-        "references": {
-            "reference_data": [
-                {
-                    "name": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html",
-                    "refsource": "MISC",
-                    "url": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html"
-                }
-            ]
-        },
-        "source": {
-            "advisory": "GHSA-prrh-qvhf-x788",
-            "discovery": "UNKNOWN"
-        }
-    },
-    {
-        "CVE_data_meta": {
-            "ASSIGNER": "no-reply@friends-of-presta.org",
-            "ID": "CVE-2017-9841",
-            "STATE": "PUBLIC",
             "TITLE": "PrestaShop module ps_facetedsearch has a critical vulnerability CVE-2017-9841"
         },
         "affects": {
@@ -17392,7 +17562,7 @@
             "ASSIGNER": "no-reply@friends-of-presta.org",
             "ID": "CVE-2017-9841",
             "STATE": "PUBLIC",
-            "TITLE": "PrestaShop module pscartabandonmentpro has a critical vulnerability CVE-2017-9841"
+            "TITLE": "PrestaShop module Product Merchant Expertise is vulnerable to CVE-2017-9841"
         },
         "affects": {
             "vendor": {
@@ -17401,7 +17571,7 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "pscartabandonmentpro",
+                                    "product_name": "gamification",
                                     "version": {
                                         "version_data": [
                                             {
@@ -17464,6 +17634,10 @@
                     "url": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html"
                 }
             ]
+        },
+        "source": {
+            "advisory": "GHSA-prrh-qvhf-x788",
+            "discovery": "UNKNOWN"
         }
     },
     {
@@ -17560,6 +17734,85 @@
                             "product_data": [
                                 {
                                     "product_name": "autoupgrade",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": ">=2.1.0, < 2.3.2"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "PrestaShop"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Util/PHP/eval-stdin.php in PHPUnit before 4.8.28 and 5.x before 5.6.3 allows remote attackers to execute arbitrary PHP code via HTTP POST data beginning with a \"<?php \" substring, as demonstrated by an attack on a site with an exposed /vendor folder, i.e., external access to the /vendor/phpunit/phpunit/src/Util/PHP/eval-stdin.php URI."
+                }
+            ]
+        },
+        "impact": {
+            "cvss": {
+                "attackComplexity": "HIGH",
+                "attackVector": "NETWORK",
+                "availabilityImpact": "HIGH",
+                "baseScore": 9,
+                "baseSeverity": "CRITICAL",
+                "confidentialityImpact": "HIGH",
+                "integrityImpact": "HIGH",
+                "privilegesRequired": "NONE",
+                "scope": "CHANGED",
+                "userInteraction": "NONE",
+                "vectorString": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:C/C:H/I:H/A:H",
+                "version": "3.1"
+            }
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "CWE-94: Improper Control of Generation of Code ('Code Injection')"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "name": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html",
+                    "refsource": "MISC",
+                    "url": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "no-reply@friends-of-presta.org",
+            "ID": "CVE-2017-9841",
+            "STATE": "PUBLIC",
+            "TITLE": "PrestaShop module pscartabandonmentpro has a critical vulnerability CVE-2017-9841"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "pscartabandonmentpro",
                                     "version": {
                                         "version_data": [
                                             {
