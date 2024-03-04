@@ -1,5 +1,67 @@
 [
     {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-26469",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Server-Side Request Forgery (SSRF) vulnerability in Tunis Soft \"Product Designer\" (productdesigner) module for PrestaShop before version 1.178.36, allows remote attackers to cause a denial of service (DoS) and escalate privileges via the url parameter in the postProcess() method."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://github.com/friends-of-presta/security-advisories/blob/main/_posts/2024-02-29-productdesigner-918.md",
+                    "url": "https://github.com/friends-of-presta/security-advisories/blob/main/_posts/2024-02-29-productdesigner-918.md"
+                }
+            ]
+        }
+    },
+    {
         "data_version": "4.0",
         "data_type": "CVE",
         "data_format": "MITRE",
@@ -98,6 +160,68 @@
     {
         "CVE_data_meta": {
             "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-25847",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "SQL Injection vulnerability in MyPrestaModules \"Product Catalog (CSV, Excel) Import\" (simpleimportproduct) modules for PrestaShop versions 6.5.0 and before, allows attackers to escalate privileges and obtain sensitive information via Send::__construct() and importProducts::_addDataToDb methods."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://github.com/friends-of-presta/security-advisories/blob/main/_posts/2024-02-29-simpleimportproduct.md",
+                    "url": "https://github.com/friends-of-presta/security-advisories/blob/main/_posts/2024-02-29-simpleimportproduct.md"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
             "ID": "CVE-2024-25846",
             "STATE": "PUBLIC"
         },
@@ -165,6 +289,68 @@
     {
         "CVE_data_meta": {
             "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-25844",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "An issue was discovered in Common-Services \"So Flexibilite\" (soflexibilite) module for PrestaShop before version 4.1.26, allows remote attackers to escalate privileges and obtain sensitive information via debug file."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://github.com/friends-of-presta/security-advisories/blob/main/_posts/2024-02-29-soflexibilite.md",
+                    "url": "https://github.com/friends-of-presta/security-advisories/blob/main/_posts/2024-02-29-soflexibilite.md"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
             "ID": "CVE-2024-25843",
             "STATE": "PUBLIC"
         },
@@ -225,6 +411,68 @@
                     "refsource": "MISC",
                     "name": "https://security.friendsofpresta.org/modules/2024/02/27/ba_importer.html",
                     "url": "https://security.friendsofpresta.org/modules/2024/02/27/ba_importer.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-25842",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "An issue was discovered in Presta World \"Account Manager - Sales Representative & Dealers - CRM\" (prestasalesmanager) module for PrestaShop before version 9.0, allows remote attackers to escalate privilege and obtain sensitive information via the uploadLogo() and postProcess methods."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://github.com/friends-of-presta/security-advisories/blob/main/_posts/2024-02-29-prestasalesmanager.md",
+                    "url": "https://github.com/friends-of-presta/security-advisories/blob/main/_posts/2024-02-29-prestasalesmanager.md"
                 }
             ]
         }
@@ -359,6 +607,68 @@
                     "refsource": "MISC",
                     "name": "https://security.friendsofpresta.org/modules/2024/02/27/prestasalesmanager.html",
                     "url": "https://security.friendsofpresta.org/modules/2024/02/27/prestasalesmanager.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-25839",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "An issue was discovered in Webbax \"Super Newsletter\" (supernewsletter) module for PrestaShop versions 1.4.21 and before, allows local attackers to escalate privileges and obtain sensitive information."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://github.com/friends-of-presta/security-advisories/blob/main/_posts/2024-02-29-supernewsletter.md",
+                    "url": "https://github.com/friends-of-presta/security-advisories/blob/main/_posts/2024-02-29-supernewsletter.md"
                 }
             ]
         }
@@ -833,6 +1143,68 @@
     {
         "CVE_data_meta": {
             "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-24307",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Path Traversal vulnerability in Tunis Soft \"Product Designer\" (productdesigner) module for PrestaShop before version 1.178.36, allows a remote attacker to escalate privileges and obtain sensitive information via the ajaxProcessCropImage() method."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://github.com/friends-of-presta/security-advisories/blob/main/_posts/2024-02-29-productdesigner-22.md",
+                    "url": "https://github.com/friends-of-presta/security-advisories/blob/main/_posts/2024-02-29-productdesigner-22.md"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
             "ID": "CVE-2024-24304",
             "STATE": "PUBLIC"
         },
@@ -955,6 +1327,68 @@
                     "refsource": "MISC",
                     "name": "https://security.friendsofpresta.org/modules/2024/02/06/hiadvancedgiftwrapping.html",
                     "url": "https://security.friendsofpresta.org/modules/2024/02/06/hiadvancedgiftwrapping.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-24302",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "An issue was discovered in Tunis Soft \"Product Designer\" (productdesigner) module for PrestaShop before version 1.178.36, allows remote attackers to execute arbitrary code, escalate privileges, and obtain sensitive information via the postProcess() method."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "refsource": "MISC",
+                    "name": "https://github.com/friends-of-presta/security-advisories/blob/main/_posts/2024-02-29-productdesigner-502.md",
+                    "url": "https://github.com/friends-of-presta/security-advisories/blob/main/_posts/2024-02-29-productdesigner-502.md"
                 }
             ]
         }
