@@ -1,5 +1,262 @@
 [
     {
+        "data_version": "4.0",
+        "data_type": "CVE",
+        "data_format": "MITRE",
+        "CVE_data_meta": {
+            "ID": "CVE-2024-30511",
+            "ASSIGNER": "audit@patchstack.com",
+            "STATE": "PUBLIC"
+        },
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Insertion of Sensitive Information into Log File vulnerability in Frédéric GILLES FG PrestaShop to WooCommerce.This issue affects FG PrestaShop to WooCommerce: from n/a through 4.45.1.\n\n"
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "CWE-532 Insertion of Sensitive Information into Log File",
+                            "cweId": "CWE-532"
+                        }
+                    ]
+                }
+            ]
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "vendor_name": "Frédéric GILLES",
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "FG PrestaShop to WooCommerce",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "not down converted",
+                                                "x_cve_json_5_version_data": {
+                                                    "versions": [
+                                                        {
+                                                            "changes": [
+                                                                {
+                                                                    "at": "4.47.0",
+                                                                    "status": "unaffected"
+                                                                }
+                                                            ],
+                                                            "lessThanOrEqual": "4.45.1",
+                                                            "status": "affected",
+                                                            "version": "n/a",
+                                                            "versionType": "custom"
+                                                        }
+                                                    ],
+                                                    "defaultStatus": "unaffected"
+                                                }
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://patchstack.com/database/vulnerability/fg-prestashop-to-woocommerce/wordpress-fg-prestashop-to-woocommerce-plugin-4-45-1-sensitive-data-exposure-via-log-file-vulnerability?_s_id=cve",
+                    "refsource": "MISC",
+                    "name": "https://patchstack.com/database/vulnerability/fg-prestashop-to-woocommerce/wordpress-fg-prestashop-to-woocommerce-plugin-4-45-1-sensitive-data-exposure-via-log-file-vulnerability?_s_id=cve"
+                }
+            ]
+        },
+        "generator": {
+            "engine": "Vulnogram 0.1.0-dev"
+        },
+        "source": {
+            "discovery": "EXTERNAL"
+        },
+        "solution": [
+            {
+                "lang": "en",
+                "supportingMedia": [
+                    {
+                        "base64": false,
+                        "type": "text/html",
+                        "value": "Update to 4.47.0 or a higher version."
+                    }
+                ],
+                "value": "Update to 4.47.0 or a higher version."
+            }
+        ],
+        "credits": [
+            {
+                "lang": "en",
+                "value": "Yudistira Arya (Patchstack Alliance)"
+            }
+        ],
+        "impact": {
+            "cvss": [
+                {
+                    "attackComplexity": "LOW",
+                    "attackVector": "NETWORK",
+                    "availabilityImpact": "NONE",
+                    "baseScore": 5.3,
+                    "baseSeverity": "MEDIUM",
+                    "confidentialityImpact": "LOW",
+                    "integrityImpact": "NONE",
+                    "privilegesRequired": "NONE",
+                    "scope": "UNCHANGED",
+                    "userInteraction": "NONE",
+                    "vectorString": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:L/I:N/A:N",
+                    "version": "3.1"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-28396",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "An issue in MyPrestaModules ordersexport v.6.0.2 and before allows a remote attacker to execute arbitrary code via the download.php component."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://addons.prestashop.com/en/data-import-export/17596-orders-csv-excel-export-pro.html",
+                    "refsource": "MISC",
+                    "name": "https://addons.prestashop.com/en/data-import-export/17596-orders-csv-excel-export-pro.html"
+                },
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2024/03/14/ordersexport.html",
+                    "url": "https://security.friendsofpresta.org/modules/2024/03/14/ordersexport.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-28395",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "SQL injection vulnerability in Best-Kit bestkit_popup v.1.7.2 and before allows a remote attacker to escalate privileges via the bestkit_popup.php component."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://addons.prestashop.com/en/pop-up/20208-pop-up-schedule-popup-splash-window.html",
+                    "refsource": "MISC",
+                    "name": "https://addons.prestashop.com/en/pop-up/20208-pop-up-schedule-popup-splash-window.html"
+                },
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2024/03/14/bestkit_popup.html",
+                    "url": "https://security.friendsofpresta.org/modules/2024/03/14/bestkit_popup.html"
+                }
+            ]
+        }
+    },
+    {
         "CVE_data_meta": {
             "ASSIGNER": "cve@mitre.org",
             "ID": "CVE-2024-28394",
@@ -69,7 +326,7 @@
     {
         "CVE_data_meta": {
             "ASSIGNER": "cve@mitre.org",
-            "ID": "CVE-2024-28391",
+            "ID": "CVE-2024-28393",
             "STATE": "PUBLIC"
         },
         "affects": {
@@ -84,6 +341,140 @@
                                         "version_data": [
                                             {
                                                 "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "SQL injection vulnerability in scalapay v.1.2.41 and before allows a remote attacker to escalate privileges via the ScalapayReturnModuleFrontController::postProcess() method."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://addons.prestashop.com/fr/paiement-en-plusieurs-fois/87023-scalapay-payez-en-3-fois-sans-frais.html",
+                    "refsource": "MISC",
+                    "name": "https://addons.prestashop.com/fr/paiement-en-plusieurs-fois/87023-scalapay-payez-en-3-fois-sans-frais.html"
+                },
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2024/03/19/scalapay.html",
+                    "url": "https://security.friendsofpresta.org/modules/2024/03/19/scalapay.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-28392",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "SQL injection vulnerability in pscartabandonmentpro v.2.0.11 and before allows a remote attacker to escalate privileges via the pscartabandonmentproFrontCAPUnsubscribeJobModuleFrontController::setEmailVisualized() method."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/16535-abandoned-cart-reminder-pro.html",
+                    "refsource": "MISC",
+                    "name": "https://addons.prestashop.com/en/remarketing-shopping-cart-abandonment/16535-abandoned-cart-reminder-pro.html"
+                },
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2024/03/14/pscartabandonmentpro.html",
+                    "url": "https://security.friendsofpresta.org/modules/2024/03/14/pscartabandonmentpro.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-28391",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "quickproducttable",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "<= 1.2.1"
                                             }
                                         ]
                                     }
@@ -141,11 +532,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "ultimateimagetool",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "2.2.01"
                                             }
                                         ]
                                     }
@@ -203,11 +594,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "spinwheel",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "<= 3.0.3"
                                             }
                                         ]
                                     }
@@ -265,11 +656,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "stproductcomments",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "<= 1.0.5"
                                             }
                                         ]
                                     }
@@ -310,6 +701,155 @@
                     "refsource": "MISC",
                     "name": "https://security.friendsofpresta.org/modules/2024/03/12/stproductcomments.html",
                     "url": "https://security.friendsofpresta.org/modules/2024/03/12/stproductcomments.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-28387",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "An issue in axonaut v.3.1.23 and before allows a remote attacker to obtain sensitive information via the log.txt component."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://axonaut.com/integration/detail/prestashop",
+                    "refsource": "MISC",
+                    "name": "https://axonaut.com/integration/detail/prestashop"
+                },
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2024/03/19/axonaut.html",
+                    "url": "https://security.friendsofpresta.org/modules/2024/03/19/axonaut.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-28386",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "An issue in Home-Made.io fastmagsync v.1.7.51 and before allows a remote attacker to execute arbitrary code via the getPhpBin() component."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "http://fastmagsync.com",
+                    "refsource": "MISC",
+                    "name": "http://fastmagsync.com"
+                },
+                {
+                    "url": "http://home-madeio.com",
+                    "refsource": "MISC",
+                    "name": "http://home-madeio.com"
+                },
+                {
+                    "url": "https://reference1.example.com/modules/fastmagsync/crons/cron_mutualise_job_queue.php?hosting=.%20%26%20%20echo%20%27%3C%3Fphp%20echo%20%2242ovh%22%3B%27%20%3E%20a.php%3B%23&syncway=tofastmag",
+                    "refsource": "MISC",
+                    "name": "https://reference1.example.com/modules/fastmagsync/crons/cron_mutualise_job_queue.php?hosting=.%20%26%20%20echo%20%27%3C%3Fphp%20echo%20%2242ovh%22%3B%27%20%3E%20a.php%3B%23&syncway=tofastmag"
+                },
+                {
+                    "url": "https://www.home-made.io/module-fastmag-sync-prestashop/",
+                    "refsource": "MISC",
+                    "name": "https://www.home-made.io/module-fastmag-sync-prestashop/"
+                },
+                {
+                    "refsource": "MISC",
+                    "name": "https://security.friendsofpresta.org/modules/2024/03/19/fastmagsync.html",
+                    "url": "https://security.friendsofpresta.org/modules/2024/03/19/fastmagsync.html"
                 }
             ]
         }
