@@ -64,6 +64,207 @@
     {
         "CVE_data_meta": {
             "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-33275",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "SQL injection vulnerability in Webbax supernewsletter v.1.4.21 and before allows a remote attacker to escalate privileges via the Super Newsletter module in the product_search.php components."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://www.webbax.ch/2017/08/30/9-modules-prestashop-gratuits-offert-par-webbax/",
+                    "refsource": "MISC",
+                    "name": "https://www.webbax.ch/2017/08/30/9-modules-prestashop-gratuits-offert-par-webbax/"
+                },
+                {
+                    "refsource": "CONFIRM",
+                    "name": "https://security.friendsofpresta.org/modules/2024/04/29/supernewsletter.html",
+                    "url": "https://security.friendsofpresta.org/modules/2024/04/29/supernewsletter.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-33274",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Directory Traversal vulnerability in FME Modules customfields v.2.2.7 and before allows a remote attacker to obtain sensitive information via the Custom Checkout Fields, Add Custom Fields to Checkout parameter of the ajax.php"
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://addons.prestashop.com/en/registration-ordering-process/19008-custom-checkout-fields-add-custom-fields-to-checkout.html",
+                    "refsource": "MISC",
+                    "name": "https://addons.prestashop.com/en/registration-ordering-process/19008-custom-checkout-fields-add-custom-fields-to-checkout.html"
+                },
+                {
+                    "refsource": "CONFIRM",
+                    "name": "https://security.friendsofpresta.org/modules/2024/04/29/customfields.html",
+                    "url": "https://security.friendsofpresta.org/modules/2024/04/29/customfields.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-33273",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "SQL injection vulnerability in shipup before v.3.3.0 allows a remote attacker to escalate privileges via the getShopID function."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://www.shipup.co/fr",
+                    "refsource": "MISC",
+                    "name": "https://www.shipup.co/fr"
+                },
+                {
+                    "refsource": "CONFIRM",
+                    "name": "https://security.friendsofpresta.org/modules/2024/04/29/shipup.html",
+                    "url": "https://security.friendsofpresta.org/modules/2024/04/29/shipup.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
             "ID": "CVE-2024-33272",
             "STATE": "PUBLIC"
         },
@@ -188,6 +389,83 @@
     {
         "CVE_data_meta": {
             "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-33270",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "An issue in FME Modules fileuploads v.2.0.3 and before and fixed in v2.0.4 allows a remote attacker to obtain sensitive information via the uploadfiles.php component."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "http://fme.com",
+                    "refsource": "MISC",
+                    "name": "http://fme.com"
+                },
+                {
+                    "url": "http://fileuploads.com",
+                    "refsource": "MISC",
+                    "name": "http://fileuploads.com"
+                },
+                {
+                    "url": "https://addons.prestashop.com/en/additional-information-product-tab/21373-customer-file-upload-attach-file-on-productcart-pages.html",
+                    "refsource": "MISC",
+                    "name": "https://addons.prestashop.com/en/additional-information-product-tab/21373-customer-file-upload-attach-file-on-productcart-pages.html"
+                },
+                {
+                    "refsource": "CONFIRM",
+                    "name": "https://security.friendsofpresta.org/modules/2024/04/29/fileuploads.html",
+                    "url": "https://security.friendsofpresta.org/modules/2024/04/29/fileuploads.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
             "ID": "CVE-2024-33269",
             "STATE": "PUBLIC"
         },
@@ -305,6 +583,73 @@
                     "refsource": "MISC",
                     "name": "https://security.friendsofpresta.org/modules/2024/04/25/mdgiftproduct.html",
                     "url": "https://security.friendsofpresta.org/modules/2024/04/25/mdgiftproduct.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2024-33267",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "SQL Injection vulnerability in Hero hfheropayment v.1.2.5 and before allows an attacker to escalate privileges via the HfHeropaymentGatewayBackModuleFrontController::initContent() function."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://www.heropay.eu/",
+                    "refsource": "MISC",
+                    "name": "https://www.heropay.eu/"
+                },
+                {
+                    "refsource": "CONFIRM",
+                    "name": "https://security.friendsofpresta.org/modules/2024/04/29/hfheropayment.html",
+                    "url": "https://security.friendsofpresta.org/modules/2024/04/29/hfheropayment.html"
                 }
             ]
         }
@@ -5310,6 +5655,73 @@
                     "refsource": "MISC",
                     "name": "https://security.friendsofpresta.org/modules/2023/10/12/extratabspro.html",
                     "url": "https://security.friendsofpresta.org/modules/2023/10/12/extratabspro.html"
+                }
+            ]
+        }
+    },
+    {
+        "CVE_data_meta": {
+            "ASSIGNER": "cve@mitre.org",
+            "ID": "CVE-2023-45385",
+            "STATE": "PUBLIC"
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "n/a",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_value": "n/a"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        },
+                        "vendor_name": "n/a"
+                    }
+                ]
+            }
+        },
+        "data_format": "MITRE",
+        "data_type": "CVE",
+        "data_version": "4.0",
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "ProQuality pqprintshippinglabels before v.4.15.0 is vulnerable to Directory Traversal via the pqprintshippinglabels module."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "n/a"
+                        }
+                    ]
+                }
+            ]
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://addons.prestashop.com/en/preparation-shipping/16885-print-shipping-labels-pro-address-direct-print.html#overview_description",
+                    "refsource": "MISC",
+                    "name": "https://addons.prestashop.com/en/preparation-shipping/16885-print-shipping-labels-pro-address-direct-print.html#overview_description"
+                },
+                {
+                    "refsource": "CONFIRM",
+                    "name": "https://security.friendsofpresta.org/modules/2024/04/29/pqprintshippinglabels.html",
+                    "url": "https://security.friendsofpresta.org/modules/2024/04/29/pqprintshippinglabels.html"
                 }
             ]
         }
