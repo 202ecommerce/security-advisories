@@ -476,11 +476,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "flashsales",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "<= 1.9.7"
                                             }
                                         ]
                                     }
@@ -604,7 +604,7 @@
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "<= 1.2.5"
                                             }
                                         ]
                                     }
