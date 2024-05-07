@@ -538,11 +538,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "mdgiftproduct",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "<= 1.4.1"
                                             }
                                         ]
                                     }
@@ -600,7 +600,7 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "hfheropayment",
                                     "version": {
                                         "version_data": [
                                             {
@@ -667,11 +667,11 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "n/a",
+                                    "product_name": "deliveryorderautoupdate",
                                     "version": {
                                         "version_data": [
                                             {
-                                                "version_value": "n/a"
+                                                "version_value": "<= 2.8.1"
                                             }
                                         ]
                                     }
