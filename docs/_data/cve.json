@@ -95,6 +95,113 @@
         "data_type": "CVE",
         "data_format": "MITRE",
         "CVE_data_meta": {
+            "ID": "CVE-2025-1230",
+            "ASSIGNER": "cve-coordination@incibe.es",
+            "STATE": "PUBLIC"
+        },
+        "description": {
+            "description_data": [
+                {
+                    "lang": "eng",
+                    "value": "Stored Cross-Site Scripting (XSS) vulnerability in Prestashop 8.1.7, due to the lack of proper validation of user input through ‘/<admin_directory>/index.php’, affecting the ‘link’ parameter. This vulnerability could allow a remote user to send a specially crafted query to an authenticated user and steal their cookie session details."
+                }
+            ]
+        },
+        "problemtype": {
+            "problemtype_data": [
+                {
+                    "description": [
+                        {
+                            "lang": "eng",
+                            "value": "CWE-79 Improper Neutralization of Input During Web Page Generation (XSS or 'Cross-site Scripting')",
+                            "cweId": "CWE-79"
+                        }
+                    ]
+                }
+            ]
+        },
+        "affects": {
+            "vendor": {
+                "vendor_data": [
+                    {
+                        "vendor_name": "Prestashop",
+                        "product": {
+                            "product_data": [
+                                {
+                                    "product_name": "Prestashop",
+                                    "version": {
+                                        "version_data": [
+                                            {
+                                                "version_affected": "=",
+                                                "version_value": "8.1.7"
+                                            }
+                                        ]
+                                    }
+                                }
+                            ]
+                        }
+                    }
+                ]
+            }
+        },
+        "references": {
+            "reference_data": [
+                {
+                    "url": "https://www.incibe.es/en/incibe-cert/notices/aviso/cross-site-scripting-xss-vulnerability-prestashop",
+                    "refsource": "MISC",
+                    "name": "https://www.incibe.es/en/incibe-cert/notices/aviso/cross-site-scripting-xss-vulnerability-prestashop"
+                }
+            ]
+        },
+        "generator": {
+            "engine": "Vulnogram 0.2.0"
+        },
+        "source": {
+            "discovery": "EXTERNAL"
+        },
+        "solution": [
+            {
+                "lang": "en",
+                "supportingMedia": [
+                    {
+                        "base64": false,
+                        "type": "text/html",
+                        "value": "The manufacturer is working on a fix for this vulnerability. It is recommended to update to the latest version available."
+                    }
+                ],
+                "value": "The manufacturer is working on a fix for this vulnerability. It is recommended to update to the latest version available."
+            }
+        ],
+        "credits": [
+            {
+                "lang": "en",
+                "value": "David Aparicio Salcedo"
+            }
+        ],
+        "impact": {
+            "cvss": [
+                {
+                    "attackComplexity": "LOW",
+                    "attackVector": "NETWORK",
+                    "availabilityImpact": "NONE",
+                    "baseScore": 4.8,
+                    "baseSeverity": "MEDIUM",
+                    "confidentialityImpact": "LOW",
+                    "integrityImpact": "LOW",
+                    "privilegesRequired": "HIGH",
+                    "scope": "CHANGED",
+                    "userInteraction": "REQUIRED",
+                    "vectorString": "CVSS:3.1/AV:N/AC:L/PR:H/UI:R/S:C/C:L/I:L/A:N",
+                    "version": "3.1"
+                }
+            ]
+        }
+    },
+    {
+        "data_version": "4.0",
+        "data_type": "CVE",
+        "data_format": "MITRE",
+        "CVE_data_meta": {
             "ID": "CVE-2024-41670",
             "ASSIGNER": "security-advisories@github.com",
             "STATE": "PUBLIC"
@@ -22502,7 +22609,7 @@
             "ASSIGNER": "no-reply@friends-of-presta.org",
             "ID": "CVE-2017-9841",
             "STATE": "PUBLIC",
-            "TITLE": "PrestaShop module autoupgrade has a critical vulnerability CVE-2017-9841"
+            "TITLE": "PrestaShop module Product Merchant Expertise is vulnerable to CVE-2017-9841"
         },
         "affects": {
             "vendor": {
@@ -22511,7 +22618,7 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "autoupgrade",
+                                    "product_name": "gamification",
                                     "version": {
                                         "version_data": [
                                             {
@@ -22574,6 +22681,10 @@
                     "url": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html"
                 }
             ]
+        },
+        "source": {
+            "advisory": "GHSA-prrh-qvhf-x788",
+            "discovery": "UNKNOWN"
         }
     },
     {
@@ -22581,7 +22692,7 @@
             "ASSIGNER": "no-reply@friends-of-presta.org",
             "ID": "CVE-2017-9841",
             "STATE": "PUBLIC",
-            "TITLE": "PrestaShop module ps_facetedsearch has a critical vulnerability CVE-2017-9841"
+            "TITLE": "PrestaShop module autoupgrade has a critical vulnerability CVE-2017-9841"
         },
         "affects": {
             "vendor": {
@@ -22590,7 +22701,7 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "ps_facetedsearch",
+                                    "product_name": "autoupgrade",
                                     "version": {
                                         "version_data": [
                                             {
@@ -22739,7 +22850,7 @@
             "ASSIGNER": "no-reply@friends-of-presta.org",
             "ID": "CVE-2017-9841",
             "STATE": "PUBLIC",
-            "TITLE": "PrestaShop module Product Merchant Expertise is vulnerable to CVE-2017-9841"
+            "TITLE": "PrestaShop module ps_checkout has a critical vulnerability CVE-2017-9841"
         },
         "affects": {
             "vendor": {
@@ -22748,7 +22859,7 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "gamification",
+                                    "product_name": "ps_checkout",
                                     "version": {
                                         "version_data": [
                                             {
@@ -22811,10 +22922,6 @@
                     "url": "https://friends-of-presta.github.io/fop-security-advisories/dependancies/2020/01/07/phpunit-CVE-2017-9841.html"
                 }
             ]
-        },
-        "source": {
-            "advisory": "GHSA-prrh-qvhf-x788",
-            "discovery": "UNKNOWN"
         }
     },
     {
@@ -22822,7 +22929,7 @@
             "ASSIGNER": "no-reply@friends-of-presta.org",
             "ID": "CVE-2017-9841",
             "STATE": "PUBLIC",
-            "TITLE": "PrestaShop module ps_checkout has a critical vulnerability CVE-2017-9841"
+            "TITLE": "PrestaShop module ps_facetedsearch has a critical vulnerability CVE-2017-9841"
         },
         "affects": {
             "vendor": {
@@ -22831,7 +22938,7 @@
                         "product": {
                             "product_data": [
                                 {
-                                    "product_name": "ps_checkout",
+                                    "product_name": "ps_facetedsearch",
                                     "version": {
                                         "version_data": [
                                             {
