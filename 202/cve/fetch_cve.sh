@@ -2,7 +2,7 @@
 
 echo "Fetch cve from CVE Project repository"
 
-git clone https://github.com/CVEProject/cvelistV5.git
+git clone https://github.com/CVEProject/cvelistV5.git cvelist
 
 ROOT_DIR=$PWD
 CVE_DIR="$ROOT_DIR/docs/cve/list/"
